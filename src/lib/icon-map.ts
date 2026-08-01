@@ -1,0 +1,30 @@
+import {
+  Signpost,
+  Zap,
+  SquareStack,
+  Type,
+  Truck,
+  PanelTop,
+  Store,
+  RectangleHorizontal,
+  Printer,
+  Building2,
+  Sparkles,
+  Wand2,
+  type LucideIcon,
+} from "lucide-react";
+
+export const iconMap: Record<string, LucideIcon> = {
+  Signpost,
+  Zap,
+  SquareStack,
+  Type,
+  Truck,
+  PanelTop,
+  Store,
+  RectangleHorizontal,
+  Printer,
+  Building2,
+  Sparkles,
+  Wand2,
+};
