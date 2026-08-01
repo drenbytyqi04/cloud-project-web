@@ -26,7 +26,7 @@ export function Contact({ withService = false }: { withService?: boolean }) {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-[#0d1224] via-background to-[#141414]" />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-[0_0_40px_rgba(255,212,0,0.4)]">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-[0_0_40px_rgba(59,130,246,0.4)]">
                   <MapPin className="h-6 w-6" />
                 </div>
                 <p className="font-display text-base text-foreground">Pro Craft Reklama Workshop</p>

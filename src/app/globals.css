@@ -10,9 +10,9 @@
   --surface-strong: rgba(255, 255, 255, 0.06);
   --border: rgba(255, 255, 255, 0.09);
   --border-strong: rgba(255, 255, 255, 0.16);
-  --accent: #ffd400;
-  --accent-foreground: #0a0a08;
-  --blue-glow: #3b6bff;
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+  --blue-glow: #93c5fd;
   --radius: 1.25rem;
 }
 
@@ -64,7 +64,7 @@
 }
 
 * {
-  scrollbar-color: rgba(255, 212, 0, 0.35) transparent;
+  scrollbar-color: rgba(59, 130, 246, 0.35) transparent;
 }
 
 html {
@@ -107,16 +107,16 @@ body {
   -webkit-backdrop-filter: blur(24px);
 }
 
-.glow-yellow {
-  box-shadow: 0 0 0 1px rgba(255, 212, 0, 0.15), 0 20px 60px -20px rgba(255, 212, 0, 0.35);
+.glow-accent {
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.15), 0 20px 60px -20px rgba(59, 130, 246, 0.35);
 }
 
 .glow-blue {
-  box-shadow: 0 0 120px 40px rgba(59, 107, 255, 0.18);
+  box-shadow: 0 0 120px 40px rgba(147, 197, 253, 0.18);
 }
 
 .text-gradient-accent {
-  background: linear-gradient(90deg, #ffd400 0%, #fff4b8 50%, #ffd400 100%);
+  background: linear-gradient(90deg, #3b82f6 0%, #bfdbfe 50%, #3b82f6 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

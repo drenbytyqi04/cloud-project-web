@@ -2,9 +2,9 @@ import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const VARIANTS = [
-  "from-[#1a1a05]/80 via-[#050505] to-[#0a1330]",
-  "from-[#0a1330]/80 via-[#050505] to-[#1a1a05]",
-  "from-[#141414] via-[#050505] to-[#12100a]",
+  "from-[#0a1330]/80 via-[#050505] to-[#0d1830]",
+  "from-[#0d1830]/80 via-[#050505] to-[#0a1330]",
+  "from-[#141414] via-[#050505] to-[#0c1428]",
   "from-[#0d1224] via-[#050505] to-[#141414]",
 ];
 
@@ -43,11 +43,11 @@ export function VisualTile({
       ) : null}
       <div
         className="absolute -right-16 -top-16 h-56 w-56 rounded-full opacity-40 blur-3xl"
-        style={{ background: seed % 2 === 0 ? "#ffd400" : "#3b6bff" }}
+        style={{ background: seed % 2 === 0 ? "#3b82f6" : "#93c5fd" }}
       />
       <div
         className="absolute -bottom-20 -left-10 h-48 w-48 rounded-full opacity-25 blur-3xl"
-        style={{ background: seed % 2 === 0 ? "#3b6bff" : "#ffd400" }}
+        style={{ background: seed % 2 === 0 ? "#93c5fd" : "#3b82f6" }}
       />
       {Icon ? (
         <Icon
