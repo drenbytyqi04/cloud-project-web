@@ -7,6 +7,7 @@ import { BeforeAfterSlider } from "@/components/shared/before-after-slider";
 import { Button } from "@/components/ui/button";
 import { CtaBand } from "@/components/sections/cta-band";
 import { projects } from "@/lib/data";
+import { getCategoryImage } from "@/lib/images";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -64,7 +65,7 @@ export default async function ProjectDetailPage({
       <section className="pb-16">
         <div className="mx-auto max-w-5xl px-6 lg:px-10">
           <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-border">
-            <VisualTile seed={index} label={project.title} />
+            <VisualTile seed={index} src={getCategoryImage(project.category)} label={project.title} alt={project.title} priority />
           </div>
 
           <div className="mt-10 grid grid-cols-3 gap-6 border-y border-border py-8">
@@ -99,7 +100,7 @@ export default async function ProjectDetailPage({
               Drag the handle to compare the site before and after installation.
             </p>
             <div className="mt-6">
-              <BeforeAfterSlider before={<VisualTile seed={index + 2} grid={false} />} after={<VisualTile seed={index} />} />
+              <BeforeAfterSlider before={<VisualTile seed={index + 2} grid={false} />} after={<VisualTile seed={index} src={getCategoryImage(project.category)} alt={project.title} />} />
             </div>
           </div>
 

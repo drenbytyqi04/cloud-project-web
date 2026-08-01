@@ -6,6 +6,7 @@ import { VisualTile } from "@/components/shared/visual-tile";
 import { Button } from "@/components/ui/button";
 import { CtaBand } from "@/components/sections/cta-band";
 import { blogPosts } from "@/lib/data";
+import { blogImages } from "@/lib/images";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -71,7 +72,7 @@ export default async function BlogPostPage({
       <section className="pb-16">
         <div className="mx-auto max-w-3xl px-6 lg:px-10">
           <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-border">
-            <VisualTile seed={index} label={post.category} />
+            <VisualTile seed={index} src={blogImages[post.slug]} label={post.category} alt={post.title} priority />
           </div>
 
           <div className="mt-10 flex flex-col gap-6">

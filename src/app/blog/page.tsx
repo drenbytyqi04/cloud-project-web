@@ -4,6 +4,7 @@ import { ArrowUpRight, Calendar, Clock } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
 import { VisualTile } from "@/components/shared/visual-tile";
 import { blogPosts } from "@/lib/data";
+import { blogImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -29,7 +30,7 @@ export default function BlogPage() {
                 className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-white/[0.015] transition-colors hover:border-accent/40"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
-                  <VisualTile seed={i} label={post.category} />
+                  <VisualTile seed={i} src={blogImages[post.slug]} label={post.category} alt={post.title} />
                 </div>
                 <div className="flex flex-1 flex-col gap-3 p-6">
                   <span className="text-xs font-medium uppercase tracking-wider text-accent">{post.category}</span>

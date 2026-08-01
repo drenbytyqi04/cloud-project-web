@@ -5,6 +5,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { VisualTile } from "@/components/shared/visual-tile";
 import { CtaBand } from "@/components/sections/cta-band";
 import { projects } from "@/lib/data";
+import { getCategoryImage } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -30,7 +31,7 @@ export default function ProjectsPage() {
                 className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-white/[0.015] transition-colors hover:border-accent/40"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <VisualTile seed={i} label={project.category} />
+                  <VisualTile seed={i} src={getCategoryImage(project.category)} label={project.category} alt={project.title} />
                 </div>
                 <div className="flex flex-1 flex-col gap-3 p-7">
                   <span className="text-xs font-medium uppercase tracking-wider text-accent">

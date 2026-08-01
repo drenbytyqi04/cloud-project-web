@@ -3,6 +3,7 @@ import { ArrowRight, Award, Hammer, Users } from "lucide-react";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { VisualTile } from "@/components/shared/visual-tile";
 import { Button } from "@/components/ui/button";
+import { workshopImage } from "@/lib/images";
 
 const points = [
   { icon: Users, label: "Experienced, in-house team of designers and fabricators" },
@@ -15,7 +16,7 @@ export function AboutTeaser() {
     <section className="relative py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-10">
         <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border">
-          <VisualTile seed={2} label="Pro Craft Reklama — Prishtinë Workshop" />
+          <VisualTile seed={2} src={workshopImage} label="Pro Craft Reklama — Prishtinë Workshop" />
         </div>
 
         <div className="flex flex-col gap-6">

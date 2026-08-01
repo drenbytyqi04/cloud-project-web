@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { VisualTile } from "@/components/shared/visual-tile";
 import { iconMap } from "@/lib/icon-map";
+import { serviceImages } from "@/lib/images";
 import type { Service } from "@/lib/data";
 
 export function ServiceCard({ service, index }: { service: Service; index: number }) {
@@ -25,7 +26,7 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="h-full w-full"
         >
-          <VisualTile icon={Icon} seed={index} />
+          <VisualTile icon={Icon} seed={index} src={serviceImages[service.slug]} alt={service.title} />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
       </div>

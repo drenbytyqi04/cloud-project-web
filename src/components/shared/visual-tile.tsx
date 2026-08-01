@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -14,14 +15,42 @@ export function VisualTile({
   label,
   className,
   grid = true,
+  src,
+  alt,
+  priority,
 }: {
   icon?: LucideIcon;
   seed?: number;
   label?: string;
   className?: string;
   grid?: boolean;
+  src?: string;
+  alt?: string;
+  priority?: boolean;
 }) {
   const variant = VARIANTS[seed % VARIANTS.length];
+
+  if (src) {
+    return (
+      <div className={cn("relative flex h-full w-full items-center justify-center overflow-hidden bg-[#050505]", className)}>
+        <Image
+          src={src}
+          alt={alt ?? label ?? "Pro Craft Reklama signage work"}
+          fill
+          priority={priority}
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
+        {label ? (
+          <span className="absolute bottom-4 left-4 font-display text-xs uppercase tracking-[0.2em] text-white/60">
+            {label}
+          </span>
+        ) : null}
+        <div className="noise-overlay" />
+      </div>
+    );
+  }
 
   return (
     <div

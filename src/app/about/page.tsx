@@ -7,6 +7,7 @@ import { AnimatedCounter } from "@/components/shared/animated-counter";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { CtaBand } from "@/components/sections/cta-band";
 import { stats } from "@/lib/data";
+import { workshopImage } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -59,7 +60,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border">
-            <VisualTile seed={1} label="Production Floor — Prishtinë" />
+            <VisualTile seed={1} src={workshopImage} label="Production Floor — Prishtinë" />
           </div>
         </div>
       </section>

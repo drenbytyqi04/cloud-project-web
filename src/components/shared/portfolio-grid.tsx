@@ -6,6 +6,7 @@ import { Expand } from "lucide-react";
 import { VisualTile } from "@/components/shared/visual-tile";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
+import { getCategoryImage } from "@/lib/images";
 import {
   portfolioCategories,
   portfolioItems,
@@ -75,7 +76,7 @@ function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) 
         <DialogTrigger asChild>
           <button className={cn("relative block w-full cursor-pointer", item.tall ? "aspect-[4/6]" : "aspect-[4/3]")}>
             <motion.div whileHover={{ scale: 1.06 }} transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} className="h-full w-full">
-              <VisualTile seed={categorySeed[item.category]} />
+              <VisualTile seed={categorySeed[item.category]} src={getCategoryImage(item.category)} alt={`${item.title} — ${item.category}`} />
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent opacity-90 transition-opacity group-hover:opacity-95" />
             <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-1 p-6 text-left">
@@ -92,7 +93,7 @@ function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) 
         </DialogTrigger>
         <DialogContent>
           <div className="aspect-[16/10] w-full overflow-hidden rounded-2xl">
-            <VisualTile seed={categorySeed[item.category]} />
+            <VisualTile seed={categorySeed[item.category]} src={getCategoryImage(item.category)} alt={`${item.title} — ${item.category}`} />
           </div>
           <div className="flex flex-col gap-1 p-6">
             <span className="text-xs font-medium uppercase tracking-wider text-accent">{item.category} · {item.year}</span>

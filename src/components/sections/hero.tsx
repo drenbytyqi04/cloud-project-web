@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight, ChevronDown, PlayCircle } from "lucide-react";
@@ -9,6 +10,7 @@ import { RevealText } from "@/components/shared/reveal-text";
 import { AnimatedCounter } from "@/components/shared/animated-counter";
 import { Magnetic } from "@/components/shared/magnetic-button";
 import { stats } from "@/lib/data";
+import { heroImage } from "@/lib/images";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -19,6 +21,15 @@ export function Hero() {
   return (
     <section ref={ref} className="relative flex min-h-screen flex-col overflow-hidden bg-background">
       <motion.div style={{ y }} className="absolute inset-0">
+        <Image
+          src={heroImage}
+          alt="Signage installation crew mounting an illuminated LED sign at night"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-70"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
         <div
           className="absolute inset-0 opacity-[0.22]"
           style={{
