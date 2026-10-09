@@ -9,7 +9,8 @@ import { SectionHeading } from "@/components/shared/section-heading";
 import { cn } from "@/lib/utils";
 
 export function Testimonials() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
+  const hasMultiple = testimonials.length > 1;
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: hasMultiple, align: "center" });
   const [selected, setSelected] = useState(0);
 
   const scrollTo = useCallback((i: number) => emblaApi?.scrollTo(i), [emblaApi]);
@@ -27,10 +28,10 @@ export function Testimonials() {
   }, [emblaApi]);
 
   useEffect(() => {
-    if (!emblaApi) return;
+    if (!emblaApi || !hasMultiple) return;
     const interval = setInterval(() => emblaApi.scrollNext(), 6000);
     return () => clearInterval(interval);
-  }, [emblaApi]);
+  }, [emblaApi, hasMultiple]);
 
   return (
     <section className="relative py-24 sm:py-32">
@@ -73,34 +74,38 @@ export function Testimonials() {
             </div>
           </div>
 
-          <button
-            onClick={scrollPrev}
-            aria-label="Previous testimonial"
-            className="absolute left-0 top-1/2 hidden -translate-y-1/2 -translate-x-4 cursor-pointer items-center justify-center rounded-full border border-border-strong bg-background/80 p-3 text-foreground transition-colors hover:border-accent/50 hover:text-accent sm:flex lg:-translate-x-14"
-          >
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-          <button
-            onClick={scrollNext}
-            aria-label="Next testimonial"
-            className="absolute right-0 top-1/2 hidden -translate-y-1/2 translate-x-4 cursor-pointer items-center justify-center rounded-full border border-border-strong bg-background/80 p-3 text-foreground transition-colors hover:border-accent/50 hover:text-accent sm:flex lg:translate-x-14"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </button>
-
-          <div className="mt-8 flex justify-center gap-2">
-            {testimonials.map((t, i) => (
+          {hasMultiple && (
+            <>
               <button
-                key={t.name}
-                onClick={() => scrollTo(i)}
-                aria-label={`Go to testimonial ${i + 1}`}
-                className={cn(
-                  "h-1.5 cursor-pointer rounded-full transition-all duration-300",
-                  selected === i ? "w-8 bg-accent" : "w-1.5 bg-white/20 hover:bg-white/40"
-                )}
-              />
-            ))}
-          </div>
+                onClick={scrollPrev}
+                aria-label="Previous testimonial"
+                className="absolute left-0 top-1/2 hidden -translate-y-1/2 -translate-x-4 cursor-pointer items-center justify-center rounded-full border border-border-strong bg-background/80 p-3 text-foreground transition-colors hover:border-accent/50 hover:text-accent sm:flex lg:-translate-x-14"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <button
+                onClick={scrollNext}
+                aria-label="Next testimonial"
+                className="absolute right-0 top-1/2 hidden -translate-y-1/2 translate-x-4 cursor-pointer items-center justify-center rounded-full border border-border-strong bg-background/80 p-3 text-foreground transition-colors hover:border-accent/50 hover:text-accent sm:flex lg:translate-x-14"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
+
+              <div className="mt-8 flex justify-center gap-2">
+                {testimonials.map((t, i) => (
+                  <button
+                    key={t.name}
+                    onClick={() => scrollTo(i)}
+                    aria-label={`Go to testimonial ${i + 1}`}
+                    className={cn(
+                      "h-1.5 cursor-pointer rounded-full transition-all duration-300",
+                      selected === i ? "w-8 bg-accent" : "w-1.5 bg-white/20 hover:bg-white/40"
+                    )}
+                  />
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

@@ -4,15 +4,14 @@ export const siteConfig = {
   tagline: "We Build Brands That Get Noticed.",
   description:
     "Premium signage, LED displays and advertising structures engineered and installed across Kosovo and the Balkans.",
-  url: "https://procraftreklama.com",
-  phone: "+383 44 123 456",
-  phoneHref: "+38344123456",
-  whatsapp: "38344123456",
+  url: "https://cloud-project-web-two.vercel.app",
+  phone: "+383 49 406 883",
+  phoneHref: "+38349406883",
+  whatsapp: "38349406883",
   email: "hello@procraftreklama.com",
-  address: "Rr. Industriale Nr. 14, Prishtinë, Kosovo",
+  address: "Rr. Jashar Salihu 26, Prishtinë 10000, Kosovo",
   hours: [
-    { day: "Monday – Friday", time: "08:00 – 18:00" },
-    { day: "Saturday", time: "09:00 – 14:00" },
+    { day: "Monday – Saturday", time: "09:00 – 17:00" },
     { day: "Sunday", time: "Closed" },
   ],
   social: [
@@ -232,31 +231,9 @@ export const whyChooseUs = [
 
 export const testimonials = [
   {
-    name: "Arben Krasniqi",
-    role: "Managing Director, Metro Retail Group",
-    quote:
-      "Pro Craft Reklama replaced our entire storefront signage across six locations without a single day of inconsistency. The kind of vendor you stop worrying about.",
-    rating: 5,
-  },
-  {
-    name: "Elira Gashi",
-    role: "Marketing Lead, Nova Bank",
-    quote:
-      "The LED facade they built has become a landmark on its own street. Their design team pushed back on our first concept — and they were right to.",
-    rating: 5,
-  },
-  {
-    name: "Driton Hoxha",
-    role: "Owner, Elite Motors",
-    quote:
-      "From the first site visit to final installation, everything was on schedule and on budget. The showroom feature wall alone changed how customers experience the space.",
-    rating: 5,
-  },
-  {
-    name: "Vjosa Berisha",
-    role: "Operations Director, Balkan Logistics",
-    quote:
-      "Forty vehicles wrapped to an identical standard, delivered ahead of our launch date. That's not luck, that's process — and it shows in the finish.",
+    name: "Agron Mazreku",
+    role: "Google Review",
+    quote: "Very fair work without any rackets and direct, respectful people!",
     rating: 5,
   },
 ];
