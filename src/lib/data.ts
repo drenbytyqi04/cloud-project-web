@@ -16,10 +16,8 @@ export const siteConfig = {
     { day: "Sunday", time: "Closed" },
   ],
   social: [
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "Facebook", href: "https://facebook.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "TikTok", href: "https://tiktok.com" },
+    { label: "Instagram", href: "https://www.instagram.com/procraft.reklama/" },
+    { label: "Facebook", href: "https://www.facebook.com/p/ProCraftReklama-61580451504515/" },
   ],
 };
 

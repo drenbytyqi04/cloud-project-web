@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { navLinks, services, siteConfig } from "@/lib/data";
-import { InstagramIcon, FacebookIcon, LinkedInIcon, TikTokIcon } from "@/components/shared/social-icons";
+import { InstagramIcon, FacebookIcon } from "@/components/shared/social-icons";
 
 const socialIcons: Record<string, typeof InstagramIcon> = {
   Instagram: InstagramIcon,
   Facebook: FacebookIcon,
-  LinkedIn: LinkedInIcon,
-  TikTok: TikTokIcon,
 };
 
 export function Footer() {
