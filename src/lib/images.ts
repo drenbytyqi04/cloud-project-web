@@ -1,23 +1,39 @@
 import type { PortfolioCategory } from "@/lib/data";
 
-const CDN = "https://d8j0ntlcm91z4.cloudfront.net/user_3BrMTMZKb9J7sZXfkZMRvaaT2nK";
-
-export const heroImage = `${CDN}/hf_20260801_224402_73e8dc1e-6580-4b83-96ae-c2c1d8d1b9ff.png`;
-export const workshopImage = `${CDN}/hf_20260801_224421_ce6e2116-4848-449b-bd2c-8730461537ab.png`;
+// Unsplash photos (stable, permanent URLs under the Unsplash License —
+// free to use commercially, no attribution required). Chosen to match the
+// site's dark/blue palette where possible; swap for real company
+// photography whenever it's available.
+export const heroImage =
+  "https://images.unsplash.com/photo-1545649313-2a9a8112b127?crop=entropy&cs=srgb&fm=jpg&q=85";
+export const workshopImage =
+  "https://images.unsplash.com/photo-1776159904891-e7b213b8198f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600";
 
 export const serviceImages: Record<string, string> = {
-  "totem-signs": `${CDN}/hf_20260801_224422_69e00641-d9c0-4a2d-886d-41368078ac82.png`,
-  "led-signs": `${CDN}/hf_20260801_224423_2a5b6420-ceee-488b-aef8-c3b96c06fae2.png`,
-  "light-boxes": `${CDN}/hf_20260801_224424_e7dbf401-e0a2-411d-8e1d-dce7f7b8c13b.png`,
-  "3d-letters": `${CDN}/hf_20260801_224426_093d57b0-e51b-48c6-b74c-b44c541ff05e.png`,
-  "vehicle-branding": `${CDN}/hf_20260801_224427_1e93b148-8423-417e-b2ad-30cc0c436be5.png`,
-  "window-graphics": `${CDN}/hf_20260801_224428_f23d0696-8c3e-4acc-b3fb-03ec55215ed5.png`,
-  "store-branding": `${CDN}/hf_20260801_224429_670b9500-2fb3-4b90-a114-0876b476611f.png`,
-  billboards: `${CDN}/hf_20260801_224430_d6b82eeb-c056-4c3c-b685-1081aa659a18.png`,
-  "large-format-printing": `${CDN}/hf_20260801_224431_8f58d245-a859-44c7-b56e-4767ade3be49.png`,
-  "interior-exterior-signage": `${CDN}/hf_20260801_224432_bf84f71e-6d62-4cdf-a32d-af3d0f47a1d2.png`,
-  "business-branding-solutions": `${CDN}/hf_20260801_224434_5a09584e-a737-49aa-a05d-4fc08be92d67.png`,
-  "custom-advertising-structures": `${CDN}/hf_20260801_224434_77aa0ebe-cfa9-4e42-988f-4acf51885c1a.png`,
+  "totem-signs":
+    "https://images.unsplash.com/photo-1554566921-d20aeb72e48d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "led-signs":
+    "https://images.unsplash.com/photo-1757564591721-4105db68cd6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "light-boxes":
+    "https://images.unsplash.com/photo-1643858985758-19689dd1e586?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "3d-letters":
+    "https://images.unsplash.com/photo-1782128919515-6c32f67a6fa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "vehicle-branding":
+    "https://images.unsplash.com/photo-1573681140254-abe33f9152c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "window-graphics":
+    "https://images.unsplash.com/photo-1770591060040-25fd7d6a4c1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "store-branding":
+    "https://images.unsplash.com/photo-1789547422569-6f2b3c4498ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  billboards:
+    "https://images.unsplash.com/photo-1784724195624-970e3414390b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "large-format-printing":
+    "https://images.unsplash.com/photo-1693031630369-bd429a57f115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "interior-exterior-signage":
+    "https://images.unsplash.com/photo-1788440890061-7bd8dbd69d28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "business-branding-solutions":
+    "https://images.unsplash.com/photo-1744395126213-b17da97aa892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "custom-advertising-structures":
+    "https://images.unsplash.com/photo-1769897779882-6c3a2b8ce920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
 };
 
 const categoryImages: Record<PortfolioCategory, string> = {
