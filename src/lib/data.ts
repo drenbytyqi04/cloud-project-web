@@ -178,14 +178,14 @@ export const portfolioCategories: PortfolioCategory[] = [
 ];
 
 export const portfolioItems: PortfolioItem[] = [
-  { id: "p1", title: "Illuminated Entrance Totem", client: "Metro Retail Group", category: "Totems", year: "2025", tall: true },
+  { id: "p1", title: "Backlit Entrance Totem — Hair Studio", client: "XB|VK Hair Studio", category: "Totems", year: "2026", tall: true },
   { id: "p2", title: "RGB Facade Display", client: "Nova Bank", category: "LED", year: "2025" },
-  { id: "p3", title: "Showroom Feature Wall", client: "Elite Motors", category: "Interior", year: "2024" },
+  { id: "p3", title: "Decorative Interior Mural — Digital Print", client: "Private Client", category: "Interior", year: "2026" },
   { id: "p4", title: "Rooftop Fascia Sign", client: "Skyline Residences", category: "Exterior", year: "2024", tall: true },
   { id: "p5", title: "Fleet Wrap — 40 Vehicles", client: "Balkan Logistics", category: "Vehicle Branding", year: "2025" },
   { id: "p6", title: "Billboard Campaign Series", client: "Pure Beverages", category: "Print", year: "2024" },
   { id: "p7", title: "Dimensional Lobby Letters", client: "Apex Tower", category: "Interior", year: "2025" },
-  { id: "p8", title: "Roadside Monument Sign", client: "Green Valley Mall", category: "Totems", year: "2023", tall: true },
+  { id: "p8", title: "Multi-Panel Roadside Totem", client: "Loshi Plast", category: "Totems", year: "2026", tall: true },
   { id: "p9", title: "Storefront Light Boxes", client: "Aurora Pharmacy", category: "LED", year: "2024" },
   { id: "p10", title: "Delivery Van Branding", client: "FreshMarket", category: "Vehicle Branding", year: "2025" },
   { id: "p11", title: "Window Vision Graphics", client: "Studio Nine Café", category: "Exterior", year: "2024" },
