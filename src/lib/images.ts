@@ -7,6 +7,10 @@ export const realPhotos = {
   totemLoshiPlast: "/images/real/totem-loshiplast-dusk.jpg",
   totemLoshiPlastDay: "/images/real/totem-loshiplast-day.jpg",
   interiorMural: "/images/real/interior-mural.jpg",
+  louvardWindow: "/images/real/louvard-window.jpg",
+  bardhasCake: "/images/real/bardhas-cake.jpg",
+  goldParfumesClose: "/images/real/gold-parfumes-close.jpg",
+  goldParfumesWide: "/images/real/gold-parfumes-wide.jpg",
 };
 
 // Unsplash photos (stable, permanent URLs under the Unsplash License —
@@ -23,12 +27,10 @@ export const serviceImages: Record<string, string> = {
     "https://images.unsplash.com/photo-1757564591721-4105db68cd6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
   "light-boxes":
     "https://images.unsplash.com/photo-1643858985758-19689dd1e586?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "3d-letters":
-    "https://images.unsplash.com/photo-1782128919515-6c32f67a6fa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "3d-letters": realPhotos.goldParfumesClose,
   "vehicle-branding":
     "https://images.unsplash.com/photo-1573681140254-abe33f9152c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "window-graphics":
-    "https://images.unsplash.com/photo-1770591060040-25fd7d6a4c1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "window-graphics": realPhotos.louvardWindow,
   "store-branding": realPhotos.interiorMural,
   billboards:
     "https://images.unsplash.com/photo-1784724195624-970e3414390b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
@@ -38,8 +40,7 @@ export const serviceImages: Record<string, string> = {
     "https://images.unsplash.com/photo-1788440890061-7bd8dbd69d28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
   "business-branding-solutions":
     "https://images.unsplash.com/photo-1744395126213-b17da97aa892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "custom-advertising-structures":
-    "https://images.unsplash.com/photo-1769897779882-6c3a2b8ce920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  "custom-advertising-structures": realPhotos.bardhasCake,
 };
 
 const categoryImages: Record<PortfolioCategory, string> = {
@@ -65,6 +66,9 @@ export const portfolioImages: Record<string, string> = {
   p1: realPhotos.totemXbvk,
   p3: realPhotos.interiorMural,
   p8: realPhotos.totemLoshiPlast,
+  p13: realPhotos.louvardWindow,
+  p14: realPhotos.bardhasCake,
+  p15: realPhotos.goldParfumesClose,
 };
 
 export function getPortfolioImage(item: { id: string; category: PortfolioCategory }): string {

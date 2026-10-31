@@ -180,7 +180,7 @@ export const portfolioCategories: PortfolioCategory[] = [
 export const portfolioItems: PortfolioItem[] = [
   { id: "p1", title: "Backlit Entrance Totem — Hair Studio", client: "XB|VK Hair Studio", category: "Totems", year: "2026", tall: true },
   { id: "p2", title: "RGB Facade Display", client: "Nova Bank", category: "LED", year: "2025" },
-  { id: "p3", title: "Decorative Interior Mural — Digital Print", client: "Private Client", category: "Interior", year: "2026" },
+  { id: "p3", title: "Decorative Interior Mural — Digital Print", client: "Louvard", category: "Interior", year: "2026" },
   { id: "p4", title: "Rooftop Fascia Sign", client: "Skyline Residences", category: "Exterior", year: "2024", tall: true },
   { id: "p5", title: "Fleet Wrap — 40 Vehicles", client: "Balkan Logistics", category: "Vehicle Branding", year: "2025" },
   { id: "p6", title: "Billboard Campaign Series", client: "Pure Beverages", category: "Print", year: "2024" },
@@ -190,6 +190,9 @@ export const portfolioItems: PortfolioItem[] = [
   { id: "p10", title: "Delivery Van Branding", client: "FreshMarket", category: "Vehicle Branding", year: "2025" },
   { id: "p11", title: "Window Vision Graphics", client: "Studio Nine Café", category: "Exterior", year: "2024" },
   { id: "p12", title: "Trade Show Backdrop", client: "TechExpo Kosovo", category: "Print", year: "2023", tall: true },
+  { id: "p13", title: "Gold-Leaf Logo Window Graphics", client: "Louvard", category: "Exterior", year: "2026", tall: true },
+  { id: "p14", title: "Heart-Shaped Pole Sign — Bakery", client: "Bardha's Cake", category: "Totems", year: "2026", tall: true },
+  { id: "p15", title: "Backlit Dimensional Storefront Letters", client: "Gold Parfumes", category: "Exterior", year: "2026" },
 ];
 
 export const processSteps = [
