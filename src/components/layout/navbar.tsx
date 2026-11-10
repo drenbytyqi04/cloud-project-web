@@ -13,33 +13,16 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function Navbar() {
   const t = useTranslations("Nav");
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  const isHomepage = pathname === "/";
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-[80]">
-      {isHomepage && !scrolled && (
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-background/70 via-background/30 to-transparent" />
-      )}
-      <div
-        className={cn(
-          "relative mx-auto flex max-w-7xl items-center justify-between px-6 transition-all duration-500 lg:px-10",
-          scrolled ? "mt-3 rounded-full glass-strong py-2.5 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)] lg:mx-6 xl:mx-auto" : "py-6"
-        )}
-      >
+    <header className="fixed inset-x-0 top-0 z-[80] glass-strong shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)]">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <Link
           href="/"
           className="font-display text-lg font-semibold tracking-tight text-foreground"
@@ -93,7 +76,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="mx-4 mt-3 flex flex-col gap-1 rounded-3xl glass-strong p-4 lg:hidden"
+            className="mx-4 mb-3 flex flex-col gap-1 rounded-3xl glass-strong p-4 lg:hidden"
           >
             {navKeys.map((key) => {
               const href = navHrefs[key];
