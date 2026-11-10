@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export function ThemeToggle({ className, inverted }: { className?: string; inverted?: boolean }) {
+export function ThemeToggle({ className }: { className?: string }) {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -19,10 +19,7 @@ export function ThemeToggle({ className, inverted }: { className?: string; inver
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
       className={cn(
-        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-colors cursor-pointer",
-        inverted
-          ? "border-white/20 bg-white/[0.06] text-white/80 hover:border-accent/40 hover:text-white"
-          : "border-border-strong bg-surface text-foreground/80 hover:border-accent/40 hover:text-foreground",
+        "flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border-strong bg-surface text-foreground/80 transition-colors hover:border-accent/40 hover:text-foreground cursor-pointer",
         className
       )}
     >
