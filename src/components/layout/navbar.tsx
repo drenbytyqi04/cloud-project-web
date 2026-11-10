@@ -32,7 +32,7 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-[80]">
       {isHomepage && !scrolled && (
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/45 via-black/15 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-background/70 via-background/30 to-transparent" />
       )}
       <div
         className={cn(
