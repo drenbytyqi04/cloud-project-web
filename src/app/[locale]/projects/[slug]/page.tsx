@@ -69,7 +69,7 @@ export default async function ProjectDetailPage({
             <ArrowLeft className="h-4 w-4" />
             {tCommon("allCaseStudies")}
           </Link>
-          <span className="mt-8 inline-flex w-fit items-center gap-2 rounded-full border border-border-strong bg-white/[0.03] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-accent">
+          <span className="mt-8 inline-flex w-fit items-center gap-2 rounded-full border border-border-strong bg-surface px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-accent">
             {categoryLabel} · {project.year}
           </span>
           <h1 className="mt-6 font-display text-balance text-4xl font-medium leading-[1.08] tracking-tight text-foreground sm:text-6xl">

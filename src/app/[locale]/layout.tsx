@@ -14,6 +14,7 @@ import { LoadingScreen } from "@/components/layout/loading-screen";
 import { WhatsAppButton } from "@/components/layout/whatsapp-button";
 import { StickyCta } from "@/components/layout/sticky-cta";
 import { PageTransition } from "@/components/layout/page-transition";
+import { ThemeProvider } from "@/components/layout/theme-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -89,23 +90,25 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className="dark">
+    <html lang={locale} className="dark" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} bg-background font-sans text-foreground antialiased`}
       >
-        <NextIntlClientProvider>
-          <LoadingScreen />
-          <ScrollProgress />
-          <SmoothScroll>
-            <Navbar />
-            <PageTransition>
-              <main>{children}</main>
-            </PageTransition>
-            <Footer />
-          </SmoothScroll>
-          <WhatsAppButton />
-          <StickyCta />
-        </NextIntlClientProvider>
+        <ThemeProvider>
+          <NextIntlClientProvider>
+            <LoadingScreen />
+            <ScrollProgress />
+            <SmoothScroll>
+              <Navbar />
+              <PageTransition>
+                <main>{children}</main>
+              </PageTransition>
+              <Footer />
+            </SmoothScroll>
+            <WhatsAppButton />
+            <StickyCta />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

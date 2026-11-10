@@ -34,7 +34,7 @@ export function LoadingScreen() {
           >
             PRO CRAFT <span className="text-accent">REKLAMA</span>
           </motion.div>
-          <div className="relative h-[2px] w-52 overflow-hidden rounded-full bg-white/10">
+          <div className="relative h-[2px] w-52 overflow-hidden rounded-full bg-foreground/10">
             <motion.div
               initial={{ x: "-100%" }}
               animate={{ x: "100%" }}

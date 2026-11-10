@@ -19,11 +19,11 @@ export function Contact({ withService = false }: { withService?: boolean }) {
                 className="absolute inset-0 opacity-40"
                 style={{
                   backgroundImage:
-                    "linear-gradient(to right, rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.5) 1px, transparent 1px)",
+                    "linear-gradient(to right, var(--border-strong) 1px, transparent 1px), linear-gradient(to bottom, var(--border-strong) 1px, transparent 1px)",
                   backgroundSize: "28px 28px",
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0d1224] via-background to-[#141414]" />
+              <div className="absolute inset-0 bg-gradient-to-br from-surface-strong via-background to-surface-strong" />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-[0_0_40px_rgba(59,130,246,0.4)]">
                   <MapPin className="h-6 w-6" />
@@ -67,7 +67,7 @@ function InfoCard({
   small?: boolean;
 }) {
   const content = (
-    <div className="flex h-full flex-col gap-3 rounded-2xl border border-border bg-white/[0.015] p-5 transition-colors hover:border-accent/40">
+    <div className="flex h-full flex-col gap-3 rounded-2xl border border-border bg-surface-subtle p-5 transition-colors hover:border-accent/40">
       <Icon className="h-5 w-5 text-accent" />
       <div>
         <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">{label}</p>

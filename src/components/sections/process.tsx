@@ -28,9 +28,9 @@ export function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.12 }}
-              className="group relative flex flex-col gap-5 rounded-3xl border border-border bg-white/[0.015] p-8 transition-colors hover:border-accent/40"
+              className="group relative flex flex-col gap-5 rounded-3xl border border-border bg-surface-subtle p-8 transition-colors hover:border-accent/40"
             >
-              <span className="font-display text-5xl font-semibold text-white/10 transition-colors group-hover:text-accent/30">
+              <span className="font-display text-5xl font-semibold text-foreground/10 transition-colors group-hover:text-accent/30">
                 {number}
               </span>
               <h3 className="font-display text-xl font-medium text-foreground">{t(`steps.${number}.title`)}</h3>

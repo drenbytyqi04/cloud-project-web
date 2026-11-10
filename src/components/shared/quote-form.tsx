@@ -82,7 +82,7 @@ export function QuoteForm() {
           </span>
           <select
             name="service"
-            className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
+            className="h-12 rounded-xl border border-border-strong bg-surface px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
             defaultValue=""
           >
             <option value="" disabled>
@@ -102,7 +102,7 @@ export function QuoteForm() {
             <span className="text-sm font-medium text-foreground">{t("estimatedBudget")}</span>
             <select
               name="budget"
-              className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
+              className="h-12 rounded-xl border border-border-strong bg-surface px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
               defaultValue=""
             >
               <option value="" disabled>
@@ -119,7 +119,7 @@ export function QuoteForm() {
             <span className="text-sm font-medium text-foreground">{t("timeline")}</span>
             <select
               name="timeline"
-              className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
+              className="h-12 rounded-xl border border-border-strong bg-surface px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
               defaultValue=""
             >
               <option value="" disabled>
@@ -147,7 +147,7 @@ export function QuoteForm() {
             name="description"
             rows={5}
             placeholder={t("descriptionPlaceholder")}
-            className="resize-none rounded-xl border border-border-strong bg-white/[0.03] px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
+            className="resize-none rounded-xl border border-border-strong bg-surface px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
           />
           <ErrorText message={errors.description} />
         </label>
@@ -158,7 +158,7 @@ export function QuoteForm() {
             name="attachment"
             type="file"
             accept="image/*,.pdf"
-            className="rounded-xl border border-border-strong bg-white/[0.03] px-4 py-3 text-sm text-muted-foreground outline-none transition-colors file:mr-4 file:rounded-full file:border-0 file:bg-accent file:px-4 file:py-2 file:text-xs file:font-medium file:text-accent-foreground focus:border-accent"
+            className="rounded-xl border border-border-strong bg-surface px-4 py-3 text-sm text-muted-foreground outline-none transition-colors file:mr-4 file:rounded-full file:border-0 file:bg-accent file:px-4 file:py-2 file:text-xs file:font-medium file:text-accent-foreground focus:border-accent"
           />
         </label>
       </fieldset>
@@ -221,7 +221,7 @@ function Field({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
+        className="h-12 rounded-xl border border-border-strong bg-surface px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
       />
       <ErrorText message={error} />
     </label>

@@ -31,7 +31,7 @@ export function ServiceCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: (index % 3) * 0.08 }}
-      className="group relative flex scroll-mt-32 flex-col overflow-hidden rounded-3xl border border-border bg-white/[0.015] transition-colors duration-500 hover:border-accent/40"
+      className="group relative flex scroll-mt-32 flex-col overflow-hidden rounded-3xl border border-border bg-surface-subtle transition-colors duration-500 hover:border-accent/40"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <motion.div

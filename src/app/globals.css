@@ -6,6 +6,7 @@
   --foreground: #ffffff;
   --muted: #050505;
   --muted-foreground: #9a9a9f;
+  --surface-subtle: rgba(255, 255, 255, 0.015);
   --surface: rgba(255, 255, 255, 0.035);
   --surface-strong: rgba(255, 255, 255, 0.06);
   --border: rgba(255, 255, 255, 0.09);
@@ -14,6 +15,23 @@
   --accent-foreground: #ffffff;
   --blue-glow: #93c5fd;
   --radius: 1.25rem;
+  color-scheme: dark;
+}
+
+:root.light {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #f4f4f6;
+  --muted-foreground: #68686f;
+  --surface-subtle: rgba(10, 10, 10, 0.022);
+  --surface: rgba(10, 10, 10, 0.04);
+  --surface-strong: rgba(10, 10, 10, 0.065);
+  --border: rgba(10, 10, 10, 0.1);
+  --border-strong: rgba(10, 10, 10, 0.16);
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+  --blue-glow: #60a5fa;
+  color-scheme: light;
 }
 
 @theme inline {
@@ -21,6 +39,7 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
+  --color-surface-subtle: var(--surface-subtle);
   --color-surface: var(--surface);
   --color-surface-strong: var(--surface-strong);
   --color-border: var(--border);
@@ -69,7 +88,6 @@
 
 html {
   background: var(--background);
-  color-scheme: dark;
 }
 
 body {
@@ -78,6 +96,7 @@ body {
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {

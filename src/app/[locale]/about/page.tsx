@@ -81,7 +81,7 @@ export default async function AboutPage({
               return (
                 <div
                   key={key}
-                  className="flex flex-col gap-4 rounded-3xl border border-border bg-white/[0.015] p-7 transition-colors hover:border-accent/40"
+                  className="flex flex-col gap-4 rounded-3xl border border-border bg-surface-subtle p-7 transition-colors hover:border-accent/40"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-border-strong text-accent">
                     <Icon className="h-5 w-5" />

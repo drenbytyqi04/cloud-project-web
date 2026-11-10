@@ -43,7 +43,7 @@ export function VisualTile({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
         {label ? (
-          <span className="absolute bottom-4 left-4 font-display text-xs uppercase tracking-[0.2em] text-white/60">
+          <span className="absolute bottom-4 left-4 font-display text-xs uppercase tracking-[0.2em] text-foreground/70">
             {label}
           </span>
         ) : null}

@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { navKeys, navHrefs } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function Navbar() {
   const t = useTranslations("Nav");
@@ -62,6 +63,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <ThemeToggle />
           <LanguageSwitcher />
           <Button asChild size="sm">
             <Link href="/quote">
@@ -98,15 +100,18 @@ export function Navbar() {
                   className={cn(
                     "rounded-2xl px-4 py-3 text-base font-medium transition-colors",
                     pathname === href
-                      ? "bg-white/[0.06] text-accent"
-                      : "text-foreground/85 hover:bg-white/[0.04]"
+                      ? "bg-surface-strong text-accent"
+                      : "text-foreground/85 hover:bg-surface"
                   )}
                 >
                   {t(key)}
                 </Link>
               );
             })}
-            <LanguageSwitcher className="mt-2" />
+            <div className="mt-2 flex items-center gap-2">
+              <ThemeToggle />
+              <LanguageSwitcher className="flex-1" />
+            </div>
             <Button asChild className="mt-2">
               <Link href="/quote">
                 {t("getQuote")}

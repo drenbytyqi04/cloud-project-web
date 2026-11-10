@@ -96,13 +96,13 @@ function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) 
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent opacity-90 transition-opacity group-hover:opacity-95" />
             <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-1 p-6 text-left">
-              <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-white backdrop-blur">
+              <span className="rounded-full bg-foreground/10 px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-foreground backdrop-blur">
                 {t(categoryMessageKey[item.category])}
               </span>
-              <h3 className="font-display text-lg font-medium text-white">{title}</h3>
-              <span className="text-sm text-white/60">{item.client} · {item.year}</span>
+              <h3 className="font-display text-lg font-medium text-foreground">{title}</h3>
+              <span className="text-sm text-muted-foreground">{item.client} · {item.year}</span>
             </div>
-            <div className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white opacity-0 backdrop-blur transition-opacity group-hover:opacity-100">
+            <div className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-foreground/10 text-foreground opacity-0 backdrop-blur transition-opacity group-hover:opacity-100">
               <Expand className="h-4 w-4" />
             </div>
           </button>

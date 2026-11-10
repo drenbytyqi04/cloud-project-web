@@ -44,7 +44,7 @@ export default async function BlogPage({
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-white/[0.015] transition-colors hover:border-accent/40"
+                  className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-surface-subtle transition-colors hover:border-accent/40"
                 >
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <VisualTile seed={i} src={blogImages[post.slug]} label={category} alt={title} />

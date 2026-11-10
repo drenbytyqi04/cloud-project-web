@@ -37,7 +37,7 @@ export default async function QuotePage({
             {trustKeys.map((key, i) => {
               const Icon = trustIcons[i];
               return (
-                <div key={key} className="flex items-start gap-4 rounded-2xl border border-border bg-white/[0.015] p-6">
+                <div key={key} className="flex items-start gap-4 rounded-2xl border border-border bg-surface-subtle p-6">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border-strong text-accent">
                     <Icon className="h-5 w-5" />
                   </div>

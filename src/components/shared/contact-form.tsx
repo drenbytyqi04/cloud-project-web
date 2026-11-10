@@ -71,7 +71,7 @@ export function ContactForm({ withService = false }: { withService?: boolean }) 
           <span className="text-sm font-medium text-foreground">{t("serviceNeeded")}</span>
           <select
             name="service"
-            className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
+            className="h-12 rounded-xl border border-border-strong bg-surface px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
             defaultValue=""
           >
             <option value="" disabled>
@@ -94,7 +94,7 @@ export function ContactForm({ withService = false }: { withService?: boolean }) 
           name="message"
           rows={5}
           placeholder={t("detailsPlaceholder")}
-          className="resize-none rounded-xl border border-border-strong bg-white/[0.03] px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
+          className="resize-none rounded-xl border border-border-strong bg-surface px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
         />
         <AnimatePresence>
           {errors.message && (
@@ -151,7 +151,7 @@ function Field({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
+        className="h-12 rounded-xl border border-border-strong bg-surface px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
       />
       <AnimatePresence>
         {error && (

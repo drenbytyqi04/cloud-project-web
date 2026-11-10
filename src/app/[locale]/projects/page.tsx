@@ -51,7 +51,7 @@ export default async function ProjectsPage({
                 <Link
                   key={project.slug}
                   href={`/projects/${project.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-white/[0.015] transition-colors hover:border-accent/40"
+                  className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-surface-subtle transition-colors hover:border-accent/40"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <VisualTile

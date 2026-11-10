@@ -18,13 +18,13 @@ export function CtaBand() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-border-strong bg-gradient-to-br from-white/[0.05] to-transparent px-8 py-16 text-center sm:px-16 sm:py-24"
+          className="relative overflow-hidden rounded-[2.5rem] border border-border-strong bg-gradient-to-br from-surface-strong to-transparent px-8 py-16 text-center sm:px-16 sm:py-24"
         >
           <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/15 blur-[140px]" />
           <div className="pointer-events-none absolute -right-20 -bottom-20 h-[260px] w-[260px] rounded-full bg-blue-glow/25 blur-[120px]" />
 
           <div className="relative flex flex-col items-center gap-6">
-            <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border-strong bg-white/[0.03] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-accent">
+            <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border-strong bg-surface px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-accent">
               {t("badge")}
             </span>
             <h2 className="font-display max-w-2xl text-balance text-4xl font-medium leading-[1.1] tracking-tight text-foreground sm:text-5xl">

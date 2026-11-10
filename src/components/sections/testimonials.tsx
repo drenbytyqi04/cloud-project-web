@@ -101,7 +101,7 @@ export function Testimonials() {
                     aria-label={`Go to testimonial ${i + 1}`}
                     className={cn(
                       "h-1.5 cursor-pointer rounded-full transition-all duration-300",
-                      selected === i ? "w-8 bg-accent" : "w-1.5 bg-white/20 hover:bg-white/40"
+                      selected === i ? "w-8 bg-accent" : "w-1.5 bg-foreground/20 hover:bg-foreground/40"
                     )}
                   />
                 ))}
