@@ -7,13 +7,26 @@ export function LoadingScreen() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (sessionStorage.getItem("pcr-loaded")) {
-      setLoading(false);
-      return;
+    // sessionStorage can throw (private-browsing modes, in-app browsers like
+    // Instagram/Facebook/TikTok that restrict storage access) — if it does,
+    // fall through to the timer instead of leaving this full-screen overlay
+    // stuck up forever, which would block all scrolling and interaction.
+    try {
+      if (sessionStorage.getItem("pcr-loaded")) {
+        setLoading(false);
+        return;
+      }
+    } catch {
+      // storage inaccessible; proceed with the timer below
     }
+
     const timer = setTimeout(() => {
       setLoading(false);
-      sessionStorage.setItem("pcr-loaded", "1");
+      try {
+        sessionStorage.setItem("pcr-loaded", "1");
+      } catch {
+        // ignore; nothing to persist if storage is inaccessible
+      }
     }, 1400);
     return () => clearTimeout(timer);
   }, []);
