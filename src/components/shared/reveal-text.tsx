@@ -21,7 +21,7 @@ export function RevealText({
       <span className="sr-only">{text}</span>
       <span aria-hidden className="inline">
         {words.map((word, i) => (
-          <span key={i} className="inline-block overflow-hidden pb-1 pr-[0.28em] align-bottom">
+          <span key={i} className="inline-block overflow-hidden pb-[0.2em] pr-[0.28em] align-bottom">
             <motion.span
               initial={{ y: "110%", rotate: 4 }}
               animate={{ y: "0%", rotate: 0 }}
