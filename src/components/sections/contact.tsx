@@ -15,22 +15,14 @@ export function Contact({ withService = false }: { withService?: boolean }) {
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1.1fr]">
           <div className="flex flex-col gap-6">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-border">
-              <div
-                className="absolute inset-0 opacity-40"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to right, var(--border-strong) 1px, transparent 1px), linear-gradient(to bottom, var(--border-strong) 1px, transparent 1px)",
-                  backgroundSize: "28px 28px",
-                }}
+              <iframe
+                src={`https://www.google.com/maps?q=${encodeURIComponent(siteConfig.address)}&output=embed`}
+                className="absolute inset-0 h-full w-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={t("workshop")}
+                allowFullScreen
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-surface-strong via-background to-surface-strong" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-[0_0_40px_rgba(59,130,246,0.4)]">
-                  <MapPin className="h-6 w-6" />
-                </div>
-                <p className="font-display text-base text-foreground">{t("workshop")}</p>
-                <p className="max-w-xs text-sm text-muted-foreground">{siteConfig.address}</p>
-              </div>
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
