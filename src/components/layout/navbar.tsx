@@ -16,6 +16,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const isHomepage = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -30,9 +31,12 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-[80]">
+      {isHomepage && !scrolled && (
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/45 via-black/15 to-transparent" />
+      )}
       <div
         className={cn(
-          "mx-auto flex max-w-7xl items-center justify-between px-6 transition-all duration-500 lg:px-10",
+          "relative mx-auto flex max-w-7xl items-center justify-between px-6 transition-all duration-500 lg:px-10",
           scrolled ? "mt-3 rounded-full glass-strong py-2.5 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)] lg:mx-6 xl:mx-auto" : "py-6"
         )}
       >
