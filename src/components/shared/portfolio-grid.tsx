@@ -86,7 +86,7 @@ function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) 
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: (index % 6) * 0.04 }}
-      className={cn("group relative overflow-hidden rounded-3xl border border-border", item.tall ? "sm:row-span-2" : "")}
+      className={cn("group relative overflow-hidden rounded-3xl border border-accent/50 transition-colors hover:border-accent", item.tall ? "sm:row-span-2" : "")}
     >
       <Dialog>
         <DialogTrigger asChild>
