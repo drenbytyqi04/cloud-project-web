@@ -1,10 +1,11 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { Globe } from "lucide-react";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import { routing } from "@/i18n/routing";
+import type { Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
+
+const displayOrder: Locale[] = ["de", "en", "sq"];
 
 export function LanguageSwitcher({ className }: { className?: string }) {
   const t = useTranslations("LanguageSwitcher");
@@ -13,28 +14,33 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   const pathname = usePathname();
 
   return (
-    <div className={cn("relative", className)}>
-      <label className="sr-only" htmlFor="language-switcher">
-        {t("label")}
-      </label>
-      <div className="flex items-center gap-1.5 rounded-full border border-border-strong bg-surface px-3 py-1.5 text-xs font-medium text-foreground/80 transition-colors hover:border-accent/40">
-        <Globe className="h-3.5 w-3.5 shrink-0 text-accent" />
-        <select
-          id="language-switcher"
-          value={locale}
-          onChange={(e) => {
-            const nextLocale = e.target.value as (typeof routing.locales)[number];
-            router.replace(pathname, { locale: nextLocale });
-          }}
-          className="cursor-pointer appearance-none bg-transparent pr-1 text-xs font-medium text-foreground/80 outline-none"
-        >
-          {routing.locales.map((l) => (
-            <option key={l} value={l} className="bg-background text-foreground">
-              {t(l)}
-            </option>
-          ))}
-        </select>
-      </div>
+    <div
+      role="group"
+      aria-label={t("label")}
+      className={cn(
+        "flex h-9 items-center gap-0.5 rounded-full border border-border-strong bg-surface p-1",
+        className
+      )}
+    >
+      {displayOrder.map((l) => {
+        const active = l === locale;
+        return (
+          <button
+            key={l}
+            type="button"
+            aria-pressed={active}
+            onClick={() => router.replace(pathname, { locale: l })}
+            className={cn(
+              "flex-1 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide transition-colors cursor-pointer",
+              active
+                ? "bg-foreground text-background"
+                : "text-muted-foreground hover:text-foreground"
+            )}
+          >
+            {l}
+          </button>
+        );
+      })}
     </div>
   );
 }
