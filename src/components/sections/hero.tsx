@@ -59,7 +59,7 @@ export function Hero() {
         />
       </motion.div>
 
-      <motion.div style={{ opacity }} className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 pt-32 pb-24 lg:px-10">
+      <motion.div style={{ opacity }} className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-end px-6 pt-32 pb-24 lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export function Hero() {
           {t("badge")}
         </motion.div>
 
-        <h1 className="font-display max-w-5xl text-balance text-5xl font-medium leading-[1.03] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
+        <h1 className="font-display max-w-4xl text-balance text-4xl font-medium leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-7xl">
           <RevealText text={t("titleLine1")} delay={0.3} />
           <br />
           <RevealText text={t("titleLine2")} delay={0.55} className="text-gradient-accent" />
@@ -79,7 +79,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-8 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl"
+          className="mt-6 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl"
         >
           {t("subtitle")}
         </motion.p>
@@ -88,7 +88,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.05, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-8 flex flex-wrap items-center gap-4"
         >
           <Magnetic strength={0.25}>
             <Button asChild size="lg">
@@ -112,7 +112,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.3, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-20 grid max-w-2xl grid-cols-3 gap-8 border-t border-border pt-8"
+          className="mt-12 grid max-w-2xl grid-cols-3 gap-8 border-t border-border pt-8"
         >
           {stats.slice(0, 3).map((stat) => (
             <div key={stat.key} className="flex flex-col gap-1">
