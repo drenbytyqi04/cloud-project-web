@@ -42,6 +42,14 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.12));
 }
 
+.tile-scrim {
+  background: linear-gradient(to top, rgba(8, 15, 40, 0.95), rgba(8, 15, 40, 0.55) 45%, transparent 85%);
+}
+
+:root.light .tile-scrim {
+  background: linear-gradient(to top, rgba(219, 234, 254, 0.92), rgba(219, 234, 254, 0.45) 45%, transparent 85%);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

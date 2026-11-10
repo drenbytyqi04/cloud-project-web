@@ -94,7 +94,7 @@ function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) 
             <motion.div whileHover={{ scale: 1.06 }} transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} className="h-full w-full">
               <VisualTile seed={categorySeed[item.category]} src={getPortfolioImage(item)} alt={`${title} — ${t(categoryMessageKey[item.category])}`} />
             </motion.div>
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent opacity-90 transition-opacity group-hover:opacity-95" />
+            <div className="tile-scrim absolute inset-0 opacity-90 transition-opacity group-hover:opacity-95" />
             <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-1 p-6 text-left">
               <span className="rounded-full bg-foreground/10 px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-foreground backdrop-blur">
                 {t(categoryMessageKey[item.category])}
