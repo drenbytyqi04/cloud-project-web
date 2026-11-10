@@ -21,7 +21,7 @@ export function Navbar() {
   }, [pathname]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-[80] glass-strong shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)]">
+    <header className="fixed inset-x-0 top-0 z-[80] border-b border-border bg-background shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)]">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <Link
           href="/"
@@ -76,7 +76,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="mx-4 mb-3 flex flex-col gap-1 rounded-3xl glass-strong p-4 lg:hidden"
+            className="mx-4 mb-3 flex flex-col gap-1 rounded-3xl border border-border bg-background p-4 shadow-2xl lg:hidden"
           >
             {navKeys.map((key) => {
               const href = navHrefs[key];
