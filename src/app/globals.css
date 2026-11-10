@@ -42,14 +42,6 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.12));
 }
 
-.hero-text-shadow {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.55), 0 8px 30px rgba(0, 0, 0, 0.5);
-}
-
-:root.light .hero-text-shadow {
-  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.7), 0 8px 30px rgba(255, 255, 255, 0.75);
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

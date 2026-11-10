@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { ArrowRight, ChevronDown, PlayCircle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -11,7 +11,7 @@ import { RevealText } from "@/components/shared/reveal-text";
 import { AnimatedCounter } from "@/components/shared/animated-counter";
 import { Magnetic } from "@/components/shared/magnetic-button";
 import { stats } from "@/lib/data";
-import { heroImages } from "@/lib/images";
+import { heroImage } from "@/lib/images";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -21,36 +21,17 @@ export function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "35%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.9], [1, 0]);
 
-  const [slide, setSlide] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSlide((i) => (i + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section ref={ref} className="relative flex min-h-screen flex-col overflow-hidden bg-background">
       <motion.div style={{ y }} className="absolute inset-0">
-        <AnimatePresence>
-          <motion.div
-            key={heroImages[slide]}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.4, ease: "easeInOut" }}
-            className="absolute inset-0"
-          >
-            <Image
-              src={heroImages[slide]}
-              alt="Pro Craft Reklama signage work"
-              fill
-              priority={slide === 0}
-              sizes="100vw"
-              className="object-cover"
-            />
-          </motion.div>
-        </AnimatePresence>
+        <Image
+          src={heroImage}
+          alt="Pro Craft Reklama signage work"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
         <div className="hero-scrim absolute inset-0" />
         <div
           className="absolute inset-0 opacity-[0.22]"
@@ -88,7 +69,7 @@ export function Hero() {
           {t("badge")}
         </motion.div>
 
-        <h1 className="hero-text-shadow font-display max-w-5xl text-balance text-5xl font-medium leading-[1.03] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
+        <h1 className="font-display max-w-5xl text-balance text-5xl font-medium leading-[1.03] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
           <RevealText text={t("titleLine1")} delay={0.3} />
           <br />
           <RevealText text={t("titleLine2")} delay={0.55} className="text-gradient-accent" />
@@ -98,7 +79,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="hero-text-shadow mt-8 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl"
+          className="mt-8 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl"
         >
           {t("subtitle")}
         </motion.p>
