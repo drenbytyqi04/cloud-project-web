@@ -15,6 +15,15 @@ export const realPhotos = {
 
 export const heroImage = realPhotos.goldParfumesWide;
 
+// Rotating hero background slideshow — real completed jobs.
+export const heroImages = [
+  realPhotos.goldParfumesWide,
+  realPhotos.totemXbvkWide,
+  realPhotos.totemLoshiPlastDay,
+  realPhotos.louvardWindow,
+  realPhotos.bardhasCake,
+];
+
 // Unsplash photos (stable, permanent URLs under the Unsplash License —
 // free to use commercially, no attribution required). Used as stand-ins
 // wherever we don't yet have real project photography.

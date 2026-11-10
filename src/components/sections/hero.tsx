@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronDown, PlayCircle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -11,7 +11,7 @@ import { RevealText } from "@/components/shared/reveal-text";
 import { AnimatedCounter } from "@/components/shared/animated-counter";
 import { Magnetic } from "@/components/shared/magnetic-button";
 import { stats } from "@/lib/data";
-import { heroImage } from "@/lib/images";
+import { heroImages } from "@/lib/images";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -21,17 +21,36 @@ export function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "35%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.9], [1, 0]);
 
+  const [slide, setSlide] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlide((i) => (i + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section ref={ref} className="relative flex min-h-screen flex-col overflow-hidden bg-background">
       <motion.div style={{ y }} className="absolute inset-0">
-        <Image
-          src={heroImage}
-          alt="Illuminated Gold Parfumes storefront sign at night"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+        <AnimatePresence>
+          <motion.div
+            key={heroImages[slide]}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.4, ease: "easeInOut" }}
+            className="absolute inset-0"
+          >
+            <Image
+              src={heroImages[slide]}
+              alt="Pro Craft Reklama signage work"
+              fill
+              priority={slide === 0}
+              sizes="100vw"
+              className="object-cover"
+            />
+          </motion.div>
+        </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/20 to-background/60" />
         <div
           className="absolute inset-0 opacity-[0.22]"
