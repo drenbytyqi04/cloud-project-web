@@ -16,7 +16,7 @@ export function Contact({ withService = false }: { withService?: boolean }) {
           <div className="flex flex-col gap-6">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-border">
               <iframe
-                src={`https://www.google.com/maps?q=${encodeURIComponent(siteConfig.address)}&output=embed`}
+                src="https://www.google.com/maps?q=42.6590633,21.1692504(ProCraft+Reklama)&z=18&output=embed"
                 className="absolute inset-0 h-full w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
