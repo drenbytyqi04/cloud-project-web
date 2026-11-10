@@ -51,7 +51,7 @@ export function Hero() {
             />
           </motion.div>
         </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/20 to-background/60" />
+        <div className="hero-scrim absolute inset-0" />
         <div
           className="absolute inset-0 opacity-[0.22]"
           style={{
