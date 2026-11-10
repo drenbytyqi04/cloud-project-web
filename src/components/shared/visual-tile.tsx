@@ -18,6 +18,7 @@ export function VisualTile({
   src,
   alt,
   priority,
+  fit = "cover",
 }: {
   icon?: LucideIcon;
   seed?: number;
@@ -27,6 +28,7 @@ export function VisualTile({
   src?: string;
   alt?: string;
   priority?: boolean;
+  fit?: "cover" | "contain";
 }) {
   const variant = VARIANTS[seed % VARIANTS.length];
 
@@ -39,15 +41,17 @@ export function VisualTile({
           fill
           priority={priority}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-          className="object-cover"
+          className={fit === "contain" ? "object-contain" : "object-cover"}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
+        {fit !== "contain" && (
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
+        )}
         {label ? (
           <span className="absolute bottom-4 left-4 font-display text-xs uppercase tracking-[0.2em] text-foreground/70">
             {label}
           </span>
         ) : null}
-        <div className="noise-overlay" />
+        {fit !== "contain" && <div className="noise-overlay" />}
       </div>
     );
   }

@@ -108,8 +108,18 @@ function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) 
           </button>
         </DialogTrigger>
         <DialogContent>
-          <div className="aspect-[16/10] w-full overflow-hidden rounded-2xl">
-            <VisualTile seed={categorySeed[item.category]} src={getPortfolioImage(item)} alt={`${title} — ${t(categoryMessageKey[item.category])}`} />
+          <div
+            className={cn(
+              "w-full overflow-hidden rounded-2xl bg-background",
+              item.tall ? "aspect-[3/4] max-h-[65vh]" : "aspect-[16/10]"
+            )}
+          >
+            <VisualTile
+              seed={categorySeed[item.category]}
+              src={getPortfolioImage(item)}
+              alt={`${title} — ${t(categoryMessageKey[item.category])}`}
+              fit="contain"
+            />
           </div>
           <div className="flex flex-col gap-1 p-6">
             <span className="text-xs font-medium uppercase tracking-wider text-accent">{t(categoryMessageKey[item.category])} · {item.year}</span>
