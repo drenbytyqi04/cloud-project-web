@@ -32,7 +32,7 @@ export function Hero() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/35 via-background/45 to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/20 to-background/60" />
         <div
           className="absolute inset-0 opacity-[0.22]"
           style={{
