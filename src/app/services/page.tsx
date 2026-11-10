@@ -8,7 +8,7 @@ import { CtaBand } from "@/components/sections/cta-band";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Totem signs, LED signage, 3D letters, vehicle branding, billboards and large format printing — fabricated in-house by Pro Craft Reklama.",
+    "Illuminated signage, interior and exterior advertising, print, window film, wall murals and vehicle wrapping — fabricated in-house by Pro Craft Reklama.",
 };
 
 export default function ServicesPage() {
@@ -17,7 +17,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Our Services"
         title="Every surface of your brand, engineered in-house."
-        description="Twelve signage and advertising disciplines, all fabricated under one roof — so quality never depends on a subcontractor's schedule."
+        description="Seven signage and advertising disciplines, all fabricated under one roof — so quality never depends on a subcontractor's schedule."
       />
       <Services full />
       <Process />

@@ -25,10 +25,10 @@ export function CtaBand() {
               Ready When You Are
             </span>
             <h2 className="font-display max-w-2xl text-balance text-4xl font-medium leading-[1.1] tracking-tight text-foreground sm:text-5xl">
-              Let&apos;s build the sign your business deserves.
+              Have an idea for your advertisement?
             </h2>
             <p className="max-w-lg text-balance text-muted-foreground">
-              Get a scoped quote within one business day — no obligation, no generic templates.
+              Tell us what you have in mind, and we&apos;ll prepare a quote for you — within one business day, no obligation.
             </p>
             <Magnetic strength={0.25}>
               <Button asChild size="lg">

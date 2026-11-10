@@ -10,13 +10,13 @@ export function Process() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
           eyebrow="How We Work"
-          title="Four steps from brief to installed."
+          title="Five steps from brief to installed."
           description="A transparent process that keeps you informed from the first sketch to the final walkthrough."
           align="center"
           className="mx-auto"
         />
 
-        <div className="relative mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="relative mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           <div className="absolute left-0 right-0 top-10 hidden h-px bg-gradient-to-r from-transparent via-border to-transparent lg:block" />
           {processSteps.map((step, i) => (
             <motion.div

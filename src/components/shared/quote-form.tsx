@@ -133,7 +133,10 @@ export function QuoteForm() {
           </label>
         </div>
 
-        <Field label="Installation Location" name="location" placeholder="Prishtinë, Kosovo" />
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <Field label="Installation Location" name="location" placeholder="Prishtinë, Kosovo" />
+          <Field label="Approximate Dimensions" name="dimensions" placeholder="e.g. 3m x 1.5m" />
+        </div>
 
         <label className="flex flex-col gap-2">
           <span className="text-sm font-medium text-foreground">
@@ -146,6 +149,16 @@ export function QuoteForm() {
             className="resize-none rounded-xl border border-border-strong bg-white/[0.03] px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
           />
           <ErrorText message={errors.description} />
+        </label>
+
+        <label className="flex flex-col gap-2">
+          <span className="text-sm font-medium text-foreground">Reference Photo or Logo (optional)</span>
+          <input
+            name="attachment"
+            type="file"
+            accept="image/*,.pdf"
+            className="rounded-xl border border-border-strong bg-white/[0.03] px-4 py-3 text-sm text-muted-foreground outline-none transition-colors file:mr-4 file:rounded-full file:border-0 file:bg-accent file:px-4 file:py-2 file:text-xs file:font-medium file:text-accent-foreground focus:border-accent"
+          />
         </label>
       </fieldset>
 

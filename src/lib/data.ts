@@ -47,112 +47,114 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "totem-signs",
-    title: "Totem Signs",
-    shortDescription: "Freestanding landmarks that anchor your location from every angle.",
+    slug: "illuminated-signage",
+    title: "Illuminated Signage",
+    shortDescription: "Lit signs and lettering that keep your business visible day and night.",
     description:
-      "Engineered totem structures that give your business a permanent, visible presence at street level. Built on steel frameworks with weatherproof cladding and internal illumination, designed to be read from a moving vehicle and to survive Balkan winters without losing their finish.",
-    icon: "Signpost",
-    features: ["Steel & aluminium structure", "LED backlighting", "Double-sided visibility", "Foundation & permitting support"],
-  },
-  {
-    slug: "led-signs",
-    title: "LED Signs",
-    shortDescription: "High-brightness digital and static LED signage for day and night impact.",
-    description:
-      "From programmable RGB displays to static illuminated channel letters, our LED signage is calibrated for legibility in direct sunlight and after dark. We handle the electronics, drivers and dimming logic so your sign performs identically on day one and year five.",
+      "An illuminated sign keeps your business visible long after the sun goes down. We build every sign around your logo and your space, with lettering and shapes that read clearly from a distance. Design, production and installation are all handled in-house, start to finish.",
     icon: "Zap",
-    features: ["IP65-rated modules", "Remote brightness control", "Energy-efficient drivers", "5-year module warranty"],
+    features: [
+      "3D letters and logos with LED illumination",
+      "Illuminated light boxes",
+      "Illuminated signs for facades and entrances",
+      "LED neon signage",
+      "Double-sided illuminated hanging signs",
+    ],
   },
   {
-    slug: "light-boxes",
-    title: "Light Boxes",
-    shortDescription: "Even, glare-free illumination for storefronts and interior branding.",
+    slug: "interior-signage",
+    title: "Interior Signage",
+    shortDescription: "Branding that carries your identity inside the store, office or venue.",
     description:
-      "Slimline light boxes with edge-lit or backlit LED arrays, finished with printed or fabric-stretch faces. A quiet, premium way to keep a brand illuminated around the clock without the visual noise of exposed neon or raw LED strips.",
-    icon: "SquareStack",
-    features: ["Edge-lit & backlit options", "Fabric or acrylic faces", "Uniform light diffusion", "Slim 8–12cm profile"],
-  },
-  {
-    slug: "3d-letters",
-    title: "3D Letters",
-    shortDescription: "Dimensional lettering machined and finished to exact brand specification.",
-    description:
-      "CNC-milled and hand-finished dimensional letters in acrylic, aluminium composite, or brushed metal — with or without face and halo illumination. Every letterform is proofed against your brand guidelines before production begins.",
-    icon: "Type",
-    features: ["CNC precision cutting", "Face & halo lit options", "Brushed metal, acrylic, PVC", "Custom mounting systems"],
-  },
-  {
-    slug: "vehicle-branding",
-    title: "Vehicle Branding",
-    shortDescription: "Full and partial wraps that turn your fleet into a moving billboard.",
-    description:
-      "Cast vinyl wraps applied in a climate-controlled bay for a bubble-free, factory finish. From single-vehicle branding to fleet-wide rollouts with colour-matched consistency across every unit.",
-    icon: "Truck",
-    features: ["Cast vinyl, 5–7 year rated", "Full, partial & window wraps", "Fleet consistency management", "Paint-safe removal"],
-  },
-  {
-    slug: "window-graphics",
-    title: "Window Graphics",
-    shortDescription: "Perforated and cut-vinyl graphics that filter light while branding glass.",
-    description:
-      "One-way vision film, frosted privacy graphics, and precision cut-vinyl lettering applied to storefront and office glazing — engineered to look sharp from the street and stay unobtrusive from inside.",
-    icon: "PanelTop",
-    features: ["One-way perforated vision film", "Frosted / etched effect vinyl", "Precision cut lettering", "UV-stable inks"],
-  },
-  {
-    slug: "store-branding",
-    title: "Store Branding",
-    shortDescription: "Cohesive interior-to-exterior identity systems for retail environments.",
-    description:
-      "A complete signage language for a single location — from the storefront fascia to till-point graphics, wayfinding and interior feature walls — all specified from one brand system so nothing feels bolted on.",
+      "A first impression is also made inside the space. We bring your brand onto walls, reception areas and points of sale, so the space itself feels organised and professional. Every element is sized and finished to match your specific interior.",
     icon: "Store",
-    features: ["Fascia to interior systems", "Wayfinding & directional signage", "Feature wall fabrication", "Brand guideline compliance"],
+    features: [
+      "Logos for reception areas and offices",
+      "Wall lettering",
+      "Wayfinding and internal signage",
+      "Stands and point-of-sale displays",
+      "Roll-ups and poster holders",
+      "Menu boards for restaurants and cafés",
+    ],
   },
   {
-    slug: "billboards",
-    title: "Billboards",
-    shortDescription: "Large-format outdoor structures engineered for maximum road visibility.",
+    slug: "exterior-signage",
+    title: "Exterior Signage",
+    shortDescription: "Outdoor advertising built to grab attention and handle the weather.",
     description:
-      "Structural design, fabrication and installation of static and backlit billboards, sited and angled for maximum dwell time from passing traffic — including structural certification for regional wind loads.",
-    icon: "RectangleHorizontal",
-    features: ["Structural engineering & certification", "Static & backlit formats", "Site survey & angle optimisation", "Scheduled maintenance plans"],
+      "Exterior advertising is often a customer's first contact with your business. We work with materials suited to outdoor conditions and adapt every sign to your facade and location, handling everything from the on-site survey to the final installation.",
+    icon: "Signpost",
+    features: [
+      "Signs for facades and entrances",
+      "Lettering on buildings",
+      "Banners and printed mesh",
+      "Panels and billboards",
+      "Outdoor wayfinding signage",
+      "Advertising on work vehicles (see Vehicle Wrapping)",
+    ],
   },
   {
-    slug: "large-format-printing",
-    title: "Large Format Printing",
-    shortDescription: "UV and latex printing on rigid and flexible substrates up to billboard scale.",
+    slug: "print",
+    title: "Print",
+    shortDescription: "Sharp, accurate colour for everything from business cards to building-sized prints.",
     description:
-      "In-house UV-flatbed and latex printing across mesh, vinyl, foamboard, dibond and fabric — colour-managed against your brand palette and rated for years of outdoor exposure without fading.",
+      "From a single business card to a large-scale banner, we make sure your brand's colours and details come out exactly right. Bring us a finished design or let us build it with you — we choose the material and format based on how the print will actually be used.",
     icon: "Printer",
-    features: ["UV-flatbed & latex printing", "Colour-managed brand matching", "Outdoor-rated inks", "Mesh, vinyl, dibond, fabric"],
+    features: [
+      "Business cards, flyers and brochures",
+      "Posters and catalogues",
+      "Labels and stickers",
+      "Banners and large-format printing",
+      "Printing on PVC, forex and other rigid materials",
+      "Promotional materials for events and campaigns",
+    ],
   },
   {
-    slug: "interior-exterior-signage",
-    title: "Interior & Exterior Signage",
-    shortDescription: "Complete signage packages spanning both sides of the door.",
+    slug: "window-film",
+    title: "Window Film",
+    shortDescription: "Decorative, branded and privacy film for storefronts, offices and glass doors.",
     description:
-      "A single point of accountability for every sign your business needs — reception branding, office wayfinding, exterior fascia, monument signs and safety signage — fabricated to a consistent standard.",
-    icon: "Building2",
-    features: ["Reception & lobby branding", "Regulatory & safety signage", "Monument & fascia signs", "Single-vendor accountability"],
+      "The glass in your storefront or office is valuable advertising and design space. Window film lets you display your brand and offers, or add privacy without losing natural light. Every sheet is cut to size and applied with care.",
+    icon: "PanelTop",
+    features: [
+      "Printed film for storefronts",
+      "Cut-vinyl logos and lettering",
+      "Frosted-effect film",
+      "Privacy film for offices and glass partitions",
+      "One-way vision perforated film",
+      "Seasonal and promotional graphics",
+    ],
   },
   {
-    slug: "business-branding-solutions",
-    title: "Business Branding Solutions",
-    shortDescription: "End-to-end brand rollouts across every physical touchpoint.",
+    slug: "wall-murals",
+    title: "Wall Murals",
+    shortDescription: "Made-to-measure printed murals that completely transform a wall.",
     description:
-      "For multi-location and franchise businesses, we manage the full rollout: design standardisation, production scheduling and phased installation, so every location opens looking identical to the one before it.",
-    icon: "Sparkles",
-    features: ["Multi-site rollout management", "Design standardisation", "Phased installation scheduling", "Ongoing brand audits"],
+      "A single wall can change the character of an entire space. We print murals to your wall's exact dimensions — from our design collection, your own photos, or your brand's graphics. A fitting solution for homes and businesses alike.",
+    icon: "ImageIcon",
+    features: [
+      "Custom-designed murals",
+      "Photo or landscape murals",
+      "Branded walls for offices, stores and shops",
+      "Murals for living rooms, bedrooms and kids' rooms",
+      "On-site measurement and installation",
+    ],
   },
   {
-    slug: "custom-advertising-structures",
-    title: "Custom Advertising Structures",
-    shortDescription: "Bespoke structures for briefs that don't fit a standard category.",
+    slug: "vehicle-wrapping",
+    title: "Vehicle Wrapping",
+    shortDescription: "Full and partial wraps that give your vehicle a new look or turn it into a moving ad.",
     description:
-      "When a brief calls for something that doesn't exist in a catalogue, our fabrication team designs and builds it from scratch — engineered, prototyped and finished in-house.",
-    icon: "Wand2",
-    features: ["In-house structural engineering", "Rapid prototyping", "One-off & limited-run fabrication", "Full installation support"],
+      "Your vehicle can get a new colour without a repaint, or advertise your business everywhere it drives. We match the design to your vehicle's model and apply the film with care to every detail, for private vehicles and business fleets alike.",
+    icon: "Truck",
+    features: [
+      "Full vehicle wrap with film",
+      "Partial wrap (hood, roof, mirrors, details)",
+      "Colour change in matte, gloss or satin film",
+      "Printed graphics for work vehicles, vans and trucks",
+      "Cut-vinyl logos and lettering",
+      "Fleet wrapping for businesses",
+    ],
   },
 ];
 
@@ -199,25 +201,31 @@ export const processSteps = [
     number: "01",
     title: "Consultation",
     description:
-      "We start on-site or on a call — understanding your brand, your location, and what needs to be visible from where. You leave with a scoped brief and a realistic budget range.",
+      "Tell us what you need and where the advertisement will be installed. We talk through the brief on-site or by phone before anything is measured or quoted.",
   },
   {
     number: "02",
+    title: "Measurements & Quote",
+    description:
+      "We take precise measurements at your location and send you a clear quote, so there are no surprises once production starts.",
+  },
+  {
+    number: "03",
     title: "Design",
     description:
       "Our design team produces to-scale renders and material samples against your brand guidelines, iterating with you until every proportion and finish is signed off.",
   },
   {
-    number: "03",
+    number: "04",
     title: "Production",
     description:
       "Fabrication happens in-house across our metal, print and electronics workshops, with quality checkpoints at every stage before anything leaves the floor.",
   },
   {
-    number: "04",
+    number: "05",
     title: "Installation",
     description:
-      "Certified installation crews handle site prep, mounting and electrical connection, leaving you with a signed handover report and a warranty on both materials and workmanship.",
+      "Certified installation crews handle site prep, mounting and electrical connection, and hand over a finished sign, ready to use.",
   },
 ];
 

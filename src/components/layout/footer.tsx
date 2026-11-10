@@ -62,7 +62,7 @@ export function Footer() {
               Services
             </span>
             <ul className="flex flex-col gap-3">
-              {services.slice(0, 6).map((service) => (
+              {services.map((service) => (
                 <li key={service.slug}>
                   <Link
                     href={`/services#${service.slug}`}

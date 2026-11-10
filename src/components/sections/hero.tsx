@@ -69,9 +69,9 @@ export function Hero() {
         </motion.div>
 
         <h1 className="font-display max-w-5xl text-balance text-5xl font-medium leading-[1.03] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
-          <RevealText text="We Build Brands" delay={0.3} />
+          <RevealText text="Advertising Your Business" delay={0.3} />
           <br />
-          <RevealText text="That Get Noticed." delay={0.55} className="text-gradient-accent" />
+          <RevealText text="Won't Go Unnoticed." delay={0.55} className="text-gradient-accent" />
         </h1>
 
         <motion.p
@@ -80,7 +80,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl"
         >
-          Premium advertising solutions that transform businesses into landmarks — engineered, fabricated and installed in-house.
+          From concept to installation, we handle the entire process — designing, producing and installing advertising that makes your business more visible, inside and outside your location.
         </motion.p>
 
         <motion.div

@@ -6,8 +6,6 @@ import { ServiceCard } from "@/components/shared/service-card";
 import { Button } from "@/components/ui/button";
 
 export function Services({ full = false }: { full?: boolean }) {
-  const list = full ? services : services.slice(0, 6);
-
   return (
     <section className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -28,8 +26,8 @@ export function Services({ full = false }: { full?: boolean }) {
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {list.map((service, i) => (
-            <ServiceCard key={service.slug} service={service} index={i} />
+          {services.map((service, i) => (
+            <ServiceCard key={service.slug} service={service} index={i} full={full} />
           ))}
         </div>
       </div>

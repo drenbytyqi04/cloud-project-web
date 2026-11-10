@@ -2,13 +2,22 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import { VisualTile } from "@/components/shared/visual-tile";
+import { Button } from "@/components/ui/button";
 import { iconMap } from "@/lib/icon-map";
 import { serviceImages } from "@/lib/images";
 import type { Service } from "@/lib/data";
 
-export function ServiceCard({ service, index }: { service: Service; index: number }) {
+export function ServiceCard({
+  service,
+  index,
+  full = false,
+}: {
+  service: Service;
+  index: number;
+  full?: boolean;
+}) {
   const Icon = iconMap[service.icon];
 
   return (
@@ -33,14 +42,36 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
 
       <div className="flex flex-1 flex-col gap-3 p-7">
         <h3 className="font-display text-xl font-medium text-foreground">{service.title}</h3>
-        <p className="text-sm leading-relaxed text-muted-foreground">{service.shortDescription}</p>
-        <Link
-          href={`/services#${service.slug}`}
-          className="group/link mt-3 inline-flex w-fit items-center gap-2 text-sm font-medium text-accent"
-        >
-          Learn more
-          <ArrowUpRight className="h-4 w-4 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
-        </Link>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          {full ? service.description : service.shortDescription}
+        </p>
+
+        {full ? (
+          <>
+            <ul className="mt-2 flex flex-col gap-2">
+              {service.features.map((feature) => (
+                <li key={feature} className="flex items-start gap-2 text-sm text-foreground/80">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <Button asChild size="sm" className="mt-4 w-fit">
+              <Link href="/quote">
+                Get a Quote
+                <ArrowUpRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </>
+        ) : (
+          <Link
+            href={`/services#${service.slug}`}
+            className="group/link mt-3 inline-flex w-fit items-center gap-2 text-sm font-medium text-accent"
+          >
+            Learn more
+            <ArrowUpRight className="h-4 w-4 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
+          </Link>
+        )}
       </div>
     </motion.div>
   );

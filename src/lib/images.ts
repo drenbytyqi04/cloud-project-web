@@ -21,39 +21,31 @@ export const heroImage =
 export const workshopImage =
   "https://images.unsplash.com/photo-1776159904891-e7b213b8198f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600";
 
+const interiorStockImage =
+  "https://images.unsplash.com/photo-1789547422569-6f2b3c4498ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200";
+
 export const serviceImages: Record<string, string> = {
-  "totem-signs": realPhotos.totemXbvk,
-  "led-signs":
-    "https://images.unsplash.com/photo-1757564591721-4105db68cd6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "light-boxes":
-    "https://images.unsplash.com/photo-1643858985758-19689dd1e586?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "3d-letters": realPhotos.goldParfumesClose,
-  "vehicle-branding":
-    "https://images.unsplash.com/photo-1573681140254-abe33f9152c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "window-graphics": realPhotos.louvardWindow,
-  "store-branding": realPhotos.interiorMural,
-  billboards:
-    "https://images.unsplash.com/photo-1784724195624-970e3414390b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "large-format-printing":
+  "illuminated-signage": realPhotos.goldParfumesClose,
+  "interior-signage": interiorStockImage,
+  "exterior-signage": realPhotos.totemXbvk,
+  print:
     "https://images.unsplash.com/photo-1693031630369-bd429a57f115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "interior-exterior-signage":
-    "https://images.unsplash.com/photo-1788440890061-7bd8dbd69d28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "business-branding-solutions":
-    "https://images.unsplash.com/photo-1744395126213-b17da97aa892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  "custom-advertising-structures": realPhotos.bardhasCake,
+  "window-film": realPhotos.louvardWindow,
+  "wall-murals": realPhotos.interiorMural,
+  "vehicle-wrapping":
+    "https://images.unsplash.com/photo-1573681140254-abe33f9152c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
 };
 
 const categoryImages: Record<PortfolioCategory, string> = {
-  Totems: serviceImages["totem-signs"],
-  LED: serviceImages["led-signs"],
-  // Not serviceImages["store-branding"] on purpose: that's the real mural
-  // photo, which is tied to one specific real job (see portfolioImages.p3
-  // below). Other fake "Interior" portfolio entries shouldn't inherit it.
-  Interior:
-    "https://images.unsplash.com/photo-1789547422569-6f2b3c4498ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  Exterior: serviceImages["interior-exterior-signage"],
-  "Vehicle Branding": serviceImages["vehicle-branding"],
-  Print: serviceImages["large-format-printing"],
+  Totems: serviceImages["exterior-signage"],
+  LED: serviceImages["illuminated-signage"],
+  // Not serviceImages["wall-murals"] on purpose: that's the real mural photo,
+  // which is tied to one specific real job (see portfolioImages.p3 below).
+  // Other fake "Interior" portfolio entries shouldn't inherit it.
+  Interior: interiorStockImage,
+  Exterior: serviceImages["exterior-signage"],
+  "Vehicle Branding": serviceImages["vehicle-wrapping"],
+  Print: serviceImages["print"],
 };
 
 export function getCategoryImage(category: PortfolioCategory): string {
@@ -76,10 +68,10 @@ export function getPortfolioImage(item: { id: string; category: PortfolioCategor
 }
 
 export const blogImages: Record<string, string> = {
-  "choosing-the-right-led-sign": serviceImages["led-signs"],
-  "totem-sign-lifespan": serviceImages["totem-signs"],
-  "fleet-branding-roi": serviceImages["vehicle-branding"],
-  "permitting-signage-kosovo": serviceImages["billboards"],
-  "rebrand-rollout-playbook": serviceImages["business-branding-solutions"],
+  "choosing-the-right-led-sign": serviceImages["illuminated-signage"],
+  "totem-sign-lifespan": serviceImages["exterior-signage"],
+  "fleet-branding-roi": serviceImages["vehicle-wrapping"],
+  "permitting-signage-kosovo": serviceImages["exterior-signage"],
+  "rebrand-rollout-playbook": serviceImages["interior-signage"],
   "materials-that-survive-balkan-winters": workshopImage,
 };
