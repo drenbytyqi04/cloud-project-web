@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { Expand } from "lucide-react";
 import { VisualTile } from "@/components/shared/visual-tile";
@@ -23,7 +24,17 @@ const categorySeed: Record<PortfolioCategory, number> = {
   Print: 1,
 };
 
+const categoryMessageKey: Record<PortfolioCategory, string> = {
+  Totems: "Totems",
+  LED: "LED",
+  Interior: "Interior",
+  Exterior: "Exterior",
+  "Vehicle Branding": "VehicleBranding",
+  Print: "Print",
+};
+
 export function PortfolioGrid({ limit }: { limit?: number }) {
+  const t = useTranslations("PortfolioCategories");
   const [active, setActive] = useState<PortfolioCategory | "All">("All");
 
   const items = useMemo(() => {
@@ -46,7 +57,7 @@ export function PortfolioGrid({ limit }: { limit?: number }) {
                 : "border-border-strong text-muted-foreground hover:border-accent/40 hover:text-foreground"
             )}
           >
-            {cat}
+            {t(cat === "All" ? "All" : categoryMessageKey[cat])}
           </button>
         ))}
       </div>
@@ -63,6 +74,11 @@ export function PortfolioGrid({ limit }: { limit?: number }) {
 }
 
 function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) {
+  const t = useTranslations("PortfolioCategories");
+  const tItems = useTranslations("PortfolioItems");
+  const tCommon = useTranslations("Common");
+  const title = tItems(`${item.id}.title`);
+
   return (
     <motion.div
       layout
@@ -76,14 +92,14 @@ function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) 
         <DialogTrigger asChild>
           <button className={cn("relative block w-full cursor-pointer", item.tall ? "aspect-[4/6]" : "aspect-[4/3]")}>
             <motion.div whileHover={{ scale: 1.06 }} transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} className="h-full w-full">
-              <VisualTile seed={categorySeed[item.category]} src={getPortfolioImage(item)} alt={`${item.title} — ${item.category}`} />
+              <VisualTile seed={categorySeed[item.category]} src={getPortfolioImage(item)} alt={`${title} — ${t(categoryMessageKey[item.category])}`} />
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent opacity-90 transition-opacity group-hover:opacity-95" />
             <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-1 p-6 text-left">
               <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-white backdrop-blur">
-                {item.category}
+                {t(categoryMessageKey[item.category])}
               </span>
-              <h3 className="font-display text-lg font-medium text-white">{item.title}</h3>
+              <h3 className="font-display text-lg font-medium text-white">{title}</h3>
               <span className="text-sm text-white/60">{item.client} · {item.year}</span>
             </div>
             <div className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white opacity-0 backdrop-blur transition-opacity group-hover:opacity-100">
@@ -93,12 +109,12 @@ function PortfolioTile({ item, index }: { item: PortfolioItem; index: number }) 
         </DialogTrigger>
         <DialogContent>
           <div className="aspect-[16/10] w-full overflow-hidden rounded-2xl">
-            <VisualTile seed={categorySeed[item.category]} src={getPortfolioImage(item)} alt={`${item.title} — ${item.category}`} />
+            <VisualTile seed={categorySeed[item.category]} src={getPortfolioImage(item)} alt={`${title} — ${t(categoryMessageKey[item.category])}`} />
           </div>
           <div className="flex flex-col gap-1 p-6">
-            <span className="text-xs font-medium uppercase tracking-wider text-accent">{item.category} · {item.year}</span>
-            <h3 className="font-display text-2xl font-medium text-foreground">{item.title}</h3>
-            <p className="text-sm text-muted-foreground">Client: {item.client}</p>
+            <span className="text-xs font-medium uppercase tracking-wider text-accent">{t(categoryMessageKey[item.category])} · {item.year}</span>
+            <h3 className="font-display text-2xl font-medium text-foreground">{title}</h3>
+            <p className="text-sm text-muted-foreground">{tCommon("client")}: {item.client}</p>
           </div>
         </DialogContent>
       </Dialog>

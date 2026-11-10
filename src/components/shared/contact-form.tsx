@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, Loader2, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,8 @@ import { services } from "@/lib/data";
 type Status = "idle" | "loading" | "success";
 
 export function ContactForm({ withService = false }: { withService?: boolean }) {
+  const t = useTranslations("ContactForm");
+  const tServices = useTranslations("Services.items");
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -21,9 +24,9 @@ export function ContactForm({ withService = false }: { withService?: boolean }) 
     const email = String(form.get("email") ?? "").trim();
     const message = String(form.get("message") ?? "").trim();
 
-    if (!name) nextErrors.name = "Please enter your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) nextErrors.email = "Enter a valid email address.";
-    if (!message) nextErrors.message = "Tell us a little about your project.";
+    if (!name) nextErrors.name = t("errorName");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) nextErrors.email = t("errorEmail");
+    if (!message) nextErrors.message = t("errorMessage");
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
@@ -43,12 +46,10 @@ export function ContactForm({ withService = false }: { withService?: boolean }) 
         className="flex flex-col items-center justify-center gap-4 rounded-3xl glass p-12 text-center"
       >
         <CheckCircle2 className="h-12 w-12 text-accent" />
-        <h3 className="font-display text-xl font-medium text-foreground">Message sent</h3>
-        <p className="max-w-sm text-sm text-muted-foreground">
-          Thank you — a member of our team will get back to you within one business day.
-        </p>
+        <h3 className="font-display text-xl font-medium text-foreground">{t("successTitle")}</h3>
+        <p className="max-w-sm text-sm text-muted-foreground">{t("successDescription")}</p>
         <Button variant="outline" size="sm" onClick={() => setStatus("idle")}>
-          Send another message
+          {t("sendAnother")}
         </Button>
       </motion.div>
     );
@@ -57,28 +58,28 @@ export function ContactForm({ withService = false }: { withService?: boolean }) 
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-5 rounded-3xl glass p-8 sm:p-10">
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <Field label="Full Name" name="name" required error={errors.name} placeholder="Arben Krasniqi" />
-        <Field label="Company" name="company" placeholder="Metro Retail Group" />
+        <Field label={t("fullName")} name="name" required error={errors.name} placeholder={t("fullNamePlaceholder")} />
+        <Field label={t("company")} name="company" placeholder={t("companyPlaceholder")} />
       </div>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <Field label="Email" name="email" type="email" required error={errors.email} placeholder="you@company.com" />
-        <Field label="Phone" name="phone" type="tel" placeholder="+383 44 000 000" />
+        <Field label={t("email")} name="email" type="email" required error={errors.email} placeholder={t("emailPlaceholder")} />
+        <Field label={t("phone")} name="phone" type="tel" placeholder={t("phonePlaceholder")} />
       </div>
 
       {withService && (
         <label className="flex flex-col gap-2">
-          <span className="text-sm font-medium text-foreground">Service Needed</span>
+          <span className="text-sm font-medium text-foreground">{t("serviceNeeded")}</span>
           <select
             name="service"
             className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
             defaultValue=""
           >
             <option value="" disabled>
-              Select a service
+              {t("selectService")}
             </option>
             {services.map((s) => (
               <option key={s.slug} value={s.slug} className="bg-background">
-                {s.title}
+                {tServices(`${s.slug}.title`)}
               </option>
             ))}
           </select>
@@ -87,12 +88,12 @@ export function ContactForm({ withService = false }: { withService?: boolean }) 
 
       <label className="flex flex-col gap-2">
         <span className="text-sm font-medium text-foreground">
-          Project Details <span className="text-accent">*</span>
+          {t("projectDetails")} <span className="text-accent">*</span>
         </span>
         <textarea
           name="message"
           rows={5}
-          placeholder="Tell us about your location, timeline and what you have in mind..."
+          placeholder={t("detailsPlaceholder")}
           className="resize-none rounded-xl border border-border-strong bg-white/[0.03] px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
         />
         <AnimatePresence>
@@ -113,11 +114,11 @@ export function ContactForm({ withService = false }: { withService?: boolean }) 
         {status === "loading" ? (
           <>
             <Loader2 className="h-4 w-4 animate-spin" />
-            Sending...
+            {t("sending")}
           </>
         ) : (
           <>
-            Send Message
+            {t("submit")}
             <Send className="h-4 w-4" />
           </>
         )}

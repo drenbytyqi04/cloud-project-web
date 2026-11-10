@@ -1,0 +1,487 @@
+{
+  "Meta": {
+    "tagline": "Ndërtojmë marka që vihen re.",
+    "description": "Reklama, tabela ndriçuese LED dhe struktura reklamuese, të projektuara dhe montuara në të gjithë Kosovën dhe rajonin.",
+    "ogLocale": "sq_AL"
+  },
+  "Nav": {
+    "home": "Ballina",
+    "about": "Rreth Nesh",
+    "services": "Shërbimet",
+    "projects": "Projektet",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "getQuote": "Kërko Ofertë"
+  },
+  "LanguageSwitcher": {
+    "label": "Gjuha",
+    "en": "English",
+    "sq": "Shqip",
+    "de": "Deutsch"
+  },
+  "Common": {
+    "allServices": "Të gjitha Shërbimet",
+    "allProjects": "Të gjitha Projektet",
+    "learnMore": "Mëso më shumë",
+    "readCaseStudy": "Lexo studimin e rastit",
+    "readArticle": "Lexo artikullin",
+    "getQuote": "Kërko Ofertë",
+    "requestQuote": "Kërko Ofertë",
+    "moreAboutUs": "Më shumë Rreth Nesh",
+    "allCaseStudies": "Të gjitha Studimet e Rastit",
+    "allArticles": "Të gjitha Artikujt",
+    "client": "Klienti",
+    "moreArticles": "Më shumë artikuj",
+    "whatsapp": "Na shkruani në WhatsApp"
+  },
+  "Hero": {
+    "badge": "Reklama & Sinjalistikë — Kosovë & Ballkan",
+    "titleLine1": "Reklama Që Biznesin Tuaj",
+    "titleLine2": "Nuk e Lë Pa u Vënë Re.",
+    "subtitle": "Nga ideja te montimi, ne e marrim përsipër gjithë procesin — dizajnojmë, prodhojmë dhe vendosim reklama që e bëjnë biznesin tuaj më të dukshëm, si brenda ashtu edhe jashtë lokalit.",
+    "ctaQuote": "Kërko Ofertë",
+    "ctaProjects": "Shiko Punimet"
+  },
+  "Stats": {
+    "projectsCompleted": "Projekte të Përfunduara",
+    "yearsExperience": "Vite Përvojë",
+    "satisfiedClients": "Klientë të Kënaqur",
+    "productionCapacity": "Kapacitet Prodhimi"
+  },
+  "ClientLogos": {
+    "heading": "Të besuar nga marka në të gjithë rajonin"
+  },
+  "ServicesSection": {
+    "eyebrow": "Çfarë Ndërtojmë",
+    "title": "Reklama të projektuara për çdo anë të markës suaj.",
+    "description": "Nga totemet në nivel rruge deri te veshja e flotës së veturave — çdo projekt prodhohet brenda kompanisë, sipas specifikave tuaja të sakta."
+  },
+  "Services": {
+    "items": {
+      "illuminated-signage": {
+        "title": "Reklama Ndriçuese",
+        "shortDescription": "Mbishkrime dhe tabela të ndriçuara që e bëjnë biznesin tuaj të dukshëm ditë e natë.",
+        "description": "Një reklamë ndriçuese e mban biznesin tuaj të dukshëm edhe pasi të bjerë nata. Punojmë çdo reklamë sipas logos dhe hapësirës suaj, me shkronja dhe forma që lexohen qartë nga larg. Kujdesemi për dizajnin, prodhimin dhe montimin, nga fillimi deri në fund.",
+        "features": [
+          "Shkronja dhe logo 3D me ndriçim LED",
+          "Kuti reklamash të ndriçuara",
+          "Tabela ndriçuese për fasada dhe hyrje",
+          "Mbishkrime neoni LED",
+          "Tabela të varura, të ndriçuara nga të dyja anët"
+        ]
+      },
+      "interior-signage": {
+        "title": "Reklama Interieri",
+        "shortDescription": "Elemente reklamuese që e sjellin identitetin e markës suaj brenda lokalit ose zyrës.",
+        "description": "Përshtypja për një biznes krijohet edhe brenda ambientit. Ne e sjellim markën tuaj në mure, recepsion dhe pika shitjeje, në mënyrë që hapësira të duket e rregullt dhe profesionale. Çdo element përshtatet me dimensionet dhe stilin e ambientit tuaj.",
+        "features": [
+          "Logo për recepsion dhe zyra",
+          "Mbishkrime në mure",
+          "Tabela orientuese dhe sinjalistikë të brendshme",
+          "Stenda dhe pika shitjeje",
+          "Rrollup-e dhe mbajtëse posterash",
+          "Tabela menyje për restorante dhe kafene"
+        ]
+      },
+      "exterior-signage": {
+        "title": "Reklama Eksterieri",
+        "shortDescription": "Reklama të jashtme që tërheqin vëmendjen dhe i përballojnë kushtet e motit.",
+        "description": "Reklama e jashtme është shpesh kontakti i parë i klientit me biznesin tuaj. Punojmë me materiale të përshtatshme për ambient të jashtëm dhe e përshtatim çdo reklamë me fasadën dhe vendndodhjen. Merremi me gjithë punën, nga matjet në terren deri te montimi.",
+        "features": [
+          "Tabela për fasada dhe hyrje",
+          "Mbishkrime në objekte",
+          "Banera dhe mesh të printuar",
+          "Pano dhe bilborde",
+          "Tabela orientuese të jashtme",
+          "Reklama në vetura pune (shih Veshja e veturave)"
+        ]
+      },
+      "print": {
+        "title": "Print",
+        "shortDescription": "Print me ngjyra të qarta për materiale të vogla dhe formate të mëdha.",
+        "description": "Nga një vizitkartë deri te një baner i madh, kujdesemi që ngjyrat dhe detajet e markës suaj të dalin saktë. Mund të sillni dizajnin tuaj të gatshëm ose ta krijojmë bashkë. Materialin dhe formatin i zgjedhim sipas mënyrës si do të përdoret printimi.",
+        "features": [
+          "Vizitkarta, fletushka dhe broshura",
+          "Postera dhe katalogë",
+          "Etiketa dhe ngjitëse",
+          "Banera dhe print në format të madh",
+          "Print në PVC, forex dhe materiale të tjera të forta",
+          "Materiale promovuese për evente dhe fushata"
+        ]
+      },
+      "window-film": {
+        "title": "Folie në Xhama",
+        "shortDescription": "Folie dekorative, reklamuese dhe për privatësi për vitrina, zyra dhe dyer xhami.",
+        "description": "Xhamat e lokalit ose zyrës janë hapësirë e vlefshme për reklamë dhe dekorim. Me folie mund të shfaqni markën dhe ofertat tuaja, ose të krijoni më shumë privatësi pa e humbur dritën natyrale. Folien e presim sipas masës dhe e vendosim me kujdes.",
+        "features": [
+          "Folie të printuara për vitrina",
+          "Logo dhe mbishkrime të prera në folie",
+          "Folie me efekt të ngrirë (frosted)",
+          "Folie për privatësi në zyra dhe ndarje xhami",
+          "Folie perforuese (one way vision)",
+          "Grafika sezonale dhe për oferta"
+        ]
+      },
+      "wall-murals": {
+        "title": "Tapeta Murale",
+        "shortDescription": "Tapeta të printuara sipas masës që e ndryshojnë plotësisht pamjen e një muri.",
+        "description": "Një mur i vetëm mund ta ndryshojë karakterin e gjithë hapësirës. Printojmë tapeta sipas përmasave të murit tuaj — me dizajn nga koleksioni, me foto ose me grafikë të markës suaj. Janë zgjidhje e përshtatshme si për shtëpi, ashtu edhe për biznese.",
+        "features": [
+          "Tapeta me dizajn sipas kërkesës",
+          "Tapeta me foto personale ose peizazhe",
+          "Mure të brenduara për zyra, lokale dhe dyqane",
+          "Tapeta për dhoma ndenjeje, gjumi dhe fëmijësh",
+          "Matje dhe vendosje në objekt"
+        ]
+      },
+      "vehicle-wrapping": {
+        "title": "Veshja e Veturave",
+        "shortDescription": "Veshje me folie që i jep veturës pamje të re ose e kthen në reklamë në lëvizje.",
+        "description": "Vetura juaj mund të marrë ngjyrë dhe pamje të re pa u lyer, ose të reklamojë biznesin tuaj kudo që qarkullon. Dizajnin e përshtatim me modelin e veturës dhe folien e vendosim me kujdes në çdo detaj. Punojmë si për vetura private, ashtu edhe për flota biznesi.",
+        "features": [
+          "Veshje e plotë e veturës me folie",
+          "Veshje e pjesshme (kapak, çati, pasqyra dhe detaje)",
+          "Ndërrim i ngjyrës me folie mat, shkëlqyese ose satin",
+          "Reklama të printuara për vetura pune, furgona dhe kamionë",
+          "Logo dhe mbishkrime të prera në folie",
+          "Veshje për flota biznesi"
+        ]
+      }
+    }
+  },
+  "WhyChooseUs": {
+    "eyebrow": "Pse Ne",
+    "title": "Një dekadë mjeshtërie, e ndërtuar në çdo montim.",
+    "description": "Shtatë arsye pse bizneset në të gjithë rajonin na besojnë pasurinë e tyre më të dukshme të markës.",
+    "items": {
+      "w1": { "title": "Materiale Premium", "description": "Alumin i klasës detare, folie me prerje dhe komponentë LED komercialë, të dizajnuar për vite ekspozimi të jashtëm." },
+      "w2": { "title": "Makineri Moderne", "description": "Prerje CNC, printim UV-flatbed dhe metalpunim precize nën një çati — pa pengesa nga nënkontraktorë." },
+      "w3": { "title": "Prodhim i Shpejtë", "description": "Afate të qarta prodhimi me përditësime në çdo fazë, kështu që e dini gjithmonë ku qëndron projekti juaj." },
+      "w4": { "title": "Montim Profesional", "description": "Ekipe të certifikuara, pajisje të përshtatshme ngritjeje dhe respektim i plotë i sigurisë në çdo montim." },
+      "w5": { "title": "Dizajn sipas Kërkesës", "description": "Çdo projekt niset nga marka juaj, jo nga një shabllon — studime dimensionale para se të bëhet prerja e parë." },
+      "w6": { "title": "Garanci", "description": "Garanci strukturore dhe elektrike në çdo projekt, e mbështetur nga një ekip lokal që ju përgjigjet në telefon." },
+      "w7": { "title": "Shërbim në të gjithë Vendin", "description": "Prodhim në Prishtinë, ekipe montimi që mbulojnë Kosovën dhe rajonin e gjerë të Ballkanit." }
+    }
+  },
+  "PortfolioTeaser": {
+    "eyebrow": "Punimet Tona",
+    "title": "Punime të zgjedhura nga i gjithë rajoni.",
+    "description": "Një vështrim te totemet, fasadat LED dhe flotat e brendshme që i kemi realizuar për klientë në Kosovë dhe Ballkan.",
+    "ctaAll": "Të gjitha Projektet"
+  },
+  "PortfolioCategories": {
+    "All": "Të gjitha",
+    "Totems": "Totemet",
+    "LED": "LED",
+    "Interior": "Interier",
+    "Exterior": "Eksterier",
+    "VehicleBranding": "Veshje Veturash",
+    "Print": "Print"
+  },
+  "PortfolioItems": {
+    "p1": { "title": "Totem Hyrjeje i Ndriçuar — Sallon Flokësh" },
+    "p2": { "title": "Ekran Fasade RGB" },
+    "p3": { "title": "Mural Dekorativ Interieri — Print Digjital" },
+    "p4": { "title": "Tabelë Fasade në Çati" },
+    "p5": { "title": "Veshje Flote — 40 Vetura" },
+    "p6": { "title": "Seri Fushatash Bilbordi" },
+    "p7": { "title": "Shkronja Dimensionale Lobi" },
+    "p8": { "title": "Totem Shumëpanel për Anë Rruge" },
+    "p9": { "title": "Kuti Drite Vitrine" },
+    "p10": { "title": "Veshje Furgoni Dërgese" },
+    "p11": { "title": "Grafika Vitrine me Folie" },
+    "p12": { "title": "Prapavijë për Panair" },
+    "p13": { "title": "Grafika Vitrine me Logo të Praruar" },
+    "p14": { "title": "Tabelë Shtylle në Formë Zemre — Pastiçeri" },
+    "p15": { "title": "Shkronja Dimensionale të Ndriçuara për Vitrinë" }
+  },
+  "Process": {
+    "eyebrow": "Si Punojmë",
+    "title": "Pesë hapa, nga kërkesa deri te montimi.",
+    "description": "Një proces transparent që ju mban të informuar nga skica e parë deri te xhirollogjia finale.",
+    "steps": {
+      "01": { "title": "Konsultimi", "description": "Na tregoni çfarë ju nevojitet dhe ku do të vendoset reklama. E kalojmë kërkesën tuaj në terren ose në telefon, para se të bëhet ndonjë matje apo ofertë." },
+      "02": { "title": "Matjet dhe Oferta", "description": "Marrim masat e sakta në vendin tuaj dhe ju dërgojmë një ofertë të qartë, që të mos ketë befasi kur fillon prodhimi." },
+      "03": { "title": "Dizajni", "description": "Ekipi ynë i dizajnit përgatit vizatime në shkallë dhe mostra materialesh sipas udhëzimeve të markës suaj, duke i rregulluar derisa çdo detaj të miratohet nga ju." },
+      "04": { "title": "Prodhimi", "description": "Prodhimi bëhet brenda kompanisë, në punishtet tona të metalit, printimit dhe elektronikës, me kontrolle cilësie në çdo fazë." },
+      "05": { "title": "Montimi", "description": "Ekipe të certifikuara kujdesen për përgatitjen e terrenit, montimin dhe lidhjen elektrike, dhe ju dorëzojnë reklamën të gatshme për përdorim." }
+    }
+  },
+  "AboutTeaser": {
+    "eyebrow": "Rreth Nesh",
+    "title": "Partner prodhimi i besueshëm, jo thjesht furnizues reklamash.",
+    "description": "Për më shumë se një dekadë, Pro Craft Reklama ka dizajnuar, prodhuar dhe montuar struktura reklamuese për biznese që nuk duan të duken të zakonshme. Çdo projekt kalon nëpër punishten tonë — nga vizatimi i parë deri te bulona e fundit — kështu që cilësia nuk varet kurrë nga afati i një nënkontraktori.",
+    "workshopLabel": "Pro Craft Reklama — Punishtja në Prishtinë",
+    "points": [
+      "Ekip me përvojë, brenda kompanisë, i dizajnerëve dhe prodhuesve",
+      "Pajisje moderne CNC, printimi dhe metalpunimi nën një çati",
+      "Një dekadë prodhimi sipas standardeve të sakta të markës"
+    ],
+    "cta": "Më shumë Rreth Nesh"
+  },
+  "Testimonials": {
+    "eyebrow": "Vlerësime",
+    "title": "Të besuar nga pronarë biznesesh në të gjithë rajonin.",
+    "items": {
+      "t1": { "role": "Vlerësim nga Google", "quote": "Punë shumë korrekte, pa asnjë lloj rrotullimi, njerëz direktë dhe respektues!" }
+    }
+  },
+  "FaqSection": {
+    "eyebrow": "Pyetje të Shpeshta",
+    "title": "Pyetjet që dëgjojmë para çdo projekti.",
+    "items": {
+      "f1": { "question": "Sa kohë zgjat zakonisht një projekt sinjalistike?", "answer": "Sinjalistika e vogël e brendshme mund të dorëzohet brenda 1–2 javësh. Totemet, fasadat LED dhe strukturat e bilbordeve zakonisht zgjasin 4–8 javë, varësisht nga inxhinieria strukturore dhe lejet. Do të merrni një afat të saktë pas miratimit të fazës së dizajnit." },
+      "f2": { "question": "A merreni me leje dhe miratime komunale?", "answer": "Po. Për struktura që kërkojnë miratim komunal — totemet, bilbordet, sinjalistika në çati — përgatisim dokumentacionin teknik dhe menaxhojmë procesin e lejeve në emrin tuaj." },
+      "f3": { "question": "A mund t'i përshtateni saktësisht udhëzimet tona të markës?", "answer": "Punojmë drejtpërdrejt nga libri juaj i markës, duke përfshirë bojë dhe folie të përputhura me Pantone, shkronja të miratuara të prera saktë, dhe përmasa të njëjta në çdo lokacion." },
+      "f4": { "question": "Çfarë përfshin garancia?", "answer": "Çdo projekt ka garanci strukturore dhe garanci të veçantë elektronike për komponentët dhe driver-at LED, zakonisht 2–5 vjet, varësisht nga produkti. Kushtet e plota konfirmohen në ofertën e projektit tuaj." },
+      "f5": { "question": "A punoni edhe jashtë Prishtinës?", "answer": "Po — ekipet tona të montimit mbulojnë të gjithë Kosovën dhe marrin edhe projekte rajonale në Ballkan. Prodhimi mbetet i centralizuar në punishten tonë në Prishtinë për kontroll të qëndrueshëm të cilësisë." },
+      "f6": { "question": "A ofroni mirëmbajtje pas montimit?", "answer": "Ofrojmë kontrata të planifikuara mirëmbajtjeje për sinjalistikë LED dhe të ndriçuar, duke përfshirë zëvendësim modulesh, pastrim dhe inspektim strukturor, që reklama juaj të funksionojë vite me radhë pas montimit." }
+    }
+  },
+  "ContactSection": {
+    "eyebrow": "Kontakt",
+    "title": "Ta vendosim markën tuaj aty ku nuk mund të kalohet pa u vënë re.",
+    "description": "Na tregoni për vendndodhjen dhe afatin tuaj — do t'ju kthehemi me një plan të qartë brenda një dite pune.",
+    "workshop": "Punishtja e Pro Craft Reklama",
+    "phoneLabel": "Telefoni",
+    "emailLabel": "Email-i",
+    "addressLabel": "Adresa",
+    "hoursLabel": "Orari i Punës",
+    "hoursWeekdays": "E hënë – E shtunë",
+    "hoursWeekdayTime": "09:00 – 17:00",
+    "hoursSunday": "E diel",
+    "hoursClosed": "Mbyllur"
+  },
+  "CtaBand": {
+    "badge": "Gati Kur të Jeni Edhe Ju",
+    "title": "Keni një ide për reklamën tuaj?",
+    "description": "Na tregoni çfarë keni në mendje dhe ne ju përgatisim një ofertë — brenda një dite pune, pa asnjë obligim.",
+    "cta": "Kërko Ofertë"
+  },
+  "Footer": {
+    "description": "Reklama, tabela ndriçuese LED dhe struktura reklamuese, të projektuara dhe montuara në të gjithë Kosovën dhe rajonin.",
+    "quickLinks": "Lidhje të Shpejta",
+    "servicesHeading": "Shërbimet",
+    "contactHeading": "Kontakt",
+    "requestQuote": "Kërko ofertë",
+    "rights": "Të gjitha të drejtat e rezervuara.",
+    "crafted": "Krijuar në Prishtinë, Kosovë."
+  },
+  "QuoteForm": {
+    "yourDetails": "Të Dhënat Tuaja",
+    "fullName": "Emri i Plotë",
+    "fullNamePlaceholder": "Arben Krasniqi",
+    "company": "Biznesi",
+    "companyPlaceholder": "Metro Retail Group",
+    "email": "Email",
+    "emailPlaceholder": "ju@kompania.com",
+    "phone": "Telefoni",
+    "phonePlaceholder": "+383 44 000 000",
+    "projectScope": "Përmbledhja e Projektit",
+    "serviceNeeded": "Shërbimi i Nevojshëm",
+    "selectService": "Zgjidhni një shërbim",
+    "estimatedBudget": "Buxheti i Parashikuar",
+    "selectRange": "Zgjidhni një intervall",
+    "timeline": "Afati Kohor",
+    "selectTimeline": "Zgjidhni një afat",
+    "installationLocation": "Vendndodhja e Montimit",
+    "locationPlaceholder": "Prishtinë, Kosovë",
+    "dimensions": "Dimensionet e Përafërta",
+    "dimensionsPlaceholder": "p.sh. 3m x 1.5m",
+    "projectDescription": "Përshkrimi i Projektit",
+    "descriptionPlaceholder": "Na tregoni për vendin, dimensionet, dhe çfarë keni në mendje...",
+    "attachment": "Ngarko Foto ose Logo (opsionale)",
+    "submit": "Dërgo Kërkesën për Ofertë",
+    "submitting": "Duke dërguar...",
+    "successTitle": "Kërkesa për ofertë u pranua",
+    "successDescription": "Faleminderit — ekipi ynë do t'i shqyrtojë detajet e projektit tuaj dhe do t'ju kthehet me një ofertë brenda një dite pune.",
+    "submitAnother": "Dërgo një kërkesë tjetër",
+    "errorName": "Ju lutemi shkruani emrin tuaj.",
+    "errorEmail": "Shkruani një adresë email të vlefshme.",
+    "errorService": "Zgjidhni shërbimin që ju nevojitet.",
+    "errorDescription": "Na jepni një përshkrim të shkurtër të projektit.",
+    "budgetUnder2k": "Nën 2,000 €",
+    "budget2to10k": "2,000 € – 10,000 €",
+    "budget10to50k": "10,000 € – 50,000 €",
+    "budgetOver50k": "50,000 €+",
+    "timelineAsap": "Sa më shpejt që të jetë e mundur",
+    "timeline1Month": "Brenda 1 muaji",
+    "timeline1to3Months": "1–3 muaj",
+    "timelineResearching": "Vetëm po informohem"
+  },
+  "ContactForm": {
+    "fullName": "Emri i Plotë",
+    "fullNamePlaceholder": "Arben Krasniqi",
+    "company": "Biznesi",
+    "companyPlaceholder": "Metro Retail Group",
+    "email": "Email",
+    "emailPlaceholder": "ju@kompania.com",
+    "phone": "Telefoni",
+    "phonePlaceholder": "+383 44 000 000",
+    "serviceNeeded": "Shërbimi i Nevojshëm",
+    "selectService": "Zgjidhni një shërbim",
+    "projectDetails": "Detajet e Projektit",
+    "detailsPlaceholder": "Na tregoni për vendndodhjen, afatin dhe çfarë keni në mendje...",
+    "submit": "Dërgo Mesazhin",
+    "sending": "Duke dërguar...",
+    "successTitle": "Mesazhi u dërgua",
+    "successDescription": "Faleminderit — një anëtar i ekipit tonë do t'ju kontaktojë brenda një dite pune.",
+    "sendAnother": "Dërgo një mesazh tjetër",
+    "errorName": "Ju lutemi shkruani emrin tuaj.",
+    "errorEmail": "Shkruani një adresë email të vlefshme.",
+    "errorMessage": "Na tregoni diçka shkurt për projektin tuaj."
+  },
+  "PageHero": {
+    "about": { "eyebrow": "Rreth Pro Craft Reklama", "title": "Mjeshtëri e ndërtuar për afat të gjatë.", "description": "Kemi kaluar më shumë se një dekadë duke kthyer vitrina, flota dhe fasada në pika referimi — të projektuara, prodhuara dhe montuara nga një ekip që e trajton çdo projekt sikur të mbante emrin tonë." },
+    "services": { "eyebrow": "Shërbimet Tona", "title": "Çdo anë e markës suaj, e prodhuar brenda kompanisë.", "description": "Shtatë disiplina reklamimi dhe sinjalistike, të gjitha të prodhuara nën një çati — që cilësia të mos varet kurrë nga afati i një nënkontraktori." },
+    "projects": { "eyebrow": "Studime Rasti", "title": "Kërkesa, realizimi dhe rezultati.", "description": "Një vështrim më i afërt se si ne planifikojmë, prodhojmë dhe montojmë projekte sinjalistike për klientë që nuk mund të përballojnë të duken të paqëndrueshëm." },
+    "blog": { "eyebrow": "Blog", "title": "Shënime nga puna, për sinjalistikë që zgjat.", "description": "Shkrime praktike mbi materialet, lejet dhe strategjinë e zbatimit — të nxjerra nga projekte që i kemi realizuar vërtet." },
+    "contact": { "eyebrow": "Kontakt", "title": "Na tregoni ku duhet të shihet marka juaj.", "description": "Na kontaktoni direkt, ose na dërgoni disa detaje më poshtë dhe do t'ju kthehemi me një plan të qartë brenda një dite pune." },
+    "quote": { "eyebrow": "Kërko Ofertë", "title": "Ta planifikojmë projektin tuaj.", "description": "Na jepni disa detaje për çfarë ju nevojitet dhe ku — do t'ju kthehemi me një buxhet dhe afat realist brenda një dite pune." }
+  },
+  "AboutPage": {
+    "storyEyebrow": "Historia Jonë",
+    "storyTitle": "Nga një punishte e vogël metalpunimi, te partneri i sinjalistikës për rajonin.",
+    "storyDescription": "Pro Craft Reklama filloi si një punishte metalpunimi me dy persona, duke pranuar çdo punë sinjalistike që trokiste në derë. Një dekadë më vonë, drejtojmë një punishte të plotë prodhimi — metalpunim, printim UV, montim LED dhe veshje veturash — duke shërbyer grupe tregtare, banka, flota logjistike dhe biznese të pavarura në të gjithë Kosovën dhe Ballkanin e gjerë.",
+    "storyParagraph": "Ajo që nuk ka ndryshuar është mënyra se si punojmë: çdo projekt fillon me një vizitë në terren, jo me një shabllon. Preferojmë të refuzojmë një kërkesë të ngutshme sesa të dorëzojmë diçka që nuk i reziston pesë viteve mot, trafiku dhe përdorimi i përditshëm.",
+    "productionFloorLabel": "Punishtja e Prodhimit — Prishtinë",
+    "valuesEyebrow": "Çfarë Vlerësojmë",
+    "valuesTitle": "Parime që formësojnë çdo projekt që marrim përsipër.",
+    "values": {
+      "v1": { "title": "Kujdes ndaj Detajeve", "description": "Çdo përmasë, kënd dhe finiturë kontrollohet kundrejt markës suaj para se të bëhet prerja e parë." },
+      "v2": { "title": "Prodhim sipas Kërkesës", "description": "Pa pjesë nga katalogu. Strukturat projektohen dhe prodhohen posaçërisht për kërkesën tuaj." },
+      "v3": { "title": "Pajisje Moderne", "description": "Prerje CNC, printim UV-flatbed dhe metalpunim precize, të gjitha nën një çati në Prishtinë." },
+      "v4": { "title": "Partneritet i Besueshëm", "description": "Një pikë e vetme përgjegjësie, nga skica e parë deri në vite mbështetjeje pas montimit." }
+    }
+  },
+  "QuotePage": {
+    "trust": {
+      "q1": { "title": "1 Ditë Pune", "description": "Koha mesatare e përgjigjes për çdo kërkesë oferte." },
+      "q2": { "title": "Pa Obligim", "description": "Një vlerësim i qartë, pa presion për angazhim." },
+      "q3": { "title": "Sipas Kërkesës Çdo Herë", "description": "Çdo ofertë përshtatet me kërkesën tuaj, jo me një shabllon." }
+    }
+  },
+  "ProjectDetail": {
+    "challengeTitle": "Sfida",
+    "solutionTitle": "Zgjidhja",
+    "resultTitle": "Rezultati",
+    "beforeAfterTitle": "Para & Pas",
+    "beforeAfterDescription": "Tërhiqni dorezën për të krahasuar vendin para dhe pas montimit.",
+    "similarBriefTitle": "Keni një kërkesë të ngjashme?",
+    "similarBriefDescription": "Do ta planifikojmë dhe do t'ju kthehemi me një plan brenda një dite pune."
+  },
+  "Projects": {
+    "items": {
+      "metro-retail-signage-rollout": {
+        "title": "Zbatim Sinjalistike në Gjashtë Lokacione",
+        "summary": "Sinjalistikë e standardizuar e jashtme dhe e brendshme në gjashtë lokacione tregtare, brenda më pak se dhjetë javësh.",
+        "challenge": "Metro Retail Group ishte zgjeruar përmes blerjeve, duke trashëguar gjashtë dyqane me gjashtë standarde të ndryshme sinjalistike. Data e lançimit të rimarkimit ishte fikse, pa hapësirë për një zbatim të ngadaltë.",
+        "solution": "Ndërtuam një sistem të vetëm dizajni që mbulonte sinjalistikën e fasadës, grafikat e vitrinave dhe orientimin e brendshëm, më pas planifikuam prodhim paralel dhe ekipe montimi të fazuara në të gjitha gjashtë lokacionet njëkohësisht.",
+        "result": "Të gjitha gjashtë lokacionet u hapën nën një markë të unifikuar ditën e lançimit, pa asnjë vonesë montimi dhe me finish të përputhur me Pantone në çdo lokacion.",
+        "stats": [
+          { "label": "Lokacione", "value": "6" },
+          { "label": "Afati", "value": "10 javë" },
+          { "label": "Lloje tabelash", "value": "14" }
+        ]
+      },
+      "nova-bank-led-facade": {
+        "title": "Fasadë LED Pika Referimi",
+        "summary": "Një ekran fasade RGB i programueshëm që e ktheu një degë kryesore në një pikë referimi të njohur të qytetit.",
+        "challenge": "Dega kryesore e Nova Bank ndodhej në një cep shumë të dukshëm, por nuk kishte identitet të dallueshëm pas errësirës, duke humbur ndikim përballë vitrinave fqinje të ndriçuara.",
+        "solution": "Projektuam një matricë LED për të gjithë fasadën me module rezistente ndaj motit dhe një sistem menaxhimi përmbajtjeje nga distanca, duke lejuar ekipin e marketingut të bankës të përditësojë momentet e markës pa vizita në terren.",
+        "result": "Fasada tani përmendet si pikë referimi e qytetit në media lokale, me trafikun këmbësor pranë degës të rritur ndjeshëm pas montimit.",
+        "stats": [
+          { "label": "Module LED", "value": "3,200" },
+          { "label": "Ndriçimi", "value": "6,500 nits" },
+          { "label": "Funksionim", "value": "99.8%" }
+        ]
+      },
+      "balkan-logistics-fleet-wrap": {
+        "title": "Veshje Flote prej 40 Veturash",
+        "summary": "Veshje të plota me folie të aplikuara në një flotë prej 40 veturash dërgese, pa asnjë ndryshim në ngjyrë.",
+        "challenge": "Balkan Logistics kishte nevojë që e gjithë flota e tyre e dërgesave të veshej para lançimit të zgjerimit rajonal, me përputhje strikte të ngjyrave mes veturave të veshura me javë diferencë.",
+        "solution": "Ndërtuam një linjë prodhimi me menaxhim ngjyrash, me stok folieje të përputhur në grupe dhe një hapësirë të dedikuar veshjeje me klimë të kontrolluar, duke planifikuar veturat me rotacion për të shmangur ndërprerjen e flotës.",
+        "result": "Të gjitha 40 veturat u veshën para datës së lançimit, me përputhje ngjyre të verifikuar, dhe flota që atëherë është bërë pasuria më e përmendur e markës së klientit.",
+        "stats": [
+          { "label": "Vetura", "value": "40" },
+          { "label": "Qëndrueshmëria e folies", "value": "7 vjet" },
+          { "label": "Ndërprerje", "value": "0 ditë" }
+        ]
+      }
+    }
+  },
+  "BlogDetail": {
+    "haveProjectTitle": "Keni një projekt sinjalistike në mendje?",
+    "haveProjectDescription": "Merrni një ofertë të qartë brenda një dite pune."
+  },
+  "Blog": {
+    "items": {
+      "choosing-the-right-led-sign": {
+        "title": "Si të Zgjidhni Tabelën e Duhur LED për Vitrinën Tuaj",
+        "excerpt": "Ndriçueshmëria, dendësia e pikselëve dhe distanca e shikimit — vendimet teknike që përcaktojnë nëse tabela juaj LED lexohet qartë apo humbet në dritë.",
+        "category": "Udhëzues",
+        "readTime": "Lexim 6 min",
+        "content": [
+          "Shumica e dështimeve të tabelave LED në vitrina nuk janë defekt prodhimi — janë papërputhje specifikimesh. Një tabelë që duket e qartë në një rrugicë anësore të hijezuar, humbet plotësisht në dritë në një fasadë të kthyer nga perëndimi, në diellin e drejtpërdrejtë të pasdites; dhe një tabelë mjaft e ndritshme për atë fasadë do të ndihet agresive në një rrugicë të ngushtë këmbësore.",
+          "Ndryshorja që ka më shumë rëndësi është distanca e shikimit, jo ndriçueshmëria e vetme. Dendësia e pikselëve përcakton distancën minimale në të cilën teksti lexohet qartë — nëse gabohet, shikuesit nga afër shohin një rrjetë pikash në vend të një logoje. E llogarisim këtë nga gjerësia reale e trotuarit dhe shpejtësia e trafikut në vendndodhjen tuaj specifike, jo nga një rregull i përgjithshëm.",
+          "Driver-at kanë po aq rëndësi sa vetë modulet. Driver-at e lirë e degradojnë ndriçueshmërinë në mënyrë të pabarabartë brenda tetëmbëdhjetë muajsh, duke krijuar zona të errëta që vihen re më shumë se një tabelë uniformisht më pak e ndritshme. Ne specifikojmë driver të klasit komercial me errësim nga distanca si standard, që ndriçueshmëria të rregullohet sezonalisht pa vizitë në terren."
+        ]
+      },
+      "totem-sign-lifespan": {
+        "title": "Çfarë Përcakton në të Vërtetë Jetëgjatësinë e një Totemi",
+        "excerpt": "Nuk është faqja akrilike ajo që dështon e para. Një vështrim te zgjedhjet strukturore dhe elektrike që dallojnë një tabelë 3-vjeçare nga një 15-vjeçare.",
+        "category": "Materiale",
+        "readTime": "Lexim 5 min",
+        "content": [
+          "Kur një totem dështon herët, shkaku pothuajse kurrë nuk është faqja e dukshme — është ajo që ndodhet brenda strukturës. Depërtimi i ujit rreth hyrjeve të kabllove të izoluara dobët korrodon instalimin e brendshëm shumë kohë përpara se akrili të tregojë ndonjë shenjë zbehjeje nga UV.",
+          "Projektimi i themelit është faktori i dytë më i neglizhuar. Një totem i nënpërmasuar për ngarkesat rajonale të erës do të zhvillojë çarje stresi te saldimi i bazës brenda pak dimrave, veçanërisht në vende të ekspozuara pranë rrugës. Ne bëjmë llogaritje strukturore kundrejt standardeve të ngarkesës së erës në Kosovë për çdo strukturë të vetëqëndrueshme, jo vetëm për ato që kërkojnë leje.",
+          "Klasa e çelikut dhe cilësia e galvanizimit përbëjnë pjesën më të madhe të diferencës së mbetur. Veshjet e klasit detar kushtojnë më shumë në fillim, por eliminojnë rrjedhjen e ndryshkut që prish pamjen e një tabele shumë kohë para se të komprometohet strukturalisht — një kosto që ua shpjegojmë klientëve para, jo pas, se angazhohen në një buxhet."
+        ]
+      },
+      "fleet-branding-roi": {
+        "title": "Matematika e Kthimit të Investimit pas Veshjes së Flotës së Veturave",
+        "excerpt": "Një flotë e veshur është një bilbord në lëvizje me zero shpenzim media. Ja si i ndihmojmë klientët të modelojnë periudhën e kthimit të investimit para se të angazhohen.",
+        "category": "Strategji",
+        "readTime": "Lexim 7 min",
+        "content": [
+          "Një furgon i vetëm dërgese, në përdorim ditor urban, gjeneron dhjetëra mijëra shikime vizuale në muaj — në një fraksion të kostos për shikim krahasuar me median statike të bilbordit, dhe pa shpenzim të përsëritur media pasi veshja të jetë montuar.",
+          "Periudha e kthimit të investimit varet shumë nga shfrytëzimi i flotës dhe densiteti i itinerarëve, prandaj ndërtojmë me klientët një model të thjeshtë shikimesh para se të japim ofertë: kilometrazhi ditor, mbivendosja e itinerarit me demografinë e synuar, dhe koha mesatare e ndalesave, të gjitha llogariten.",
+          "Qëndrueshmëria e veshjes është gjysma tjetër e ekuacionit të ROI-t. Një veshje me folie 7-vjeçare e amortizon koston fillestare në një periudhë shumë më të gjatë sesa një veshje buxheti 3-vjeçare që duhet zëvendësuar dy herë në të njëjtën periudhë — shpesh duke e bërë materialin premium opsionin më ekonomik gjatë jetës së shërbimit të veturës."
+        ]
+      },
+      "permitting-signage-kosovo": {
+        "title": "Udhëzues Praktik për Lejet e Sinjalistikës në Kosovë",
+        "excerpt": "Çfarë kërkojnë në të vërtetë komunat në një dorëzim strukturor, dhe si të shmangni vonesat që i shtyjnë montimet me muaj.",
+        "category": "Rregullore",
+        "readTime": "Lexim 8 min",
+        "content": [
+          "Shkaku më i madh i vonesave në leje që shohim është një dorëzim strukturor i paplotë — llogaritje të ngarkesës së erës që mungojnë, detaje themeli të paqarta, ose vizatime që nuk përputhen me dimensionet reale të propozuara.",
+          "Komunat zakonisht kujdesen për tri gjëra: sigurinë strukturore, ndikimin në shikueshmërinë e trafikut, dhe përputhjen me pamjen e rrugës përreth. Adresimi i të tria qartazi që në dorëzimin fillestar, në vend që të pritet për një kërkesë shtesë informacioni, zakonisht e shkurton ciklin e shqyrtimit me javë.",
+          "Ne përgatisim dhe dorëzojmë paketën e plotë teknike në emër të klientëve si standard, sepse kemi mësuar saktësisht çfarë pret të shohë çdo zyrë komunale — dhe çfarë shkakton një rishqyrtim automatik të dytë."
+        ]
+      },
+      "rebrand-rollout-playbook": {
+        "title": "Si të Zbatoni një Rimarkim Shumë-Lokacionesh pa Humbur Konsistencën",
+        "excerpt": "Plani ynë i zbatimit të fazuar për marka franchise dhe shumë-lokacionesh, nga standardizimi i dizajnit deri te ekipi i fundit i montimit që largohet nga vendi i fundit.",
+        "category": "Strategji",
+        "readTime": "Lexim 6 min",
+        "content": [
+          "Rimarkimet në shumë lokacione rrallë dështojnë për shkak të dizajnit — dështojnë për shkak të rradhitjes. Pa një orar të përbashkët prodhimi, lokacioni i pestë, i montuar një muaj pas të parit, mund të përfundojë me grupe folie pak të ndryshme, lartësi montimi, ose toleranca finishi.",
+          "Ne fiksojmë një sistem të vetëm dizajni para se të fillojë çdo prodhim: referenca të sakta Pantone, standarde lartësie montimi, dhe specifikime materiali të dokumentuara një herë dhe të referuara nga çdo turn prodhimi, pavarësisht se cilën javë është planifikuar një vend i caktuar.",
+          "Rradhitja e montimit ka po aq rëndësi sa perceptimi i markës. Kur është e mundur, i shpërndajmë ekipet që të hapim së pari lokacionet me trafik më të lartë, që rimarkimi të lexohet si i qëllimshëm dhe i koordinuar, jo si një zbatim gradual dhe i dukshëm."
+        ]
+      },
+      "materials-that-survive-balkan-winters": {
+        "title": "Materialet Që Mbijetojnë Vërtet Dimrat e Ballkanit",
+        "excerpt": "Cikli i ngrirjes dhe shkrirjes e shkatërron shpejt sinjalistikën e lirë. Specifikimet e substratit dhe harduerit nga të cilat nuk heqim dorë, pavarësisht presionit të buxhetit.",
+        "category": "Materiale",
+        "readTime": "Lexim 5 min",
+        "content": [
+          "Cikli i ngrirjes dhe shkrirjes është i ashpër për sinjalistikën që nuk është specifikuar për të. Uji që depërton në një të çarë të hollë të një substrati të izoluar dobët zgjerohet kur ngrin, duke e zgjeruar të çarën në çdo cikël derisa materiali dështon nga brenda.",
+          "Ne standardizojmë kompozitin e aluminit dhe substratet e klasit detar për gjithçka të montuar jashtë, edhe kur buxheti i klientit sugjeron një alternativë më të lirë — diferenca e kostos është e vogël krahasuar me zëvendësimin e plotë të tabelës dy dimra më vonë.",
+          "Bulonat dhe hardueri i montimit marrin të njëjtin kujdes. Çelik inox kudo, i përshtatur për intervalin e temperaturës që shohim realisht lokalisht, sepse një kllapë e ndryshkur shpesh është shkaku i vërtetë i një tabele që duket sikur po dështon strukturalisht."
+        ]
+      }
+    }
+  }
+}

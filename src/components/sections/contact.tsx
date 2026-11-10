@@ -1,17 +1,16 @@
+import { useTranslations } from "next-intl";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { ContactForm } from "@/components/shared/contact-form";
 import { siteConfig } from "@/lib/data";
 
 export function Contact({ withService = false }: { withService?: boolean }) {
+  const t = useTranslations("ContactSection");
+
   return (
     <section className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <SectionHeading
-          eyebrow="Contact"
-          title="Let's put your brand somewhere it can't be missed."
-          description="Tell us about your location and timeline — we'll come back with a scoped plan within one business day."
-        />
+        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} description={t("description")} />
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1.1fr]">
           <div className="flex flex-col gap-6">
@@ -29,19 +28,19 @@ export function Contact({ withService = false }: { withService?: boolean }) {
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-[0_0_40px_rgba(59,130,246,0.4)]">
                   <MapPin className="h-6 w-6" />
                 </div>
-                <p className="font-display text-base text-foreground">Pro Craft Reklama Workshop</p>
+                <p className="font-display text-base text-foreground">{t("workshop")}</p>
                 <p className="max-w-xs text-sm text-muted-foreground">{siteConfig.address}</p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <InfoCard icon={Phone} label="Phone" value={siteConfig.phone} href={`tel:${siteConfig.phoneHref}`} />
-              <InfoCard icon={Mail} label="Email" value={siteConfig.email} href={`mailto:${siteConfig.email}`} />
-              <InfoCard icon={MapPin} label="Address" value={siteConfig.address} />
+              <InfoCard icon={Phone} label={t("phoneLabel")} value={siteConfig.phone} href={`tel:${siteConfig.phoneHref}`} />
+              <InfoCard icon={Mail} label={t("emailLabel")} value={siteConfig.email} href={`mailto:${siteConfig.email}`} />
+              <InfoCard icon={MapPin} label={t("addressLabel")} value={siteConfig.address} />
               <InfoCard
                 icon={Clock}
-                label="Working Hours"
-                value={siteConfig.hours.map((h) => `${h.day}: ${h.time}`).join(" · ")}
+                label={t("hoursLabel")}
+                value={`${t("hoursWeekdays")}: ${t("hoursWeekdayTime")} · ${t("hoursSunday")}: ${t("hoursClosed")}`}
                 small
               />
             </div>

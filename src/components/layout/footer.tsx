@@ -1,6 +1,7 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
-import { navLinks, services, siteConfig } from "@/lib/data";
+import { Link } from "@/i18n/navigation";
+import { navKeys, navHrefs, services, siteConfig } from "@/lib/data";
 import { InstagramIcon, FacebookIcon } from "@/components/shared/social-icons";
 
 const socialIcons: Record<string, typeof InstagramIcon> = {
@@ -9,6 +10,10 @@ const socialIcons: Record<string, typeof InstagramIcon> = {
 };
 
 export function Footer() {
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Nav");
+  const tServices = useTranslations("Services.items");
+
   return (
     <footer className="relative border-t border-border bg-background pt-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -17,9 +22,7 @@ export function Footer() {
             <span className="font-display text-xl font-semibold tracking-tight">
               PRO CRAFT <span className="text-accent">REKLAMA</span>
             </span>
-            <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Premium signage, LED displays and advertising structures engineered and installed across Kosovo and the Balkans.
-            </p>
+            <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">{t("description")}</p>
             <div className="flex gap-3 pt-2">
               {siteConfig.social.map((s) => {
                 const Icon = socialIcons[s.label] ?? InstagramIcon;
@@ -41,16 +44,16 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <span className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-              Quick Links
+              {t("quickLinks")}
             </span>
             <ul className="flex flex-col gap-3">
-              {navLinks.map((link) => (
-                <li key={link.href}>
+              {navKeys.map((key) => (
+                <li key={key}>
                   <Link
-                    href={link.href}
+                    href={navHrefs[key]}
                     className="text-sm text-foreground/80 transition-colors hover:text-accent"
                   >
-                    {link.label}
+                    {tNav(key)}
                   </Link>
                 </li>
               ))}
@@ -59,7 +62,7 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <span className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-              Services
+              {t("servicesHeading")}
             </span>
             <ul className="flex flex-col gap-3">
               {services.map((service) => (
@@ -68,7 +71,7 @@ export function Footer() {
                     href={`/services#${service.slug}`}
                     className="text-sm text-foreground/80 transition-colors hover:text-accent"
                   >
-                    {service.title}
+                    {tServices(`${service.slug}.title`)}
                   </Link>
                 </li>
               ))}
@@ -77,7 +80,7 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <span className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-              Contact
+              {t("contactHeading")}
             </span>
             <ul className="flex flex-col gap-3 text-sm text-foreground/80">
               <li className="flex items-start gap-3">
@@ -101,15 +104,15 @@ export function Footer() {
               href="/quote"
               className="group mt-2 inline-flex w-fit items-center gap-2 text-sm font-medium text-accent"
             >
-              Request a quote
+              {t("requestQuote")}
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-border py-8 text-xs text-muted-foreground sm:flex-row">
-          <span>© {new Date().getFullYear()} Pro Craft Reklama. All rights reserved.</span>
-          <span>Crafted in Prishtinë, Kosovo.</span>
+          <span>© {new Date().getFullYear()} Pro Craft Reklama. {t("rights")}</span>
+          <span>{t("crafted")}</span>
         </div>
       </div>
     </footer>

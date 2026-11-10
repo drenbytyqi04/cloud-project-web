@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight, ChevronDown, PlayCircle } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { RevealText } from "@/components/shared/reveal-text";
 import { AnimatedCounter } from "@/components/shared/animated-counter";
@@ -13,6 +14,8 @@ import { stats } from "@/lib/data";
 import { heroImage } from "@/lib/images";
 
 export function Hero() {
+  const t = useTranslations("Hero");
+  const tStats = useTranslations("Stats");
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "35%"]);
@@ -65,13 +68,13 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-border-strong bg-white/[0.03] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-accent"
         >
-          Signage & Advertising Craftsmanship — Kosovo &amp; The Balkans
+          {t("badge")}
         </motion.div>
 
         <h1 className="font-display max-w-5xl text-balance text-5xl font-medium leading-[1.03] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
-          <RevealText text="Advertising Your Business" delay={0.3} />
+          <RevealText text={t("titleLine1")} delay={0.3} />
           <br />
-          <RevealText text="Won't Go Unnoticed." delay={0.55} className="text-gradient-accent" />
+          <RevealText text={t("titleLine2")} delay={0.55} className="text-gradient-accent" />
         </h1>
 
         <motion.p
@@ -80,7 +83,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl"
         >
-          From concept to installation, we handle the entire process — designing, producing and installing advertising that makes your business more visible, inside and outside your location.
+          {t("subtitle")}
         </motion.p>
 
         <motion.div
@@ -92,7 +95,7 @@ export function Hero() {
           <Magnetic strength={0.25}>
             <Button asChild size="lg">
               <Link href="/quote">
-                Get a Quote
+                {t("ctaQuote")}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
@@ -101,7 +104,7 @@ export function Hero() {
             <Button asChild variant="glass" size="lg">
               <Link href="/projects">
                 <PlayCircle className="h-4 w-4" />
-                View Projects
+                {t("ctaProjects")}
               </Link>
             </Button>
           </Magnetic>
@@ -114,11 +117,11 @@ export function Hero() {
           className="mt-20 grid max-w-2xl grid-cols-3 gap-8 border-t border-border pt-8"
         >
           {stats.slice(0, 3).map((stat) => (
-            <div key={stat.label} className="flex flex-col gap-1">
+            <div key={stat.key} className="flex flex-col gap-1">
               <span className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
                 <AnimatedCounter value={stat.value} suffix={stat.suffix} />
               </span>
-              <span className="text-xs text-muted-foreground sm:text-sm">{stat.label}</span>
+              <span className="text-xs text-muted-foreground sm:text-sm">{tStats(stat.key)}</span>
             </div>
           ))}
         </motion.div>

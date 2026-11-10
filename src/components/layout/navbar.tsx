@@ -1,15 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
-import { navLinks } from "@/lib/data";
+import { navKeys, navHrefs } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 
 export function Navbar() {
+  const t = useTranslations("Nav");
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -41,27 +43,29 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
-          {navLinks.map((link) => {
-            const active = pathname === link.href;
+          {navKeys.map((key) => {
+            const href = navHrefs[key];
+            const active = pathname === href;
             return (
               <Link
-                key={link.href}
-                href={link.href}
+                key={key}
+                href={href}
                 className={cn(
                   "relative rounded-full px-4 py-2 text-sm font-medium transition-colors",
                   active ? "text-accent" : "text-foreground/80 hover:text-foreground"
                 )}
               >
-                {link.label}
+                {t(key)}
               </Link>
             );
           })}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-3 lg:flex">
+          <LanguageSwitcher />
           <Button asChild size="sm">
             <Link href="/quote">
-              Get a Quote
+              {t("getQuote")}
               <ArrowUpRight className="h-4 w-4" />
             </Link>
           </Button>
@@ -85,23 +89,27 @@ export function Navbar() {
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="mx-4 mt-3 flex flex-col gap-1 rounded-3xl glass-strong p-4 lg:hidden"
           >
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  "rounded-2xl px-4 py-3 text-base font-medium transition-colors",
-                  pathname === link.href
-                    ? "bg-white/[0.06] text-accent"
-                    : "text-foreground/85 hover:bg-white/[0.04]"
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navKeys.map((key) => {
+              const href = navHrefs[key];
+              return (
+                <Link
+                  key={key}
+                  href={href}
+                  className={cn(
+                    "rounded-2xl px-4 py-3 text-base font-medium transition-colors",
+                    pathname === href
+                      ? "bg-white/[0.06] text-accent"
+                      : "text-foreground/85 hover:bg-white/[0.04]"
+                  )}
+                >
+                  {t(key)}
+                </Link>
+              );
+            })}
+            <LanguageSwitcher className="mt-2" />
             <Button asChild className="mt-2">
               <Link href="/quote">
-                Get a Quote
+                {t("getQuote")}
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
             </Button>

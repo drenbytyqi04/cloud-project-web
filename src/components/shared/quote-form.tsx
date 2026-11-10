@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, Loader2, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,10 +9,12 @@ import { services } from "@/lib/data";
 
 type Status = "idle" | "loading" | "success";
 
-const budgets = ["Under €2,000", "€2,000 – €10,000", "€10,000 – €50,000", "€50,000+"];
-const timelines = ["As soon as possible", "Within 1 month", "1–3 months", "Just researching"];
+const budgetKeys = ["budgetUnder2k", "budget2to10k", "budget10to50k", "budgetOver50k"] as const;
+const timelineKeys = ["timelineAsap", "timeline1Month", "timeline1to3Months", "timelineResearching"] as const;
 
 export function QuoteForm() {
+  const t = useTranslations("QuoteForm");
+  const tServices = useTranslations("Services.items");
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -25,10 +28,10 @@ export function QuoteForm() {
     const service = String(form.get("service") ?? "").trim();
     const description = String(form.get("description") ?? "").trim();
 
-    if (!name) nextErrors.name = "Please enter your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) nextErrors.email = "Enter a valid email address.";
-    if (!service) nextErrors.service = "Select the service you need.";
-    if (!description) nextErrors.description = "Give us a brief description of the project.";
+    if (!name) nextErrors.name = t("errorName");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) nextErrors.email = t("errorEmail");
+    if (!service) nextErrors.service = t("errorService");
+    if (!description) nextErrors.description = t("errorDescription");
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
@@ -48,12 +51,10 @@ export function QuoteForm() {
         className="flex flex-col items-center justify-center gap-4 rounded-3xl glass p-12 text-center sm:p-16"
       >
         <CheckCircle2 className="h-14 w-14 text-accent" />
-        <h3 className="font-display text-2xl font-medium text-foreground">Quote request received</h3>
-        <p className="max-w-md text-sm text-muted-foreground">
-          Thank you — our team will review your project details and follow up with a scoped quote within one business day.
-        </p>
+        <h3 className="font-display text-2xl font-medium text-foreground">{t("successTitle")}</h3>
+        <p className="max-w-md text-sm text-muted-foreground">{t("successDescription")}</p>
         <Button variant="outline" onClick={() => setStatus("idle")}>
-          Submit another request
+          {t("submitAnother")}
         </Button>
       </motion.div>
     );
@@ -62,22 +63,22 @@ export function QuoteForm() {
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-8 rounded-3xl glass p-8 sm:p-10">
       <fieldset className="flex flex-col gap-5">
-        <legend className="mb-1 text-xs font-medium uppercase tracking-[0.18em] text-accent">Your Details</legend>
+        <legend className="mb-1 text-xs font-medium uppercase tracking-[0.18em] text-accent">{t("yourDetails")}</legend>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <Field label="Full Name" name="name" required error={errors.name} placeholder="Arben Krasniqi" />
-          <Field label="Company" name="company" placeholder="Metro Retail Group" />
+          <Field label={t("fullName")} name="name" required error={errors.name} placeholder={t("fullNamePlaceholder")} />
+          <Field label={t("company")} name="company" placeholder={t("companyPlaceholder")} />
         </div>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <Field label="Email" name="email" type="email" required error={errors.email} placeholder="you@company.com" />
-          <Field label="Phone" name="phone" type="tel" placeholder="+383 44 000 000" />
+          <Field label={t("email")} name="email" type="email" required error={errors.email} placeholder={t("emailPlaceholder")} />
+          <Field label={t("phone")} name="phone" type="tel" placeholder={t("phonePlaceholder")} />
         </div>
       </fieldset>
 
       <fieldset className="flex flex-col gap-5">
-        <legend className="mb-1 text-xs font-medium uppercase tracking-[0.18em] text-accent">Project Scope</legend>
+        <legend className="mb-1 text-xs font-medium uppercase tracking-[0.18em] text-accent">{t("projectScope")}</legend>
         <label className="flex flex-col gap-2">
           <span className="text-sm font-medium text-foreground">
-            Service Needed <span className="text-accent">*</span>
+            {t("serviceNeeded")} <span className="text-accent">*</span>
           </span>
           <select
             name="service"
@@ -85,11 +86,11 @@ export function QuoteForm() {
             defaultValue=""
           >
             <option value="" disabled>
-              Select a service
+              {t("selectService")}
             </option>
             {services.map((s) => (
               <option key={s.slug} value={s.slug} className="bg-background">
-                {s.title}
+                {tServices(`${s.slug}.title`)}
               </option>
             ))}
           </select>
@@ -98,35 +99,35 @@ export function QuoteForm() {
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-medium text-foreground">Estimated Budget</span>
+            <span className="text-sm font-medium text-foreground">{t("estimatedBudget")}</span>
             <select
               name="budget"
               className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
               defaultValue=""
             >
               <option value="" disabled>
-                Select a range
+                {t("selectRange")}
               </option>
-              {budgets.map((b) => (
-                <option key={b} value={b} className="bg-background">
-                  {b}
+              {budgetKeys.map((key) => (
+                <option key={key} value={t(key)} className="bg-background">
+                  {t(key)}
                 </option>
               ))}
             </select>
           </label>
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-medium text-foreground">Timeline</span>
+            <span className="text-sm font-medium text-foreground">{t("timeline")}</span>
             <select
               name="timeline"
               className="h-12 rounded-xl border border-border-strong bg-white/[0.03] px-4 text-sm text-foreground outline-none transition-colors focus:border-accent"
               defaultValue=""
             >
               <option value="" disabled>
-                Select a timeline
+                {t("selectTimeline")}
               </option>
-              {timelines.map((t) => (
-                <option key={t} value={t} className="bg-background">
-                  {t}
+              {timelineKeys.map((key) => (
+                <option key={key} value={t(key)} className="bg-background">
+                  {t(key)}
                 </option>
               ))}
             </select>
@@ -134,25 +135,25 @@ export function QuoteForm() {
         </div>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <Field label="Installation Location" name="location" placeholder="Prishtinë, Kosovo" />
-          <Field label="Approximate Dimensions" name="dimensions" placeholder="e.g. 3m x 1.5m" />
+          <Field label={t("installationLocation")} name="location" placeholder={t("locationPlaceholder")} />
+          <Field label={t("dimensions")} name="dimensions" placeholder={t("dimensionsPlaceholder")} />
         </div>
 
         <label className="flex flex-col gap-2">
           <span className="text-sm font-medium text-foreground">
-            Project Description <span className="text-accent">*</span>
+            {t("projectDescription")} <span className="text-accent">*</span>
           </span>
           <textarea
             name="description"
             rows={5}
-            placeholder="Tell us about the site, dimensions, and what you have in mind..."
+            placeholder={t("descriptionPlaceholder")}
             className="resize-none rounded-xl border border-border-strong bg-white/[0.03] px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent"
           />
           <ErrorText message={errors.description} />
         </label>
 
         <label className="flex flex-col gap-2">
-          <span className="text-sm font-medium text-foreground">Reference Photo or Logo (optional)</span>
+          <span className="text-sm font-medium text-foreground">{t("attachment")}</span>
           <input
             name="attachment"
             type="file"
@@ -166,11 +167,11 @@ export function QuoteForm() {
         {status === "loading" ? (
           <>
             <Loader2 className="h-4 w-4 animate-spin" />
-            Submitting...
+            {t("submitting")}
           </>
         ) : (
           <>
-            Submit Quote Request
+            {t("submit")}
             <Send className="h-4 w-4" />
           </>
         )}

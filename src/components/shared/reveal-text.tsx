@@ -24,8 +24,7 @@ export function RevealText({
           <span key={i} className="inline-block overflow-hidden pb-1 pr-[0.28em] align-bottom">
             <motion.span
               initial={{ y: "110%", rotate: 4 }}
-              whileInView={{ y: "0%", rotate: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
+              animate={{ y: "0%", rotate: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.22, 1, 0.36, 1],

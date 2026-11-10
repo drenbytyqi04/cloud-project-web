@@ -1,16 +1,18 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { siteConfig } from "@/lib/data";
 
 export function WhatsAppButton() {
+  const t = useTranslations("Common");
   return (
     <motion.a
       href={`https://wa.me/${siteConfig.whatsapp}`}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with us on WhatsApp"
+      aria-label={t("whatsapp")}
       initial={{ opacity: 0, scale: 0.6, y: 20 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ delay: 1.6, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}

@@ -1,0 +1,487 @@
+{
+  "Meta": {
+    "tagline": "Wir bauen Marken, die auffallen.",
+    "description": "Hochwertige Beschilderung, LED-Displays und Werbebauten, entwickelt und montiert im gesamten Kosovo und auf dem Balkan.",
+    "ogLocale": "de_DE"
+  },
+  "Nav": {
+    "home": "Start",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "projects": "Projekte",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "getQuote": "Angebot anfragen"
+  },
+  "LanguageSwitcher": {
+    "label": "Sprache",
+    "en": "English",
+    "sq": "Shqip",
+    "de": "Deutsch"
+  },
+  "Common": {
+    "allServices": "Alle Leistungen",
+    "allProjects": "Alle Projekte",
+    "learnMore": "Mehr erfahren",
+    "readCaseStudy": "Fallstudie lesen",
+    "readArticle": "Artikel lesen",
+    "getQuote": "Angebot anfragen",
+    "requestQuote": "Angebot anfordern",
+    "moreAboutUs": "Mehr über uns",
+    "allCaseStudies": "Alle Fallstudien",
+    "allArticles": "Alle Artikel",
+    "client": "Kunde",
+    "moreArticles": "Weitere Artikel",
+    "whatsapp": "Schreiben Sie uns auf WhatsApp"
+  },
+  "Hero": {
+    "badge": "Beschilderung & Werbetechnik — Kosovo & Balkan",
+    "titleLine1": "Werbung für Ihr Unternehmen,",
+    "titleLine2": "die niemand übersieht.",
+    "subtitle": "Von der Idee bis zur Montage übernehmen wir den gesamten Prozess — wir entwerfen, produzieren und montieren Werbung, die Ihr Unternehmen sichtbarer macht, innen wie außen.",
+    "ctaQuote": "Angebot anfragen",
+    "ctaProjects": "Projekte ansehen"
+  },
+  "Stats": {
+    "projectsCompleted": "Abgeschlossene Projekte",
+    "yearsExperience": "Jahre Erfahrung",
+    "satisfiedClients": "Zufriedene Kunden",
+    "productionCapacity": "Produktionskapazität"
+  },
+  "ClientLogos": {
+    "heading": "Vertraut von Marken in der ganzen Region"
+  },
+  "ServicesSection": {
+    "eyebrow": "Was wir bauen",
+    "title": "Beschilderung für jede Facette Ihrer Marke.",
+    "description": "Vom freistehenden Totem bis zur Fahrzeugflotte — jedes Projekt wird im eigenen Haus gefertigt, exakt nach Ihrer Vorgabe."
+  },
+  "Services": {
+    "items": {
+      "illuminated-signage": {
+        "title": "Leuchtreklame",
+        "shortDescription": "Beleuchtete Schilder und Schriftzüge, die Ihr Unternehmen Tag und Nacht sichtbar machen.",
+        "description": "Eine Leuchtreklame hält Ihr Unternehmen sichtbar, lange nachdem die Sonne untergegangen ist. Wir gestalten jedes Schild passend zu Ihrem Logo und Ihrem Standort, mit Schriftzügen und Formen, die aus der Entfernung klar lesbar sind. Design, Produktion und Montage erfolgen komplett im eigenen Haus.",
+        "features": [
+          "3D-Buchstaben und Logos mit LED-Beleuchtung",
+          "Beleuchtete Leuchtkästen",
+          "Beleuchtete Schilder für Fassaden und Eingänge",
+          "LED-Neonreklame",
+          "Beidseitig beleuchtete Hängeschilder"
+        ]
+      },
+      "interior-signage": {
+        "title": "Innenbeschilderung",
+        "shortDescription": "Markenauftritt, der Ihre Identität ins Geschäft, Büro oder Lokal bringt.",
+        "description": "Ein erster Eindruck entsteht auch im Innenraum. Wir bringen Ihre Marke an Wände, Empfangsbereiche und Verkaufsstellen, damit der Raum selbst organisiert und professionell wirkt. Jedes Element wird exakt auf Ihren Innenraum zugeschnitten.",
+        "features": [
+          "Logos für Empfang und Büros",
+          "Wandbeschriftungen",
+          "Leit- und Orientierungssysteme im Innenbereich",
+          "Standdisplays und Verkaufsaufsteller",
+          "Roll-ups und Posterhalter",
+          "Menütafeln für Restaurants und Cafés"
+        ]
+      },
+      "exterior-signage": {
+        "title": "Außenbeschilderung",
+        "shortDescription": "Außenwerbung, die auffällt und jedem Wetter standhält.",
+        "description": "Außenwerbung ist oft der erste Kontakt eines Kunden mit Ihrem Unternehmen. Wir arbeiten mit Materialien, die für den Außeneinsatz geeignet sind, und passen jedes Schild an Ihre Fassade und Ihren Standort an — von der Vor-Ort-Begehung bis zur finalen Montage.",
+        "features": [
+          "Schilder für Fassaden und Eingänge",
+          "Beschriftungen an Gebäuden",
+          "Banner und bedrucktes Mesh-Gewebe",
+          "Tafeln und Großflächenplakate",
+          "Außen-Leitsysteme",
+          "Werbung auf Firmenfahrzeugen (siehe Fahrzeugbeschriftung)"
+        ]
+      },
+      "print": {
+        "title": "Druck",
+        "shortDescription": "Präzise, kräftige Farben — von der Visitenkarte bis zum Großformatdruck.",
+        "description": "Von einer einzelnen Visitenkarte bis zum großformatigen Banner sorgen wir dafür, dass Farben und Details Ihrer Marke exakt stimmen. Bringen Sie ein fertiges Design mit, oder lassen Sie es uns gemeinsam entwickeln — Material und Format wählen wir passend zum tatsächlichen Einsatz.",
+        "features": [
+          "Visitenkarten, Flyer und Broschüren",
+          "Poster und Kataloge",
+          "Etiketten und Aufkleber",
+          "Banner und Großformatdruck",
+          "Druck auf PVC, Forex und weiteren starren Materialien",
+          "Werbematerial für Veranstaltungen und Kampagnen"
+        ]
+      },
+      "window-film": {
+        "title": "Fensterfolie",
+        "shortDescription": "Dekorative, werbliche und Sichtschutzfolien für Schaufenster, Büros und Glastüren.",
+        "description": "Die Glasflächen Ihres Schaufensters oder Büros sind wertvoller Werbe- und Gestaltungsraum. Mit Folie zeigen Sie Ihre Marke und Ihre Angebote oder schaffen mehr Privatsphäre, ohne auf Tageslicht zu verzichten. Jede Folie wird passgenau zugeschnitten und sorgfältig angebracht.",
+        "features": [
+          "Bedruckte Folie für Schaufenster",
+          "Konturgeschnittene Logos und Schriftzüge",
+          "Mattierte Folie (Frosted-Effekt)",
+          "Sichtschutzfolie für Büros und Glastrennwände",
+          "Perforierte One-Way-Vision-Folie",
+          "Saisonale und werbliche Grafiken"
+        ]
+      },
+      "wall-murals": {
+        "title": "Wandtapeten",
+        "shortDescription": "Maßgefertigte, gedruckte Wandtapeten, die eine Wand komplett verwandeln.",
+        "description": "Eine einzige Wand kann den Charakter eines ganzen Raumes verändern. Wir drucken Wandtapeten exakt nach den Maßen Ihrer Wand — aus unserer Designkollektion, Ihren eigenen Fotos oder der Grafik Ihrer Marke. Eine passende Lösung für Privathaushalte wie für Unternehmen.",
+        "features": [
+          "Individuell gestaltete Wandtapeten",
+          "Foto- oder Landschaftstapeten",
+          "Markenwände für Büros, Geschäfte und Läden",
+          "Tapeten für Wohnzimmer, Schlafzimmer und Kinderzimmer",
+          "Vermessung und Montage vor Ort"
+        ]
+      },
+      "vehicle-wrapping": {
+        "title": "Fahrzeugbeschriftung",
+        "shortDescription": "Voll- und Teilfolierungen, die Ihrem Fahrzeug ein neues Aussehen geben oder es in eine rollende Werbefläche verwandeln.",
+        "description": "Ihr Fahrzeug kann ohne Neulackierung eine neue Farbe erhalten oder für Ihr Unternehmen werben, egal wohin es fährt. Wir passen das Design an das jeweilige Fahrzeugmodell an und bringen die Folie mit Sorgfalt bis ins letzte Detail an — für Privatfahrzeuge ebenso wie für Firmenflotten.",
+        "features": [
+          "Vollfolierung des Fahrzeugs",
+          "Teilfolierung (Motorhaube, Dach, Spiegel, Details)",
+          "Farbwechsel mit matter, glänzender oder Satin-Folie",
+          "Bedruckte Grafiken für Firmenfahrzeuge, Transporter und Lkw",
+          "Konturgeschnittene Logos und Schriftzüge",
+          "Flottenfolierung für Unternehmen"
+        ]
+      }
+    }
+  },
+  "WhyChooseUs": {
+    "eyebrow": "Warum wir",
+    "title": "Ein Jahrzehnt Handwerkskunst, in jeder Montage.",
+    "description": "Sieben Gründe, warum Unternehmen in der ganzen Region uns ihr sichtbarstes Markenelement anvertrauen.",
+    "items": {
+      "w1": { "title": "Hochwertige Materialien", "description": "Aluminium in Schiffsqualität, gegossene Folie und gewerbliche LED-Komponenten, ausgelegt für jahrelangen Außeneinsatz." },
+      "w2": { "title": "Moderne Maschinen", "description": "CNC-Fräsen, UV-Flachbettdruck und präzise Metallverarbeitung unter einem Dach — ohne Verzögerungen durch Subunternehmer." },
+      "w3": { "title": "Schnelle Produktion", "description": "Transparente Produktionszeiten mit Zwischenstand-Updates, damit Sie jederzeit genau wissen, wo Ihr Projekt steht." },
+      "w4": { "title": "Professionelle Montage", "description": "Zertifizierte Teams, geeignetes Hebezeug und vollständige Einhaltung der Sicherheitsvorgaben bei jeder Montage." },
+      "w5": { "title": "Individuelles Design", "description": "Jedes Projekt beginnt bei Ihrer Marke, nicht bei einer Vorlage — mit Maßstudien, bevor der erste Schnitt erfolgt." },
+      "w6": { "title": "Garantie", "description": "Struktur- und Elektrogarantie auf jedes Projekt, unterstützt von einem lokalen Team, das ans Telefon geht." },
+      "w7": { "title": "Landesweiter Service", "description": "Produktion in Prishtina, Montageteams für ganz Kosovo und die weitere Balkanregion." }
+    }
+  },
+  "PortfolioTeaser": {
+    "eyebrow": "Unsere Arbeiten",
+    "title": "Ausgewählte Projekte aus der ganzen Region.",
+    "description": "Ein Blick auf Totems, LED-Fassaden und beschriftete Flotten, die wir für Kunden in Kosovo und auf dem Balkan realisiert haben.",
+    "ctaAll": "Alle Projekte"
+  },
+  "PortfolioCategories": {
+    "All": "Alle",
+    "Totems": "Totems",
+    "LED": "LED",
+    "Interior": "Innenbereich",
+    "Exterior": "Außenbereich",
+    "VehicleBranding": "Fahrzeugbeschriftung",
+    "Print": "Druck"
+  },
+  "PortfolioItems": {
+    "p1": { "title": "Beleuchtetes Eingangstotem — Friseursalon" },
+    "p2": { "title": "RGB-Fassadendisplay" },
+    "p3": { "title": "Dekorative Wandtapete — Digitaldruck" },
+    "p4": { "title": "Dachfassadenschild" },
+    "p5": { "title": "Flottenfolierung — 40 Fahrzeuge" },
+    "p6": { "title": "Großflächenplakat-Kampagnenserie" },
+    "p7": { "title": "Dimensionale Lobby-Buchstaben" },
+    "p8": { "title": "Mehrteiliges Straßentotem" },
+    "p9": { "title": "Leuchtkästen für Schaufenster" },
+    "p10": { "title": "Beschriftung für Lieferfahrzeug" },
+    "p11": { "title": "Fenstergrafik mit Sichtschutzfolie" },
+    "p12": { "title": "Messewand-Hintergrund" },
+    "p13": { "title": "Fenstergrafik mit Blattgold-Logo" },
+    "p14": { "title": "Herzförmiges Mastschild — Konditorei" },
+    "p15": { "title": "Beleuchtete 3D-Schriftzüge für Schaufenster" }
+  },
+  "Process": {
+    "eyebrow": "So arbeiten wir",
+    "title": "Fünf Schritte von der Anfrage bis zur Montage.",
+    "description": "Ein transparenter Ablauf, der Sie von der ersten Skizze bis zur finalen Abnahme auf dem Laufenden hält.",
+    "steps": {
+      "01": { "title": "Beratung", "description": "Sagen Sie uns, was Sie brauchen und wo die Werbung montiert werden soll. Wir besprechen die Anfrage vor Ort oder telefonisch, bevor etwas vermessen oder kalkuliert wird." },
+      "02": { "title": "Vermessung & Angebot", "description": "Wir nehmen vor Ort präzise Maße und senden Ihnen ein klares Angebot, damit es beim Produktionsstart keine Überraschungen gibt." },
+      "03": { "title": "Design", "description": "Unser Designteam erstellt maßstabsgetreue Entwürfe und Materialmuster nach Ihren Markenvorgaben und passt sie an, bis jede Proportion und Oberfläche freigegeben ist." },
+      "04": { "title": "Produktion", "description": "Die Fertigung erfolgt im eigenen Haus in unseren Metall-, Druck- und Elektronikwerkstätten, mit Qualitätskontrollen in jeder Phase." },
+      "05": { "title": "Montage", "description": "Zertifizierte Montageteams übernehmen Vorbereitung, Befestigung und Elektroanschluss und übergeben Ihnen ein fertiges, einsatzbereites Schild." }
+    }
+  },
+  "AboutTeaser": {
+    "eyebrow": "Über uns",
+    "title": "Ein verlässlicher Produktionspartner, kein reiner Schilderlieferant.",
+    "description": "Seit über einem Jahrzehnt entwirft, fertigt und montiert Pro Craft Reklama Werbebauten für Unternehmen, die nicht gewöhnlich aussehen wollen. Jedes Projekt läuft durch unsere eigene Werkstatt — vom ersten Entwurf bis zur letzten Schraube —, damit die Qualität nie vom Zeitplan eines Subunternehmers abhängt.",
+    "workshopLabel": "Pro Craft Reklama — Werkstatt in Prishtina",
+    "points": [
+      "Erfahrenes, hauseigenes Team aus Designern und Produzenten",
+      "Moderne CNC-, Druck- und Metallbearbeitungstechnik unter einem Dach",
+      "Ein Jahrzehnt Fertigung nach höchsten Markenstandards"
+    ],
+    "cta": "Mehr über uns"
+  },
+  "Testimonials": {
+    "eyebrow": "Kundenstimmen",
+    "title": "Vertraut von Unternehmern in der ganzen Region.",
+    "items": {
+      "t1": { "role": "Google-Bewertung", "quote": "Sehr faire Arbeit, ganz ohne Tricks, und direkte, respektvolle Leute!" }
+    }
+  },
+  "FaqSection": {
+    "eyebrow": "Häufige Fragen",
+    "title": "Fragen, die wir vor jedem Projekt hören.",
+    "items": {
+      "f1": { "question": "Wie lange dauert ein typisches Beschilderungsprojekt?", "answer": "Kleine Innenbeschilderungen sind oft in 1–2 Wochen fertig. Totems, LED-Fassaden und Großflächenkonstruktionen dauern je nach Statik und Genehmigungsverfahren meist 4–8 Wochen. Einen verbindlichen Zeitplan erhalten Sie nach Freigabe der Designphase." },
+      "f2": { "question": "Kümmern Sie sich um Genehmigungen und behördliche Zustimmungen?", "answer": "Ja. Für Bauten, die eine behördliche Genehmigung erfordern — Totems, Großflächenplakate, Dachbeschilderung —, erstellen wir die technische Dokumentation und übernehmen den Genehmigungsprozess für Sie." },
+      "f3": { "question": "Können Sie unsere bestehenden Markenvorgaben exakt einhalten?", "answer": "Wir arbeiten direkt nach Ihrem Markenhandbuch, einschließlich Pantone-abgestimmter Farben und Folien, freigegebener Schriftarten im genauen Maß und einheitlicher Proportionen an jedem Standort." },
+      "f4": { "question": "Was ist in der Garantie enthalten?", "answer": "Jedes Projekt erhält eine Struktur- und eine separate Elektronikgarantie auf LED-Komponenten und Treiber, je nach Produkt in der Regel 2–5 Jahre. Die vollständigen Bedingungen werden in Ihrem Angebot bestätigt." },
+      "f5": { "question": "Arbeiten Sie auch außerhalb von Prishtina?", "answer": "Ja — unsere Montageteams decken ganz Kosovo ab und übernehmen auch regionale Projekte auf dem Balkan. Die Produktion bleibt zur gleichbleibenden Qualitätskontrolle zentral in unserer Werkstatt in Prishtina." },
+      "f6": { "question": "Übernehmen Sie die Wartung nach der Montage?", "answer": "Wir bieten geplante Wartungsverträge für LED- und Leuchtreklamen an, einschließlich Modulaustausch, Reinigung und struktureller Prüfung, damit Ihre Beschilderung auch Jahre nach der Montage zuverlässig funktioniert." }
+    }
+  },
+  "ContactSection": {
+    "eyebrow": "Kontakt",
+    "title": "Platzieren wir Ihre Marke dort, wo sie nicht zu übersehen ist.",
+    "description": "Erzählen Sie uns von Ihrem Standort und Zeitrahmen — wir melden uns innerhalb eines Werktags mit einem konkreten Plan zurück.",
+    "workshop": "Werkstatt von Pro Craft Reklama",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "addressLabel": "Adresse",
+    "hoursLabel": "Öffnungszeiten",
+    "hoursWeekdays": "Montag – Samstag",
+    "hoursWeekdayTime": "09:00 – 17:00",
+    "hoursSunday": "Sonntag",
+    "hoursClosed": "Geschlossen"
+  },
+  "CtaBand": {
+    "badge": "Bereit, wenn Sie es sind",
+    "title": "Haben Sie eine Idee für Ihre Werbung?",
+    "description": "Sagen Sie uns, was Sie sich vorstellen, und wir erstellen Ihnen ein Angebot — innerhalb eines Werktags, ganz unverbindlich.",
+    "cta": "Angebot anfordern"
+  },
+  "Footer": {
+    "description": "Hochwertige Beschilderung, LED-Displays und Werbebauten, entwickelt und montiert im gesamten Kosovo und auf dem Balkan.",
+    "quickLinks": "Schnellzugriff",
+    "servicesHeading": "Leistungen",
+    "contactHeading": "Kontakt",
+    "requestQuote": "Angebot anfordern",
+    "rights": "Alle Rechte vorbehalten.",
+    "crafted": "Gefertigt in Prishtina, Kosovo."
+  },
+  "QuoteForm": {
+    "yourDetails": "Ihre Angaben",
+    "fullName": "Vollständiger Name",
+    "fullNamePlaceholder": "Arben Krasniqi",
+    "company": "Unternehmen",
+    "companyPlaceholder": "Metro Retail Group",
+    "email": "E-Mail",
+    "emailPlaceholder": "sie@unternehmen.com",
+    "phone": "Telefon",
+    "phonePlaceholder": "+383 44 000 000",
+    "projectScope": "Projektumfang",
+    "serviceNeeded": "Benötigte Leistung",
+    "selectService": "Leistung auswählen",
+    "estimatedBudget": "Geschätztes Budget",
+    "selectRange": "Bereich auswählen",
+    "timeline": "Zeitrahmen",
+    "selectTimeline": "Zeitrahmen auswählen",
+    "installationLocation": "Montageort",
+    "locationPlaceholder": "Prishtina, Kosovo",
+    "dimensions": "Ungefähre Abmessungen",
+    "dimensionsPlaceholder": "z. B. 3 m x 1,5 m",
+    "projectDescription": "Projektbeschreibung",
+    "descriptionPlaceholder": "Erzählen Sie uns vom Standort, den Abmessungen und Ihrer Vorstellung ...",
+    "attachment": "Referenzfoto oder Logo (optional)",
+    "submit": "Angebotsanfrage senden",
+    "submitting": "Wird gesendet ...",
+    "successTitle": "Angebotsanfrage erhalten",
+    "successDescription": "Vielen Dank — unser Team prüft Ihre Projektangaben und meldet sich innerhalb eines Werktags mit einem konkreten Angebot zurück.",
+    "submitAnother": "Weitere Anfrage senden",
+    "errorName": "Bitte geben Sie Ihren Namen ein.",
+    "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "errorService": "Bitte wählen Sie die benötigte Leistung aus.",
+    "errorDescription": "Bitte geben Sie eine kurze Projektbeschreibung an.",
+    "budgetUnder2k": "Unter 2.000 €",
+    "budget2to10k": "2.000 € – 10.000 €",
+    "budget10to50k": "10.000 € – 50.000 €",
+    "budgetOver50k": "50.000 € +",
+    "timelineAsap": "So schnell wie möglich",
+    "timeline1Month": "Innerhalb von 1 Monat",
+    "timeline1to3Months": "1–3 Monate",
+    "timelineResearching": "Ich informiere mich nur"
+  },
+  "ContactForm": {
+    "fullName": "Vollständiger Name",
+    "fullNamePlaceholder": "Arben Krasniqi",
+    "company": "Unternehmen",
+    "companyPlaceholder": "Metro Retail Group",
+    "email": "E-Mail",
+    "emailPlaceholder": "sie@unternehmen.com",
+    "phone": "Telefon",
+    "phonePlaceholder": "+383 44 000 000",
+    "serviceNeeded": "Benötigte Leistung",
+    "selectService": "Leistung auswählen",
+    "projectDetails": "Projektdetails",
+    "detailsPlaceholder": "Erzählen Sie uns von Ihrem Standort, Zeitrahmen und Ihrer Vorstellung ...",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet ...",
+    "successTitle": "Nachricht gesendet",
+    "successDescription": "Vielen Dank — ein Mitglied unseres Teams meldet sich innerhalb eines Werktags bei Ihnen.",
+    "sendAnother": "Weitere Nachricht senden",
+    "errorName": "Bitte geben Sie Ihren Namen ein.",
+    "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "errorMessage": "Erzählen Sie uns kurz von Ihrem Projekt."
+  },
+  "PageHero": {
+    "about": { "eyebrow": "Über Pro Craft Reklama", "title": "Handwerkskunst für die Langstrecke gebaut.", "description": "Seit über einem Jahrzehnt verwandeln wir Schaufenster, Flotten und Fassaden in Landmarken — entwickelt, gefertigt und montiert von einem Team, das jedes Projekt behandelt, als trüge es unseren eigenen Namen." },
+    "services": { "eyebrow": "Unsere Leistungen", "title": "Jede Facette Ihrer Marke, im eigenen Haus gefertigt.", "description": "Sieben Disziplinen aus Beschilderung und Werbetechnik, alle unter einem Dach gefertigt — damit die Qualität nie vom Zeitplan eines Subunternehmers abhängt." },
+    "projects": { "eyebrow": "Fallstudien", "title": "Die Anfrage, die Umsetzung und das Ergebnis.", "description": "Ein genauerer Blick darauf, wie wir Beschilderungsprojekte für Kunden planen, produzieren und montieren, die sich keine Unstimmigkeiten leisten können." },
+    "blog": { "eyebrow": "Blog", "title": "Praxisnotizen zu Beschilderung, die hält.", "description": "Praktische Beiträge zu Materialien, Genehmigungen und Rollout-Strategien — aus Projekten, die wir tatsächlich umgesetzt haben." },
+    "contact": { "eyebrow": "Kontakt", "title": "Sagen Sie uns, wo Ihre Marke gesehen werden soll.", "description": "Erreichen Sie uns direkt, oder senden Sie uns unten ein paar Angaben — wir melden uns innerhalb eines Werktags mit einem konkreten Plan zurück." },
+    "quote": { "eyebrow": "Angebot anfragen", "title": "Lassen Sie uns Ihr Projekt planen.", "description": "Teilen Sie uns mit, was Sie brauchen und wo — wir melden uns innerhalb eines Werktags mit einem realistischen Budget und Zeitrahmen." }
+  },
+  "AboutPage": {
+    "storyEyebrow": "Unsere Geschichte",
+    "storyTitle": "Von einer kleinen Metallwerkstatt zum Beschilderungspartner der Region.",
+    "storyDescription": "Pro Craft Reklama begann als Zwei-Personen-Metallwerkstatt, die jeden Beschilderungsauftrag annahm, der durch die Tür kam. Ein Jahrzehnt später betreiben wir eine vollständige Produktionsfläche — Metallfertigung, UV-Druck, LED-Montage und Fahrzeugfolierung — und betreuen Handelsgruppen, Banken, Logistikflotten und unabhängige Unternehmen in ganz Kosovo und auf dem weiteren Balkan.",
+    "storyParagraph": "Was sich nicht verändert hat, ist unsere Arbeitsweise: Jedes Projekt beginnt mit einer Vor-Ort-Begehung, nicht mit einer Vorlage. Wir lehnen lieber einen überstürzten Auftrag ab, als etwas zu liefern, das fünf Jahre Wetter, Verkehr und täglicher Abnutzung nicht standhält.",
+    "productionFloorLabel": "Produktionsfläche — Prishtina",
+    "valuesEyebrow": "Was uns wichtig ist",
+    "valuesTitle": "Grundsätze, die jedes Projekt prägen, das wir übernehmen.",
+    "values": {
+      "v1": { "title": "Liebe zum Detail", "description": "Jede Proportion, jeder Radius und jede Oberfläche wird mit Ihrer Marke abgeglichen, bevor der erste Schnitt erfolgt." },
+      "v2": { "title": "Individuelle Fertigung", "description": "Keine Katalogteile. Konstruktionen werden speziell für Ihre Anforderung entwickelt und gefertigt." },
+      "v3": { "title": "Moderne Ausstattung", "description": "CNC-Fräsen, UV-Flachbettdruck und präzise Metallverarbeitung, alles unter einem Dach in Prishtina." },
+      "v4": { "title": "Verlässliche Partnerschaft", "description": "Ein einziger Ansprechpartner, vom ersten Entwurf bis zu jahrelanger Betreuung nach der Montage." }
+    }
+  },
+  "QuotePage": {
+    "trust": {
+      "q1": { "title": "1 Werktag", "description": "Durchschnittliche Antwortzeit auf jede Angebotsanfrage." },
+      "q2": { "title": "Unverbindlich", "description": "Eine konkrete Kostenschätzung, ganz ohne Verpflichtung." },
+      "q3": { "title": "Jedes Mal individuell", "description": "Jedes Angebot wird nach Ihrer Anfrage erstellt, nicht nach einer Vorlage." }
+    }
+  },
+  "ProjectDetail": {
+    "challengeTitle": "Die Herausforderung",
+    "solutionTitle": "Die Lösung",
+    "resultTitle": "Das Ergebnis",
+    "beforeAfterTitle": "Vorher & Nachher",
+    "beforeAfterDescription": "Ziehen Sie den Regler, um den Standort vor und nach der Montage zu vergleichen.",
+    "similarBriefTitle": "Haben Sie eine ähnliche Anfrage?",
+    "similarBriefDescription": "Wir planen sie und melden uns innerhalb eines Werktags mit einem konkreten Plan."
+  },
+  "Projects": {
+    "items": {
+      "metro-retail-signage-rollout": {
+        "title": "Beschilderungs-Rollout an sechs Standorten",
+        "summary": "Einheitliche Außen- und Innenbeschilderung an sechs Filialen, umgesetzt in unter zehn Wochen.",
+        "challenge": "Metro Retail Group war durch Übernahmen gewachsen und hatte sechs Filialen mit sechs unterschiedlichen Beschilderungsstandards geerbt. Der Starttermin für das Rebranding stand fest — für einen langsamen Rollout war kein Spielraum.",
+        "solution": "Wir entwickelten ein einheitliches Designsystem für Fassadenbeschilderung, Fenstergrafik und Innenleitsystem und planten anschließend parallele Produktion sowie gestaffelte Montageteams an allen sechs Standorten gleichzeitig.",
+        "result": "Alle sechs Filialen eröffneten am Starttag unter einer einheitlichen Marke, ohne Montageverzögerungen und mit durchgängig Pantone-abgestimmten Oberflächen.",
+        "stats": [
+          { "label": "Standorte", "value": "6" },
+          { "label": "Zeitrahmen", "value": "10 Wochen" },
+          { "label": "Schildertypen", "value": "14" }
+        ]
+      },
+      "nova-bank-led-facade": {
+        "title": "Markante LED-Fassade",
+        "summary": "Ein programmierbares RGB-Fassadendisplay, das eine Flaggschiff-Filiale zu einem erkennbaren Wahrzeichen der Stadt machte.",
+        "challenge": "Die Flaggschiff-Filiale von Nova Bank lag an einer gut sichtbaren Ecke, hatte nach Einbruch der Dunkelheit aber keinen eigenen Charakter und verlor neben benachbarten beleuchteten Schaufenstern an Wirkung.",
+        "solution": "Wir entwickelten eine LED-Matrix für die gesamte Fassade mit wetterfesten Modulen und einem Content-Management-System zur Fernsteuerung, mit dem das Marketingteam der Bank Markenauftritte ohne Vor-Ort-Besuch aktualisieren kann.",
+        "result": "Die Fassade gilt inzwischen in der lokalen Presse als Wahrzeichen der Stadt, und die Fußgängerfrequenz an der Filiale stieg nach der Montage messbar an.",
+        "stats": [
+          { "label": "LED-Module", "value": "3.200" },
+          { "label": "Helligkeit", "value": "6.500 nits" },
+          { "label": "Verfügbarkeit", "value": "99,8 %" }
+        ]
+      },
+      "balkan-logistics-fleet-wrap": {
+        "title": "Flottenbeschriftung für 40 Fahrzeuge",
+        "summary": "Vollfolierung einer 40 Fahrzeuge umfassenden Lieferflotte, ganz ohne Farbabweichung.",
+        "challenge": "Balkan Logistics musste die gesamte Lieferflotte vor dem Start einer regionalen Expansion folieren lassen — mit strikter Farbkonsistenz zwischen Fahrzeugen, die Wochen auseinander foliert wurden.",
+        "solution": "Wir bauten eine farbgesteuerte Produktionslinie mit chargengleichem Folienmaterial und einer eigenen klimatisierten Folierungshalle auf und planten die Fahrzeuge im Rotationsprinzip, um Flottenausfälle zu vermeiden.",
+        "result": "Alle 40 Fahrzeuge waren rechtzeitig vor dem Starttermin foliert, mit nachweislich einheitlicher Farbgebung — die Flotte ist seither das meistgenannte Markenelement des Kunden.",
+        "stats": [
+          { "label": "Fahrzeuge", "value": "40" },
+          { "label": "Folienhaltbarkeit", "value": "7 Jahre" },
+          { "label": "Ausfallzeit", "value": "0 Tage" }
+        ]
+      }
+    }
+  },
+  "BlogDetail": {
+    "haveProjectTitle": "Haben Sie ein Beschilderungsprojekt im Kopf?",
+    "haveProjectDescription": "Erhalten Sie innerhalb eines Werktags ein konkretes Angebot."
+  },
+  "Blog": {
+    "items": {
+      "choosing-the-right-led-sign": {
+        "title": "Das richtige LED-Schild für Ihr Schaufenster wählen",
+        "excerpt": "Helligkeit, Pixelabstand und Betrachtungsabstand — die technischen Entscheidungen, die darüber bestimmen, ob Ihr LED-Schild klar lesbar bleibt oder überstrahlt.",
+        "category": "Ratgeber",
+        "readTime": "6 Min. Lesezeit",
+        "content": [
+          "Die meisten LED-Ausfälle an Schaufenstern sind kein Fertigungsfehler — sondern eine falsche Spezifikation. Ein Schild, das in einer schattigen Seitenstraße scharf wirkt, überstrahlt auf einer nach Westen ausgerichteten Fassade in der direkten Nachmittagssonne völlig, und ein für diese Fassade ausreichend helles Schild wirkt in einer schmalen Fußgängergasse aggressiv.",
+          "Die entscheidende Variable ist der Betrachtungsabstand, nicht die Helligkeit allein. Der Pixelabstand bestimmt die Mindestdistanz, ab der Text sauber erkennbar ist — wird er falsch gewählt, sehen Betrachter aus der Nähe nur ein Punkteraster statt eines Schriftzugs. Wir berechnen dies anhand der tatsächlichen Gehwegbreite und Verkehrsgeschwindigkeit an Ihrem konkreten Standort, nicht nach einer pauschalen Faustregel.",
+          "Treiber sind genauso wichtig wie die Module selbst. Billige Treiber lassen die Helligkeit innerhalb von achtzehn Monaten ungleichmäßig nach und erzeugen fleckige Helligkeitsunterschiede, die auffälliger sind als ein gleichmäßig dunkleres Schild. Wir setzen standardmäßig gewerbliche Treiber mit Fernsteuerung ein, damit die Helligkeit saisonal angepasst werden kann, ohne dass ein Vor-Ort-Termin nötig ist."
+        ]
+      },
+      "totem-sign-lifespan": {
+        "title": "Was die Lebensdauer eines Totems wirklich bestimmt",
+        "excerpt": "Nicht die Acrylfront versagt zuerst. Ein Blick auf die konstruktiven und elektrischen Entscheidungen, die ein 3-Jahres-Schild von einem 15-Jahres-Schild unterscheiden.",
+        "category": "Materialien",
+        "readTime": "5 Min. Lesezeit",
+        "content": [
+          "Wenn ein Totem frühzeitig versagt, liegt die Ursache fast nie an der sichtbaren Front — sondern im Inneren der Konstruktion. Eindringendes Wasser an schlecht abgedichteten Kabeldurchführungen korrodiert die Innenverkabelung lange, bevor das Acryl erste UV-Ausbleichung zeigt.",
+          "Die Fundamentplanung ist der am häufigsten übersehene Faktor. Ein für die regionalen Windlasten zu knapp dimensioniertes Totem entwickelt schon nach wenigen Wintern Spannungsrisse an der Fußschweißnaht, besonders an exponierten Standorten entlang der Straße. Wir berechnen die Statik jeder freistehenden Konstruktion nach den Windlaststandards Kosovos — nicht nur bei genehmigungspflichtigen Bauten.",
+          "Stahlqualität und Verzinkung machen den Großteil der verbleibenden Differenz aus. Beschichtungen in Schiffsqualität kosten anfangs mehr, verhindern aber den Rostaustritt, der das Erscheinungsbild eines Schildes lange vor einer strukturellen Beeinträchtigung ruiniert — eine Kostenfrage, die wir mit Kunden vor, nicht nach der Budgetentscheidung besprechen."
+        ]
+      },
+      "fleet-branding-roi": {
+        "title": "Die ROI-Rechnung hinter der Fahrzeugflotten-Beschriftung",
+        "excerpt": "Eine folierte Flotte ist eine rollende Werbefläche ohne Mediabudget. So helfen wir Kunden, die Amortisationszeit vorab zu berechnen.",
+        "category": "Strategie",
+        "readTime": "7 Min. Lesezeit",
+        "content": [
+          "Ein einzelner Lieferwagen im täglichen Stadtverkehr erzeugt monatlich zehntausende Sichtkontakte — zu einem Bruchteil der Kosten pro Sichtkontakt klassischer Plakatwerbung, und ohne wiederkehrende Mediakosten nach der Folierung.",
+          "Die Amortisationszeit hängt stark von Flottennutzung und Routendichte ab. Deshalb erstellen wir mit Kunden vor dem Angebot ein einfaches Reichweitenmodell: Tageskilometer, Überschneidung der Route mit der Zielgruppe und durchschnittliche Standzeiten fließen alle ein.",
+          "Die Haltbarkeit der Folie ist die andere Hälfte der ROI-Gleichung. Eine 7 Jahre haltbare Gussfolie amortisiert die Anfangskosten über einen deutlich längeren Zeitraum als eine günstige 3-Jahres-Folie, die im gleichen Zeitraum zweimal erneuert werden muss — oft macht das die hochwertigere Variante über die Nutzungsdauer des Fahrzeugs zur günstigeren Wahl."
+        ]
+      },
+      "permitting-signage-kosovo": {
+        "title": "Ein praktischer Leitfaden zu Genehmigungen für Beschilderung in Kosovo",
+        "excerpt": "Worauf Kommunen bei einer statischen Einreichung tatsächlich achten, und wie Sie Verzögerungen vermeiden, die Montagen um Monate verschieben.",
+        "category": "Vorschriften",
+        "readTime": "8 Min. Lesezeit",
+        "content": [
+          "Die häufigste Ursache für Genehmigungsverzögerungen ist eine unvollständige statische Einreichung — fehlende Windlastberechnungen, unklare Fundamentdetails oder Zeichnungen, die nicht mit den tatsächlich geplanten Abmessungen übereinstimmen.",
+          "Kommunen achten in der Regel auf drei Dinge: statische Sicherheit, Auswirkungen auf die Verkehrssicht und Übereinstimmung mit dem umgebenden Straßenbild. Werden alle drei Punkte bereits in der Ersteinreichung klar adressiert, statt auf eine Nachforderung zu warten, verkürzt das die Prüfzeit meist um Wochen.",
+          "Wir erstellen und reichen das vollständige technische Paket standardmäßig im Namen unserer Kunden ein, weil wir genau wissen, was jede Behörde erwartet — und was eine automatische zweite Prüfung auslöst."
+        ]
+      },
+      "rebrand-rollout-playbook": {
+        "title": "Ein Multi-Standort-Rebranding ohne Konsistenzverlust umsetzen",
+        "excerpt": "Unser gestaffelter Rollout-Plan für Franchise- und Multi-Standort-Marken — von der Design-Standardisierung bis zum letzten Montageteam am letzten Standort.",
+        "category": "Strategie",
+        "readTime": "6 Min. Lesezeit",
+        "content": [
+          "Multi-Standort-Rebrandings scheitern selten am Design — sie scheitern an der Reihenfolge. Ohne einen gemeinsamen Produktionsplan kann der fünfte Standort, einen Monat nach dem ersten montiert, leicht mit abweichenden Folienchargen, Montagehöhen oder Oberflächentoleranzen enden.",
+          "Wir legen ein einziges Designsystem fest, bevor die Fertigung beginnt: exakte Pantone-Referenzen, Montagehöhen-Standards und Materialspezifikationen, einmal dokumentiert und von jedem Produktionslauf referenziert — unabhängig davon, in welcher Woche ein Standort geplant ist.",
+          "Die Reihenfolge der Montage ist für die Markenwahrnehmung genauso wichtig. Wo möglich, staffeln wir die Teams so, dass die Standorte mit dem höchsten Besucheraufkommen zuerst eröffnen, damit das Rebranding bewusst und koordiniert wirkt statt wie ein schrittweiser, sichtbarer Rollout."
+        ]
+      },
+      "materials-that-survive-balkan-winters": {
+        "title": "Materialien, die Balkanwinter wirklich überstehen",
+        "excerpt": "Frost-Tau-Wechsel zerstören billige Beschilderung schnell. Die Substrat- und Beschlagspezifikationen, bei denen wir keine Kompromisse eingehen — unabhängig vom Budgetdruck.",
+        "category": "Materialien",
+        "readTime": "5 Min. Lesezeit",
+        "content": [
+          "Frost-Tau-Wechsel setzen Beschilderung stark zu, die nicht dafür ausgelegt ist. Wasser, das in einen feinen Spalt eines schlecht abgedichteten Untergrunds eindringt, dehnt sich beim Gefrieren aus und vergrößert den Spalt mit jedem Zyklus, bis das Material von innen heraus versagt.",
+          "Wir setzen für alles, was im Außenbereich montiert wird, auf Aluminiumverbund und Substrate in Schiffsqualität — selbst wenn das Budget des Kunden eine günstigere Alternative nahelegt. Der Preisunterschied ist gering im Vergleich zu einem kompletten Austausch zwei Winter später.",
+          "Befestigungen und Montagebeschläge werden mit derselben Sorgfalt geprüft. Durchgehend Edelstahl, ausgelegt für den tatsächlich vor Ort auftretenden Temperaturbereich — denn ein verrosteter Winkel ist oft die wahre Ursache eines Schildes, das strukturell zu versagen scheint."
+        ]
+      }
+    }
+  }
+}

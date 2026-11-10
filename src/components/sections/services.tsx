@@ -1,24 +1,24 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { services } from "@/lib/data";
+import { Link } from "@/i18n/navigation";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { ServiceCard } from "@/components/shared/service-card";
 import { Button } from "@/components/ui/button";
 
 export function Services({ full = false }: { full?: boolean }) {
+  const t = useTranslations("ServicesSection");
+  const tCommon = useTranslations("Common");
+
   return (
     <section className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-end">
-          <SectionHeading
-            eyebrow="What We Build"
-            title="Signage engineered for every surface of your brand."
-            description="From street-level totems to fleet-wide vehicle wraps — every project is fabricated in-house, to your exact specification."
-          />
+          <SectionHeading eyebrow={t("eyebrow")} title={t("title")} description={t("description")} />
           {!full && (
             <Button asChild variant="outline" className="shrink-0">
               <Link href="/services">
-                All Services
+                {tCommon("allServices")}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>

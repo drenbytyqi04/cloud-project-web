@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
@@ -9,6 +10,7 @@ import { SectionHeading } from "@/components/shared/section-heading";
 import { cn } from "@/lib/utils";
 
 export function Testimonials() {
+  const t = useTranslations("Testimonials");
   const hasMultiple = testimonials.length > 1;
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: hasMultiple, align: "center" });
   const [selected, setSelected] = useState(0);
@@ -37,8 +39,8 @@ export function Testimonials() {
     <section className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <SectionHeading
-          eyebrow="Testimonials"
-          title="Trusted by business owners across the region."
+          eyebrow={t("eyebrow")}
+          title={t("title")}
           align="center"
           className="mx-auto"
         />
@@ -46,8 +48,8 @@ export function Testimonials() {
         <div className="relative mt-16">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
-              {testimonials.map((t) => (
-                <div key={t.name} className="min-w-0 flex-[0_0_100%] px-2">
+              {testimonials.map((item) => (
+                <div key={item.key} className="min-w-0 flex-[0_0_100%] px-2">
                   <motion.div
                     initial={{ opacity: 0, y: 16 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -57,16 +59,16 @@ export function Testimonials() {
                   >
                     <Quote className="h-8 w-8 text-accent" />
                     <p className="text-balance font-display text-xl font-medium leading-relaxed text-foreground sm:text-2xl">
-                      &ldquo;{t.quote}&rdquo;
+                      &ldquo;{t(`items.${item.key}.quote`)}&rdquo;
                     </p>
                     <div className="flex gap-1">
-                      {Array.from({ length: t.rating }).map((_, i) => (
+                      {Array.from({ length: item.rating }).map((_, i) => (
                         <Star key={i} className="h-4 w-4 fill-accent text-accent" />
                       ))}
                     </div>
                     <div>
-                      <div className="font-medium text-foreground">{t.name}</div>
-                      <div className="text-sm text-muted-foreground">{t.role}</div>
+                      <div className="font-medium text-foreground">{item.name}</div>
+                      <div className="text-sm text-muted-foreground">{t(`items.${item.key}.role`)}</div>
                     </div>
                   </motion.div>
                 </div>
@@ -92,9 +94,9 @@ export function Testimonials() {
               </button>
 
               <div className="mt-8 flex justify-center gap-2">
-                {testimonials.map((t, i) => (
+                {testimonials.map((item, i) => (
                   <button
-                    key={t.name}
+                    key={item.key}
                     onClick={() => scrollTo(i)}
                     aria-label={`Go to testimonial ${i + 1}`}
                     className={cn(

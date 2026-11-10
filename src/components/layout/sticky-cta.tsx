@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 
 export function StickyCta() {
+  const t = useTranslations("Nav");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -28,7 +30,7 @@ export function StickyCta() {
         >
           <Button asChild size="default">
             <Link href="/quote">
-              Get a Quote
+              {t("getQuote")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>

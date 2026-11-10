@@ -1,12 +1,15 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Magnetic } from "@/components/shared/magnetic-button";
 
 export function CtaBand() {
+  const t = useTranslations("CtaBand");
+
   return (
     <section className="relative overflow-hidden py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
@@ -22,18 +25,16 @@ export function CtaBand() {
 
           <div className="relative flex flex-col items-center gap-6">
             <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border-strong bg-white/[0.03] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-accent">
-              Ready When You Are
+              {t("badge")}
             </span>
             <h2 className="font-display max-w-2xl text-balance text-4xl font-medium leading-[1.1] tracking-tight text-foreground sm:text-5xl">
-              Have an idea for your advertisement?
+              {t("title")}
             </h2>
-            <p className="max-w-lg text-balance text-muted-foreground">
-              Tell us what you have in mind, and we&apos;ll prepare a quote for you — within one business day, no obligation.
-            </p>
+            <p className="max-w-lg text-balance text-muted-foreground">{t("description")}</p>
             <Magnetic strength={0.25}>
               <Button asChild size="lg">
                 <Link href="/quote">
-                  Request a Quote
+                  {t("cta")}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
