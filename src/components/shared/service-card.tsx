@@ -34,13 +34,9 @@ export function ServiceCard({
       className="group relative flex scroll-mt-32 flex-col overflow-hidden rounded-3xl border border-border bg-surface-subtle transition-colors duration-500 hover:border-accent/40"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        <motion.div
-          whileHover={{ scale: 1.06 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="h-full w-full"
-        >
+        <div className="h-full w-full transition-transform duration-700 ease-out group-hover:scale-110">
           <VisualTile icon={Icon} seed={index} src={serviceImages[service.slug]} alt={t("title")} />
-        </motion.div>
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
       </div>
 
