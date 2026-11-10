@@ -16,6 +16,8 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const isHomepage = pathname === "/";
+  const overDarkHero = isHomepage && !scrolled;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -38,7 +40,10 @@ export function Navbar() {
       >
         <Link
           href="/"
-          className="font-display text-lg font-semibold tracking-tight text-foreground"
+          className={cn(
+            "font-display text-lg font-semibold tracking-tight",
+            overDarkHero ? "text-white" : "text-foreground"
+          )}
         >
           PRO CRAFT <span className="text-accent">REKLAMA</span>
         </Link>
@@ -53,7 +58,11 @@ export function Navbar() {
                 href={href}
                 className={cn(
                   "relative rounded-full px-4 py-2 text-sm font-medium transition-colors",
-                  active ? "text-accent" : "text-foreground/80 hover:text-foreground"
+                  active
+                    ? "text-accent"
+                    : overDarkHero
+                      ? "text-white/80 hover:text-white"
+                      : "text-foreground/80 hover:text-foreground"
                 )}
               >
                 {t(key)}
@@ -63,8 +72,8 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <ThemeToggle />
-          <LanguageSwitcher />
+          <ThemeToggle inverted={overDarkHero} />
+          <LanguageSwitcher inverted={overDarkHero} />
           <Button asChild size="sm">
             <Link href="/quote">
               {t("getQuote")}
@@ -76,7 +85,10 @@ export function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-border-strong text-foreground lg:hidden cursor-pointer"
+          className={cn(
+            "flex h-10 w-10 items-center justify-center rounded-full border lg:hidden cursor-pointer",
+            overDarkHero ? "border-white/20 text-white" : "border-border-strong text-foreground"
+          )}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
