@@ -99,9 +99,9 @@ export function Hero() {
           </Magnetic>
           <Magnetic strength={0.25}>
             <Button asChild variant="glass" size="lg">
-              <Link href="/portfolio">
+              <Link href="/projects">
                 <PlayCircle className="h-4 w-4" />
-                View Portfolio
+                View Projects
               </Link>
             </Button>
           </Magnetic>
