@@ -13,11 +13,11 @@ export const realPhotos = {
   goldParfumesWide: "/images/real/gold-parfumes-wide.jpg",
 };
 
+export const heroImage = realPhotos.goldParfumesWide;
+
 // Unsplash photos (stable, permanent URLs under the Unsplash License —
 // free to use commercially, no attribution required). Used as stand-ins
 // wherever we don't yet have real project photography.
-export const heroImage =
-  "https://images.unsplash.com/photo-1545649313-2a9a8112b127?crop=entropy&cs=srgb&fm=jpg&q=85";
 export const workshopImage =
   "https://images.unsplash.com/photo-1776159904891-e7b213b8198f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600";
 

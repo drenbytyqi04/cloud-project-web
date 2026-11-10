@@ -26,7 +26,7 @@ export function Hero() {
       <motion.div style={{ y }} className="absolute inset-0">
         <Image
           src={heroImage}
-          alt="Signage installation crew mounting an illuminated LED sign at night"
+          alt="Illuminated Gold Parfumes storefront sign at night"
           fill
           priority
           sizes="100vw"
