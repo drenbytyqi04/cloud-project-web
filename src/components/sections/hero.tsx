@@ -88,7 +88,7 @@ export function Hero() {
           {t("badge")}
         </motion.div>
 
-        <h1 className="font-display max-w-5xl text-balance text-5xl font-medium leading-[1.03] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
+        <h1 className="hero-text-shadow font-display max-w-5xl text-balance text-5xl font-medium leading-[1.03] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
           <RevealText text={t("titleLine1")} delay={0.3} />
           <br />
           <RevealText text={t("titleLine2")} delay={0.55} className="text-gradient-accent" />
@@ -98,7 +98,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-8 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl"
+          className="hero-text-shadow mt-8 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl"
         >
           {t("subtitle")}
         </motion.p>
