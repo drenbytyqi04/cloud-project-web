@@ -13,13 +13,12 @@ export const siteConfig = {
   ],
 };
 
-export const navKeys = ["home", "about", "services", "projects", "blog", "contact"] as const;
+export const navKeys = ["home", "about", "services", "projects", "contact"] as const;
 export const navHrefs: Record<(typeof navKeys)[number], string> = {
   home: "/",
   about: "/about",
   services: "/services",
   projects: "/projects",
-  blog: "/blog",
   contact: "/contact",
 };
 
@@ -105,20 +104,6 @@ export const clientLogos = [
 ];
 
 export const faqKeys = ["f1", "f2", "f3", "f4", "f5", "f6"] as const;
-
-export type BlogPost = {
-  slug: string;
-  date: string;
-};
-
-export const blogPosts: BlogPost[] = [
-  { slug: "choosing-the-right-led-sign", date: "2026-06-12" },
-  { slug: "totem-sign-lifespan", date: "2026-05-28" },
-  { slug: "fleet-branding-roi", date: "2026-05-09" },
-  { slug: "permitting-signage-kosovo", date: "2026-04-22" },
-  { slug: "rebrand-rollout-playbook", date: "2026-03-30" },
-  { slug: "materials-that-survive-balkan-winters", date: "2026-03-05" },
-];
 
 export type Project = {
   slug: string;

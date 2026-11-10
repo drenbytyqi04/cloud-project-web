@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { siteConfig, services, blogPosts, projects } from "@/lib/data";
+import { siteConfig, services, projects } from "@/lib/data";
 import { routing } from "@/i18n/routing";
 
 function localePath(locale: string, route: string) {
@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [];
 
   for (const locale of routing.locales) {
-    const staticRoutes = ["", "/about", "/services", "/projects", "/blog", "/contact", "/quote"].map((route) => ({
+    const staticRoutes = ["", "/about", "/services", "/projects", "/contact", "/quote"].map((route) => ({
       url: localePath(locale, route),
       lastModified: new Date(),
     }));
@@ -26,12 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     }));
 
-    const blogRoutes = blogPosts.map((post) => ({
-      url: localePath(locale, `/blog/${post.slug}`),
-      lastModified: new Date(post.date),
-    }));
-
-    routes.push(...staticRoutes, ...serviceRoutes, ...projectRoutes, ...blogRoutes);
+    routes.push(...staticRoutes, ...serviceRoutes, ...projectRoutes);
   }
 
   return routes;

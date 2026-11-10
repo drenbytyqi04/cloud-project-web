@@ -66,12 +66,3 @@ export const portfolioImages: Record<string, string> = {
 export function getPortfolioImage(item: { id: string; category: PortfolioCategory }): string {
   return portfolioImages[item.id] ?? getCategoryImage(item.category);
 }
-
-export const blogImages: Record<string, string> = {
-  "choosing-the-right-led-sign": serviceImages["illuminated-signage"],
-  "totem-sign-lifespan": serviceImages["exterior-signage"],
-  "fleet-branding-roi": serviceImages["vehicle-wrapping"],
-  "permitting-signage-kosovo": serviceImages["exterior-signage"],
-  "rebrand-rollout-playbook": serviceImages["interior-signage"],
-  "materials-that-survive-balkan-winters": workshopImage,
-};
